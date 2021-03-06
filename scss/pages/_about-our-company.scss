@@ -1,0 +1,25 @@
+@import '../components/breadcrumb';
+@import '../components/pagination';
+
+.carousel-container {
+    position: relative;
+}
+
+.page-caption {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 36px;
+    bottom: 55px;
+    color: $primary;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.carousel--page {
+    margin-bottom: 30px;
+
+    @include media-breakpoint-up(sm) {
+        margin-bottom: 60px;
+    }
+}

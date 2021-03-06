@@ -1,0 +1,16 @@
+.btn {
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding: 7px 33px;
+    border-radius: 8px;
+    line-height: 24px;
+
+    @include media-breakpoint-only(xs) {
+        padding: 7px 40px;
+    }
+}
+
+.btn-lg {
+    padding-top: 12px;
+    padding-bottom: 12px;
+}

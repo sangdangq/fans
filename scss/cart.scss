@@ -1,0 +1,52 @@
+@font-face {
+    font-family: Averta;
+    src: url(../) format('woff2');
+    font-weight: 400;
+}
+
+@import "./settings/setting";
+@import "./vendors/bootstrap";
+
+@import "./generic/generic";
+
+@import "./elements/elements";
+
+@import "./components/button";
+@import "./components/footer";
+@import "./components/quantity";
+@import "./components/form";
+@import "./components/breadcrumb";
+
+@import "./utilities/utilities";
+
+
+@import "./pages/homepage";
+
+.cart-item {
+    border-bottom: 1px solid $grey;
+
+    &:last-of-type {
+        border-bottom: none;
+    }
+
+    &__price {
+        font-size: 20px;
+    }
+}
+
+.cart-count {
+    position: relative;
+    padding-bottom: 20px;
+
+    &::before {
+        content: "";
+        display: block;
+        width: 50px;
+        height: 4px;
+        background-color: $secondary;
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}

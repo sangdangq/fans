@@ -1,0 +1,15 @@
+{
+  "name": "electric-app",
+  "version": "1.0.0",
+  "description": "Gia Son app",
+  "main": "index.js",
+  "dependencies": {
+    "bootstrap": "^5.0.0-beta1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Sang Dang",
+  "license": "ISC"
+}

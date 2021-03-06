@@ -1,0 +1,48 @@
+.quantity {
+    display: flex;
+
+    .btn {
+        color: $black;
+        padding: 0;
+        width: 50px;
+        height: 50px;
+        background: rgba(232, 238, 247, 0.37);
+        border: 1px solid #DEE0E2;
+        @include center;
+        font-size: 40px;
+        box-shadow: none;
+
+        &:first-child {
+            border-radius: 8px 0px 0px 8px;
+        }
+
+        &:last-child {
+            border-radius: 0 8px 8px 0px;
+        }
+    }
+
+    input {
+        border: 1px solid #DEE0E2;
+        border-left: none;
+        border-right: none;
+        text-align: center;
+        font-size: 20px;
+        font-weight: bold;
+        max-width: 75px;
+
+        &::-webkit-inner-spin-button {
+            display: none;
+        }
+
+        @include media-breakpoint-up(sm) {
+            max-width: 100px;
+        }
+    }
+
+    &--small {
+        .btn {
+            height: 40px;
+            width: 40px;
+        }
+    }
+}

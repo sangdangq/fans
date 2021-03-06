@@ -1,0 +1,66 @@
+@font-face {
+    font-family: Averta;
+    src: url(../) format('woff2');
+    font-weight: 400;
+}
+
+@import "./settings/setting";
+@import "./vendors/bootstrap";
+
+@import "./generic/generic";
+
+@import "./elements/elements";
+
+@import "./components/button";
+@import "./components/footer";
+@import "./components/breadcrumb";
+@import "./components/pagination";
+
+@import "./utilities/utilities";
+
+
+@import "./pages/homepage";
+
+.breadcrumb-element {
+    .breadcrumb-item, a {
+        color: $white;
+    }
+}
+
+.product-intro {
+    position: relative;
+
+    .caption {
+        position: absolute;
+        right: 5%;
+        top: 50%;
+        transform: translateY(-70%);
+        color: $white;
+        max-width: 30%;
+
+        h1,
+        h2 {
+            text-align: right;
+        }
+
+        h1 {
+            font-size: 69px;
+            font-weight: bold;
+        }
+
+        h2 {
+            font-size: 39px;
+            text-transform: uppercase;
+        }
+
+        p {
+            text-align: justify;
+            font-size: 15px;
+            line-height: 18px;
+        }
+    }
+}
+
+.shape--footer::after {
+    background-color: $secondary;
+}

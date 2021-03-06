@@ -1,0 +1,150 @@
+@import "../../node_modules/bootstrap/scss/bootstrap.scss";
+
+@include media-breakpoint-only(xs) {
+
+    .container,
+    .container-fluid {
+        padding-left: 6px;
+        padding-right: 6px;
+    }
+
+    .row:not(.no-gutters) {
+        margin-right: -4px;
+        margin-left: -4px;
+    }
+
+    .row:not(.no-gutters)>.col,
+    .row:not(.no-gutters)>[class*="col-"] {
+        padding-right: 4px;
+        padding-left: 4px;
+    }
+}
+
+
+@include media-breakpoint-between(sm, md) {
+
+    .container,
+    .container-fluid {
+        padding-left: 0.71875rem;
+        padding-right: 0.71875rem;
+    }
+
+    .row:not(.no-gutters) {
+        margin-right: -0.25rem;
+        margin-left: -0.25rem;
+    }
+
+    .row:not(.no-gutters)>.col,
+    .row:not(.no-gutters)>[class*="col-"] {
+        padding-right: 0.25rem;
+        padding-left: 0.25rem;
+    }
+}
+
+@include media-breakpoint-up(xs) {
+    .fs-default {
+        font-size: 16px !important;
+    }
+
+    .fs-1 {
+        font-size: 27px !important;
+    }
+
+    .fs-2 {
+        font-size: 23px !important;
+    }
+
+    .fs-3 {
+        font-size: 18px !important;
+    }
+
+    .fs-4 {
+        font-size: 14px !important;
+    }
+
+    .fs-5 {
+        font-size: 11px !important;
+    }
+
+    .fs-6 {
+        font-size: 11px !important;
+    }
+
+    .fs-xs-1 {
+        font-size: 27px !important;
+    }
+
+    .fs-xs-2 {
+        font-size: 23px !important;
+    }
+
+    .fs-xs-3 {
+        font-size: 18px !important;
+    }
+
+    .fs-xs-4 {
+        font-size: 14px !important;
+    }
+
+    .fs-xs-5 {
+        font-size: 11px !important;
+    }
+
+    .fs-xs-6 {
+        font-size: 11px !important;
+    }
+}
+
+@include media-breakpoint-up(lg) {
+    .fs-default {
+        font-size: 16px !important;
+    }
+
+    .fs-1 {
+        font-size: 27px !important;
+    }
+
+    .fs-2 {
+        font-size: 23px !important;
+    }
+
+    .fs-3 {
+        font-size: 18px !important;
+    }
+
+    .fs-4 {
+        font-size: 14px !important;
+    }
+
+    .fs-5 {
+        font-size: 11px !important;
+    }
+
+    .fs-6 {
+        font-size: 11px !important;
+    }
+
+    .fs-lg-1 {
+        font-size: 27px !important;
+    }
+
+    .fs-lg-2 {
+        font-size: 23px !important;
+    }
+
+    .fs-lg-3 {
+        font-size: 18px !important;
+    }
+
+    .fs-lg-4 {
+        font-size: 14px !important;
+    }
+
+    .fs-lg-5 {
+        font-size: 11px !important;
+    }
+
+    .fs-lg-6 {
+        font-size: 11px !important;
+    }
+}

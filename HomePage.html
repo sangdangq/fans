@@ -1,0 +1,884 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,400;0,700;1,600&display=swap"
+    rel="stylesheet">
+  <script src="https://kit.fontawesome.com/a37d93ee05.js" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <link href="/scss//main.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <title>Gia Sơn</title>
+</head>
+
+<body>
+  <!-- Navigator -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary py-0">
+    <div class="container-xl ps-lg-0">
+      <a class="navbar-brand" href="#">
+        <img src="/images/Logo 1.png" alt="" width="30" height="24">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon">
+          <div class="navbar-toggler-icon__upper"></div>
+          <div class="navbar-toggler-icon__lower"></div>
+        </span>
+      </button>
+      <div class="collapse navbar-collapse align-self-end" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link text-uppercase active fw-bold pb-4 pt-1" aria-current="page" href="#">Trang chủ</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-uppercase fw-bold pb-4 pt-1" href="#">Về chúng tôi</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link text-uppercase dropdown-toggle fw-bold pb-4 pt-1" href="#" id="navbarDropdownMenuLink"
+              role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Sản phẩm
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <li><a class="dropdown-item" href="#">Quạt trần Mỹ</a></li>
+              <li><a class="dropdown-item" href="#">Quạt trần Anh</a></li>
+              <li><a class="dropdown-item" href="#">Quạt trần Pháp</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-uppercase fw-bold pb-4 pt-1" href="#">Tư vấn chọn Quạt trần</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-uppercase fw-bold pb-4 pt-1" href="#">Liên hệ</a>
+          </li>
+          <li class="nav-item">
+            <i class="fas fa-search"></i>
+            <form class="search pb-4 pb-md-0 px-3 px-lg-0" action="action_page.php">
+              <div class="input-group">
+                <input type="text" class="form-control text-dark" placeholder="Tìm kiếm" aria-label="Tìm kiếm"
+                  aria-describedby="btnGroupAddon2">
+                <div class="input-group-text bg-secondary" id="btnGroupAddon2"><i class="fas fa-search"></i></div>
+              </div>
+            </form>
+          </li>
+        </ul>
+      </div>
+      <div class="contact d-none d-lg-block text-end">
+        <div class="contact__phone mb-1">
+          <div class="d-flex align-items-center">
+            <i class="fas fa-phone-alt text-secondary me-1"></i>
+            <span class="text-nowrap fs-lg-4">Hotline đặt hàng</span>
+          </div>
+          <div class="contact__item fs-4 fs-lg-2 fw-bold lh-sm">
+            08.13.13.13.31
+          </div>
+          <div class="contact__item fs-4 fs-lg-2 fw-bold lh-sm">
+            08.16.16.16.61
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Carousel -->
+  <div id="carouselMain" class="carousel slide carousel--main" data-bs-ride="carousel">
+    <ol class="carousel-indicators d-none d-md-flex">
+      <li data-bs-target="#carouselMain" data-bs-slide-to="0" class="active"></li>
+      <li data-bs-target="#carouselMain" data-bs-slide-to="1"></li>
+      <li data-bs-target="#carouselMain" data-bs-slide-to="2"></li>
+    </ol>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="/images/Banner-1.png" class="d-none d-sm-block w-100" alt="Banner">
+        <img src="/images/Mobile-Banner-1.png" class="d-block d-sm-none w-100" alt="Banner">
+        <div class="carousel-caption d-none d-md-block text-start">
+          <h2 class="fw-bold text-uppercase mb-5">sản phẩm chất lượng hàng đầu</h5>
+            <button class="btn btn-secondary btn-lg text-white fs-5">Tìm hiểu thêm</button>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="/images/Banner-1.png" class="d-none d-sm-block w-100" alt="Banner">
+        <img src="/images/Mobile-Banner-1.png" class="d-block d-sm-none w-100" alt="Banner">
+        <div class="carousel-caption d-none d-md-block text-start">
+          <h2 class="fw-bold text-uppercase mb-5">sản phẩm chất lượng hàng đầu</h5>
+            <button class="btn btn-secondary btn-lg text-white fs-5">Tìm hiểu thêm</button>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="/images/Banner-1.png" class="d-none d-sm-block w-100" alt="Banner">
+        <img src="/images/Mobile-Banner-1.png" class="d-block d-sm-none w-100" alt="Banner">
+        <div class="carousel-caption d-none d-md-block text-start">
+          <h2 class="fw-bold text-uppercase mb-5">sản phẩm chất lượng hàng đầu</h5>
+            <button class="btn btn-secondary btn-lg text-white fs-5">Tìm hiểu thêm</button>
+        </div>
+      </div>
+    </div>
+    <a class="carousel-control-prev" href="#carouselMain" role="button" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon d-none" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselMain" role="button" data-bs-slide="next">
+      <span class="carousel-control-next-icon d-none" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </a>
+    <div class="d-none d-md-block carousel__cover">
+      <img src="/images/Rectangle-60.png" alt="blur">
+      <img src="/images/Rectangle-61.png" alt="blur">
+    </div>
+    <div class="carousel__corner">
+      <img class="img-fluid" src="/images/corner-carousel-full.png" alt="corner">
+    </div>
+  </div>
+
+  <!-- Branch -->
+  <div class="container-fluid px-lg-0 bg-primary pt-3 py-md-5 pb-3">
+    <div class="container-xl branch d-flex justify-content-between flex-wrap">
+      <div class="row justify-content-center row-cols-4 row-cols-lg-5 gy-4">
+        <div class="branch__item col"><img class="img-fluid" src="/images/logo-03.png" alt=""></div>
+        <div class="branch__item col"><img class="img-fluid" src="/images/logo-04.png" alt=""></div>
+        <div class="branch__item col"><img class="img-fluid" src="/images/logo-05.png" alt=""></div>
+        <div class="branch__item col"><img class="img-fluid" src="/images/logo-06.png" alt=""></div>
+        <div class="branch__item col"><img class="img-fluid" src="/images/logo-07.png" alt=""></div>
+        <div class="branch__item col"><img class="img-fluid" src="/images/logo-08.png" alt=""></div>
+        <div class="branch__item col"><img class="img-fluid" src="/images/logo-09.png" alt=""></div>
+        <div class="branch__item col"><img class="img-fluid" src="/images/logo-10.png" alt=""></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Top Product -->
+  <div class="container-fluid bg-secondary">
+    <div class="slider container-xl">
+      <div class="swiper-container slide pt-4 pb-3 py-lg-5">
+        <h3 class="text-uppercase fs-3 text-primary text-center fw-bold mb-4">Sản phẩm bán chạy</h3>
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="category">
+              <div class="row mb-lg-3">
+                <div class="col-6 col-lg-3 mb-3">
+                  <div class="category__card">
+                    <div class="category__img">
+                      <img class="w-100" src="/images/image 19.png" alt="product">
+                    </div>
+                    <div
+                      class="category__caption bg-primary d-flex flex-column align-items-center justify-content-center fw-bold px-3">
+                      <span class="text-center text-wrap">Quạt trần Eagle Led</span>
+                      <span class="text-secondary">9.690.000đ</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-6 col-lg-3 mb-3">
+                  <div class="category__card">
+                    <div class="category__img"><img class="w-100" src="/images/image 23.png" alt="product"></div>
+                    <div
+                      class="category__caption bg-primary d-flex flex-column align-items-center justify-content-center fw-bold px-3">
+                      <span class="text-center">Quạt trần Monalisa</span>
+                      <span class="text-secondary">9.690.000đ</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-6 col-lg-3 mb-3">
+                  <div class="category__card">
+                    <div class="category__img"><img class="w-100" src="/images/image 24.png" alt="product"></div>
+                    <div
+                      class="category__caption bg-primary d-flex flex-column align-items-center justify-content-center fw-bold px-3">
+                      <span class="text-center">Quạt trần Crown</span>
+                      <span class="text-secondary">9.690.000đ</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-6 col-lg-3 mb-3">
+                  <div class="category__card">
+                    <div class="category__img"><img class="w-100" src="/images/image 25.png" alt="product"></div>
+                    <div
+                      class="category__caption bg-primary d-flex flex-column align-items-center justify-content-center fw-bold px-3">
+                      <span class="text-center">Quạt Classic AB</span>
+                      <span class="text-secondary">9.690.000đ </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="category">
+              <div class="row mb-lg-3">
+                <div class="col-6 col-lg-3 mb-3">
+                  <div class="category__card">
+                    <div class="category__img">
+                      <img class="w-100" src="/images/image 27.png" alt="product">
+                    </div>
+                    <div
+                      class="category__caption bg-primary d-flex flex-column align-items-center justify-content-center fw-bold px-3">
+                      <span class="text-center text-wrap">Quạt trần Panasonic F-70ZBP</span>
+                      <span class="text-secondary">9.690.000đ</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-6 col-lg-3 mb-3">
+                  <div class="category__card">
+                    <div class="category__img"><img class="w-100" src="/images/image 28.png" alt="product"></div>
+                    <div
+                      class="category__caption bg-primary d-flex flex-column align-items-center justify-content-center fw-bold px-3">
+                      <span class="text-center">Quạt trần Panasonic F-70ZBP</span>
+                      <span class="text-secondary">9.690.000đ</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-6 col-lg-3 mb-3">
+                  <div class="category__card">
+                    <div class="category__img"><img class="w-100" src="/images/image 29.png" alt="product"></div>
+                    <div
+                      class="category__caption bg-primary d-flex flex-column align-items-center justify-content-center fw-bold px-3">
+                      <span class="text-center">Quạt trần Panasonic F-70ZBP</span>
+                      <span class="text-secondary">9.690.000đ</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-6 col-lg-3 mb-3">
+                  <div class="category__card">
+                    <div class="category__img"><img class="w-100" src="/images/image 30.png" alt="product"></div>
+                    <div
+                      class="category__caption bg-primary d-flex flex-column align-items-center justify-content-center fw-bold px-3">
+                      <span class="text-center">Quạt trần Panasonic F-70ZBP</span>
+                      <span class="text-secondary">9.690.000đ </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="category">
+              <div class="row mb-lg-3">
+                <div class="col-6 col-lg-3 mb-3">
+                  <div class="category__card">
+                    <div class="category__img">
+                      <img class="w-100" src="/images/image 19.png" alt="product">
+                    </div>
+                    <div
+                      class="category__caption bg-primary d-flex flex-column align-items-center justify-content-center fw-bold px-3">
+                      <span class="text-center text-wrap">Quạt trần Panasonic F-70ZBP</span>
+                      <span class="text-secondary">9.690.000đ</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-6 col-lg-3 mb-3">
+                  <div class="category__card">
+                    <div class="category__img"><img class="w-100" src="/images/image 23.png" alt="product"></div>
+                    <div
+                      class="category__caption bg-primary d-flex flex-column align-items-center justify-content-center fw-bold px-3">
+                      <span class="text-center">Quạt trần Panasonic F-70ZBP</span>
+                      <span class="text-secondary">9.690.000đ</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-6 col-lg-3 mb-3">
+                  <div class="category__card">
+                    <div class="category__img"><img class="w-100" src="/images/image 24.png" alt="product"></div>
+                    <div
+                      class="category__caption bg-primary d-flex flex-column align-items-center justify-content-center fw-bold px-3">
+                      <span class="text-center">Quạt trần Panasonic F-70ZBP</span>
+                      <span class="text-secondary">9.690.000đ</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-6 col-lg-3 mb-3">
+                  <div class="category__card">
+                    <div class="category__img"><img class="w-100" src="/images/image 25.png" alt="product"></div>
+                    <div
+                      class="category__caption bg-primary d-flex flex-column align-items-center justify-content-center fw-bold px-3">
+                      <span class="text-center">Quạt trần Panasonic F-70ZBP</span>
+                      <span class="text-secondary">9.690.000đ </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+      <div class="swiper-button-prev d-none d-lg-flex"></div>
+      <div class="swiper-button-next d-none d-lg-flex"></div>
+    </div>
+    <div class="shape shape--top"></div>
+  </div>
+
+  <!-- Top product -->
+  <!-- <div class="container-fluid bg-secondary">
+    <div class="container-xl">
+      <div id="carouselTopProduct" class="carousel slide carousel-fade carousel--product pt-4 pb-5 py-lg-5"
+        data-bs-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-bs-target="#carouselTopProduct" data-bs-slide-to="0" class="active"></li>
+          <li data-bs-target="#carouselTopProduct" data-bs-slide-to="1"></li>
+          <li data-bs-target="#carouselTopProduct" data-bs-slide-to="2"></li>
+        </ol>
+        <h3 class="text-uppercase fs-3 text-primary text-center fw-bold mb-4">Sản phẩm bán chạy</h3>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="category">
+              <div class="row mb-lg-3">
+                <div class="col-6 col-lg-3 mb-3">
+                  <div class="category__card">
+                    <div class="category__img">
+                      <img class="w-100" src="/images/image 19.png" alt="product">
+                    </div>
+                    <div
+                      class="category__caption bg-primary d-flex flex-column align-items-center justify-content-center fw-bold px-3">
+                      <span class="text-center text-wrap">Quạt trần Eagle Led</span>
+                      <span class="text-secondary">9.690.000đ</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-6 col-lg-3 mb-3">
+                  <div class="category__card">
+                    <div class="category__img"><img class="w-100" src="/images/image 23.png" alt="product"></div>
+                    <div
+                      class="category__caption bg-primary d-flex flex-column align-items-center justify-content-center fw-bold px-3">
+                      <span class="text-center">Quạt trần Monalisa</span>
+                      <span class="text-secondary">9.690.000đ</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-6 col-lg-3 mb-3">
+                  <div class="category__card">
+                    <div class="category__img"><img class="w-100" src="/images/image 24.png" alt="product"></div>
+                    <div
+                      class="category__caption bg-primary d-flex flex-column align-items-center justify-content-center fw-bold px-3">
+                      <span class="text-center">Quạt trần Crown</span>
+                      <span class="text-secondary">9.690.000đ</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-6 col-lg-3 mb-3">
+                  <div class="category__card">
+                    <div class="category__img"><img class="w-100" src="/images/image 25.png" alt="product"></div>
+                    <div
+                      class="category__caption bg-primary d-flex flex-column align-items-center justify-content-center fw-bold px-3">
+                      <span class="text-center">Quạt Classic AB</span>
+                      <span class="text-secondary">9.690.000đ </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="category">
+              <div class="row mb-lg-3">
+                <div class="col-6 col-lg-3 mb-3">
+                  <div class="category__card">
+                    <div class="category__img">
+                      <img class="w-100" src="/images/image 27.png" alt="product">
+                    </div>
+                    <div
+                      class="category__caption bg-primary d-flex flex-column align-items-center justify-content-center fw-bold px-3">
+                      <span class="text-center text-wrap">Quạt trần Panasonic F-70ZBP</span>
+                      <span class="text-secondary">9.690.000đ</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-6 col-lg-3 mb-3">
+                  <div class="category__card">
+                    <div class="category__img"><img class="w-100" src="/images/image 28.png" alt="product"></div>
+                    <div
+                      class="category__caption bg-primary d-flex flex-column align-items-center justify-content-center fw-bold px-3">
+                      <span class="text-center">Quạt trần Panasonic F-70ZBP</span>
+                      <span class="text-secondary">9.690.000đ</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-6 col-lg-3 mb-3">
+                  <div class="category__card">
+                    <div class="category__img"><img class="w-100" src="/images/image 29.png" alt="product"></div>
+                    <div
+                      class="category__caption bg-primary d-flex flex-column align-items-center justify-content-center fw-bold px-3">
+                      <span class="text-center">Quạt trần Panasonic F-70ZBP</span>
+                      <span class="text-secondary">9.690.000đ</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-6 col-lg-3 mb-3">
+                  <div class="category__card">
+                    <div class="category__img"><img class="w-100" src="/images/image 30.png" alt="product"></div>
+                    <div
+                      class="category__caption bg-primary d-flex flex-column align-items-center justify-content-center fw-bold px-3">
+                      <span class="text-center">Quạt trần Panasonic F-70ZBP</span>
+                      <span class="text-secondary">9.690.000đ </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="category">
+              <div class="row mb-lg-3">
+                <div class="col-6 col-lg-3 mb-3">
+                  <div class="category__card">
+                    <div class="category__img">
+                      <img class="w-100" src="/images/image 19.png" alt="product">
+                    </div>
+                    <div
+                      class="category__caption bg-primary d-flex flex-column align-items-center justify-content-center fw-bold px-3">
+                      <span class="text-center text-wrap">Quạt trần Panasonic F-70ZBP</span>
+                      <span class="text-secondary">9.690.000đ</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-6 col-lg-3 mb-3">
+                  <div class="category__card">
+                    <div class="category__img"><img class="w-100" src="/images/image 23.png" alt="product"></div>
+                    <div
+                      class="category__caption bg-primary d-flex flex-column align-items-center justify-content-center fw-bold px-3">
+                      <span class="text-center">Quạt trần Panasonic F-70ZBP</span>
+                      <span class="text-secondary">9.690.000đ</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-6 col-lg-3 mb-3">
+                  <div class="category__card">
+                    <div class="category__img"><img class="w-100" src="/images/image 24.png" alt="product"></div>
+                    <div
+                      class="category__caption bg-primary d-flex flex-column align-items-center justify-content-center fw-bold px-3">
+                      <span class="text-center">Quạt trần Panasonic F-70ZBP</span>
+                      <span class="text-secondary">9.690.000đ</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-6 col-lg-3 mb-3">
+                  <div class="category__card">
+                    <div class="category__img"><img class="w-100" src="/images/image 25.png" alt="product"></div>
+                    <div
+                      class="category__caption bg-primary d-flex flex-column align-items-center justify-content-center fw-bold px-3">
+                      <span class="text-center">Quạt trần Panasonic F-70ZBP</span>
+                      <span class="text-secondary">9.690.000đ </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <a class="carousel-control-prev d-none d-lg-inline-flex" href="#carouselTopProduct" role="button"
+          data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </a>
+        <a class="carousel-control-next d-none d-lg-inline-flex" href="#carouselTopProduct" role="button"
+          data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </a>
+      </div>
+    </div>
+    <div class="shape shape--top"></div>
+  </div> -->
+
+
+  <!-- Category -->
+  <div class="container-fluid bg-white pb-4 pb-lg-5">
+    <div class="container-xl category">
+      <h3 class="text-uppercase fs-3 text-primary text-center fw-bold mb-4">Quạt trần panasonic</h3>
+      <div class="row mb-lg-3">
+        <div class="col-6 col-lg-3 mb-3">
+          <div class="category__card">
+            <div class="category__img">
+              <img class="w-100" src="/images/image 27.png" alt="product">
+            </div>
+            <div
+              class="category__caption bg-primary d-flex flex-column align-items-center justify-content-center fw-bold px-3">
+              <span class="text-center text-wrap">Quạt trần Panasonic F-70ZBP</span>
+              <span class="text-secondary">9.690.000đ</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-6 col-lg-3 mb-3">
+          <div class="category__card">
+            <div class="category__img"><img class="w-100" src="/images/image 28.png" alt="product"></div>
+            <div
+              class="category__caption bg-primary d-flex flex-column align-items-center justify-content-center fw-bold px-3">
+              <span class="text-center">Quạt trần Panasonic F-70ZBP</span>
+              <span class="text-secondary">9.690.000đ</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-6 col-lg-3 mb-3">
+          <div class="category__card">
+            <div class="category__img"><img class="w-100" src="/images/image 29.png" alt="product"></div>
+            <div
+              class="category__caption bg-primary d-flex flex-column align-items-center justify-content-center fw-bold px-3">
+              <span class="text-center">Quạt trần Panasonic F-70ZBP</span>
+              <span class="text-secondary">9.690.000đ</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-6 col-lg-3 mb-3">
+          <div class="category__card">
+            <div class="category__img"><img class="w-100" src="/images/image 30.png" alt="product"></div>
+            <div
+              class="category__caption bg-primary d-flex flex-column align-items-center justify-content-center fw-bold px-3">
+              <span class="text-center">Quạt trần Panasonic F-70ZBP</span>
+              <span class="text-secondary">9.690.000đ </span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="text-center">
+        <button class="btn btn-md btn-secondary text-primary fw-bold">Xem thêm</button>
+      </div>
+    </div>
+  </div>
+  <div class="container-fluid bg-light py-4 py-lg-5">
+    <div class="container-xl category">
+      <h3 class="text-uppercase fs-3 text-primary text-center fw-bold mb-4">Quạt trần KDK</h3>
+      <div class="row mb-lg-3">
+        <div class="col-6 col-lg-3 mb-3">
+          <div class="category__card">
+            <div class="category__img">
+              <img class="w-100" src="/images/image 27.png" alt="product">
+            </div>
+            <div
+              class="category__caption bg-primary d-flex flex-column align-items-center justify-content-center fw-bold px-3">
+              <span class="text-center text-wrap">Quạt trần Panasonic F-70ZBP</span>
+              <span class="text-secondary">9.690.000đ</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-6 col-lg-3 mb-3">
+          <div class="category__card">
+            <div class="category__img"><img class="w-100" src="/images/image 28.png" alt="product"></div>
+            <div
+              class="category__caption bg-primary d-flex flex-column align-items-center justify-content-center fw-bold px-3">
+              <span class="text-center">Quạt trần Panasonic F-70ZBP</span>
+              <span class="text-secondary">9.690.000đ</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-6 col-lg-3 mb-3">
+          <div class="category__card">
+            <div class="category__img"><img class="w-100" src="/images/image 29.png" alt="product"></div>
+            <div
+              class="category__caption bg-primary d-flex flex-column align-items-center justify-content-center fw-bold px-3">
+              <span class="text-center">Quạt trần Panasonic F-70ZBP</span>
+              <span class="text-secondary">9.690.000đ</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-6 col-lg-3 mb-3">
+          <div class="category__card">
+            <div class="category__img"><img class="w-100" src="/images/image 30.png" alt="product"></div>
+            <div
+              class="category__caption bg-primary d-flex flex-column align-items-center justify-content-center fw-bold px-3">
+              <span class="text-center">Quạt trần Panasonic F-70ZBP</span>
+              <span class="text-secondary">9.690.000đ </span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="text-center">
+        <button class="btn btn-md btn-secondary text-primary fw-bold">Xem thêm</button>
+      </div>
+    </div>
+  </div>
+  <div class="container-fluid bg-white py-4 py-lg-5">
+    <div class="container-xl category">
+      <h3 class="text-uppercase fs-3 text-primary text-center fw-bold mb-4">Quạt trần MR.VU</h3>
+      <div class="row mb-lg-3">
+        <div class="col-6 col-lg-3 mb-3">
+          <div class="category__card">
+            <div class="category__img">
+              <img class="w-100" src="/images/image 27.png" alt="product">
+            </div>
+            <div
+              class="category__caption bg-primary d-flex flex-column align-items-center justify-content-center fw-bold px-3">
+              <span class="text-center text-wrap">Quạt trần Panasonic F-70ZBP</span>
+              <span class="text-secondary">9.690.000đ</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-6 col-lg-3 mb-3">
+          <div class="category__card">
+            <div class="category__img"><img class="w-100" src="/images/image 28.png" alt="product"></div>
+            <div
+              class="category__caption bg-primary d-flex flex-column align-items-center justify-content-center fw-bold px-3">
+              <span class="text-center">Quạt trần Panasonic F-70ZBP</span>
+              <span class="text-secondary">9.690.000đ</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-6 col-lg-3 mb-3">
+          <div class="category__card">
+            <div class="category__img"><img class="w-100" src="/images/image 29.png" alt="product"></div>
+            <div
+              class="category__caption bg-primary d-flex flex-column align-items-center justify-content-center fw-bold px-3">
+              <span class="text-center">Quạt trần Panasonic F-70ZBP</span>
+              <span class="text-secondary">9.690.000đ</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-6 col-lg-3 mb-3">
+          <div class="category__card">
+            <div class="category__img"><img class="w-100" src="/images/image 30.png" alt="product"></div>
+            <div
+              class="category__caption bg-primary d-flex flex-column align-items-center justify-content-center fw-bold px-3">
+              <span class="text-center">Quạt trần Panasonic F-70ZBP</span>
+              <span class="text-secondary">9.690.000đ </span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="text-center">
+        <button class="btn btn-md btn-secondary text-primary fw-bold">Xem thêm</button>
+      </div>
+    </div>
+  </div>
+  <div class="container-fluid bg-light py-4 py-lg-5">
+    <div class="container-xl category">
+      <h3 class="text-uppercase fs-3 text-primary text-center fw-bold mb-4">Quạt luxury fan (Quạt trần mỹ)</h3>
+      <div class="row mb-lg-3">
+        <div class="col-6 col-lg-3 mb-3">
+          <div class="category__card">
+            <div class="category__img">
+              <img class="w-100" src="/images/image 27.png" alt="product">
+            </div>
+            <div
+              class="category__caption bg-primary d-flex flex-column align-items-center justify-content-center fw-bold px-3">
+              <span class="text-center text-wrap">Quạt trần Panasonic F-70ZBP</span>
+              <span class="text-secondary">9.690.000đ</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-6 col-lg-3 mb-3">
+          <div class="category__card">
+            <div class="category__img"><img class="w-100" src="/images/image 28.png" alt="product"></div>
+            <div
+              class="category__caption bg-primary d-flex flex-column align-items-center justify-content-center fw-bold px-3">
+              <span class="text-center">Quạt trần Panasonic F-70ZBP</span>
+              <span class="text-secondary">9.690.000đ</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-6 col-lg-3 mb-3">
+          <div class="category__card">
+            <div class="category__img"><img class="w-100" src="/images/image 29.png" alt="product"></div>
+            <div
+              class="category__caption bg-primary d-flex flex-column align-items-center justify-content-center fw-bold px-3">
+              <span class="text-center">Quạt trần Panasonic F-70ZBP</span>
+              <span class="text-secondary">9.690.000đ</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-6 col-lg-3 mb-3">
+          <div class="category__card">
+            <div class="category__img"><img class="w-100" src="/images/image 30.png" alt="product"></div>
+            <div
+              class="category__caption bg-primary d-flex flex-column align-items-center justify-content-center fw-bold px-3">
+              <span class="text-center">Quạt trần Panasonic F-70ZBP</span>
+              <span class="text-secondary">9.690.000đ </span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="text-center">
+        <button class="btn btn-md btn-secondary text-primary fw-bold">Xem thêm</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- News -->
+  <div class="container-fluid bg-white py-4 py-lg-5">
+    <div class="container-xl category category">
+      <h3 class="text-uppercase fs-3 text-primary text-center fw-bold mb-4">Tư vấn lắp đặt Quạt trần</h3>
+      <div class="row mb-lg-3 align-items-stretch">
+        <div class="col-12 col-lg-4 mb-4">
+          <div class="category__card shadow-none h-100 d-flex flex-column">
+            <div class="category__img category__img--news">
+              <img class="w-100" src="/images/news 1.png" alt="product">
+            </div>
+            <div class="category__caption  category__caption--big bg-light px-4 pt-3 pb-sm-5">
+              <p class="text-left text-primary fw-bold">Quạt trần kết hợp đèn chùm giá
+                30 triệu đồng cho biệt thự</p>
+              <p class="text-dark fs-6">Sau một năm ra mắt thị trường, mẫu Villa Light bán ra khoảng 100 chiếc, doanh số
+                gần 3 tỷ đồng.</p>
+              <div class="category__date px-4 pb-3">15.01.2020</div>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-lg-4 mb-4">
+          <div class="category__card shadow-none h-100 d-flex flex-column">
+            <div class="category__img category__img--news"><img class="w-100" src="/images/news 2.png" alt="product">
+            </div>
+            <div class="category__caption  category__caption--big bg-light px-4 pt-3 pb-sm-5">
+              <p class="text-left text-primary fw-bold">Chọn Quạt trần phù hợp cho chung cư trần thấp</p>
+              <p class="text-dark fs-6">Ngoài màu sắc và thiết kế, lựa chọn Quạt trần cần chú ý địa điểm lắp, diện tích
+                phòng, ....</p>
+              <div class="category__date px-4 pb-3">15.01.2020</div>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-lg-4 mb-4">
+          <div class="category__card shadow-none h-100 d-flex flex-column">
+            <div class="category__img category__img--news"><img class="w-100" src="/images/news 3.png" alt="product">
+            </div>
+            <div class="category__caption category__caption--big bg-light px-4 pt-3 pb-sm-5">
+              <p class="text-left text-primary fw-bold">Nguyên tắc lắp Quạt trần không phải ai cũng biết</p>
+              <p class="text-dark fs-6">Sau một năm ra mắt thị trường, mẫu Villa Light bán ra khoảng 100 chiếc, doanh số
+                gần 3 tỷ đồng.</p>
+              <div class="category__date px-4 pb-3">15.01.2020</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="text-center">
+        <button class="btn btn-md btn-secondary text-primary fw-bold">Xem thêm</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <div class="position-relative">
+    <div class="shape shape--footer"></div>
+    <div class="messenger d-none d-md-flex">
+      <img class="messenger__item mb-3" src="./images/image 45.png" alt="phone">
+      <div class="messenger__item messenger__msg">
+        <i class="fab fa-facebook-messenger"></i>
+      </div>
+    </div>
+    <footer class="container-fluid bg-primary py-5 footer">
+      <div class="container-xl">
+        <div class="row">
+          <div class="col-12 col-lg-3 text-center text-lg-start mb-4">
+            <h3 class="footer__header text-white text-uppercase fw-bold">Công ty TNHH Gia Sơn</h3>
+            <img class="footer__logo" src="/images/Logo 1.png" alt="Logo Gia Son">
+          </div>
+          <div class="col-12 col-lg-4 mb-4">
+            <h3 class="footer__header text-white text-uppercase text-center text-lg-start fw-bold mb-lg-4">Sản phẩm</h3>
+            <div class="row fs-5 fs-lg-4">
+              <div class="col-6">
+                <div>
+                  <i class="fas fa-chevron-right text-secondary me-2 fs-6"></i>
+                  Quạt trần Panasonic
+                </div>
+                <div>
+                  <i class="fas fa-chevron-right text-secondary me-2 fs-6"></i>
+                  Quạt trần Panasonic
+                </div>
+                <div>
+                  <i class="fas fa-chevron-right text-secondary me-2 fs-6"></i>
+                  Quạt trần MR.VU
+                </div>
+                <div>
+                  <i class="fas fa-chevron-right text-secondary me-2 fs-6"></i>
+                  Quạt trần MỸ.
+                </div>
+              </div>
+              <div class="col-6">
+                <div>
+                  <i class="fas fa-chevron-right text-secondary me-2 fs-6"></i>
+                  Quạt trần Vinawind
+                </div>
+                <div>
+                  <i class="fas fa-chevron-right text-secondary me-2 fs-6"></i>
+                  Quạt trần Hatari
+                </div>
+                <div>
+                  <i class="fas fa-chevron-right text-secondary me-2 fs-6"></i>
+                  Quạt trần MITSUBISHI
+                </div>
+                <div>
+                  <i class="fas fa-chevron-right text-secondary me-2 fs-6"></i>
+                  Quạt trần KAIYO
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 mb-4 col-lg-5 text-center text-lg-start">
+            <h3 class="footer__header text-white text-uppercase text-center text-lg-start fw-bold mb-lg-4">Liên hệ</h3>
+            <div class="row">
+              <div class="col-12 col-lg-5 fs-6 fs-xs-4 fs-lg-4 mb-sm-3">
+                <div class="mb-3">
+                  <div
+                    class="d-flex flex-column flex-sm-row align-items-center justify-content-center justify-content-lg-start">
+                    <i class="fas fa-phone-alt text-secondary me-1"></i>
+                    <span class="text-nowrap text-white">Hotline đặt hàng</span>
+                  </div>
+                  <div class="fs-1 fs-lg-3 lh-1 fw-bold">081 6161661</div>
+                </div>
+                <div>
+                  <div
+                    class="d-flex flex-column flex-sm-row align-items-center justify-content-center justify-content-lg-start mb-2">
+                    <i class="fas fa-envelope text-secondary me-1"></i>
+                    <span class="text-nowraptext-white">info@giason.com.vn</span>
+                  </div>
+                  <div>
+                    Showroom: ...
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-7 d-none d-lg-flex justify-content-md-start social">
+                <div class="social__item">
+                  <i class="fab fa-twitter"></i>
+                </div>
+                <div class="social__item">
+                  <i class="fab fa-google-plus-g"></i>
+                </div>
+                <div class="social__item">
+                  <i class="fab fa-facebook-f"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+  <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous">
+  </script> -->
+  <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js">
+  </script>
+  <script>
+    $(document).ready(() => {
+      $('.nav-item > .fas.fa-search').click(function (e) {
+        e.preventDefault();
+        $(this).hide();
+        $('.search').show();
+      });
+
+      $('.search .fas.fa-search').click(function (e) {
+        $('.search').hide();
+        $('.nav-item > .fas.fa-search').show();
+      });
+
+      const swiper = new Swiper('.swiper-container', {
+        // Optional parameters
+        direction: 'horizontal',
+        loop: true,
+
+        // If we need pagination
+        pagination: {
+          el: '.swiper-pagination',
+        },
+
+        // Navigation arrows
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        },
+
+        // And if we need scrollbar
+        scrollbar: {
+          el: '.swiper-scrollbar',
+        },
+      });
+    })
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,28 @@
+@import "../../node_modules/bootstrap/scss/mixins";
+
+@mixin shape($size, $color, $direction) {
+    content: "";
+    display: block;
+    height: $size;
+    width: $size;
+    border-radius: 50%;
+    background-color: $color;
+    position: absolute;
+    font-size: 0;
+    left: -($size / 2) + 50vw;
+
+    @if($direction=='up') {
+        top: 0;
+    }
+
+    @else {
+        bottom: 0;
+    }
+}
+
+@mixin center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
