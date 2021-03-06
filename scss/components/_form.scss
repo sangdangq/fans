@@ -1,10 +1,11 @@
 .textarea {
     border: 1px solid #DEE0E2;
-    border-radius: 8px;
+    border-radius: 5px;
     width: 100%;
-    min-height: 113px;
+    min-height: 77px;
     resize: none;
-    padding: 22px 34px;
+    padding: 10px 15px;
+    font-size: 14px;
 
     ::placeholder {
         color: $grey;
@@ -16,6 +17,13 @@
 
     ::-webkit-input-placeholder {
         color: $grey;
+    }
+
+    @include media-breakpoint-up(sm) {
+        border-radius: 8px;
+        min-height: 113px;
+        padding: 22px 34px;
+        font-size: 16px;
     }
 }
 

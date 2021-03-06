@@ -42,11 +42,27 @@
         content: "";
         display: block;
         width: 50px;
-        height: 4px;
+        height: 2px;
         background-color: $secondary;
         position: absolute;
         bottom: 0;
         left: 50%;
         transform: translateX(-50%);
+
+        @include media-breakpoint-up(sm) {
+            height: 4px;
+        }
+    }
+}
+
+.btn-lg {
+    font-size: 12px;
+    padding: 5px 25px;
+    width: 100%;
+    line-height: 1;
+    height: 100%;
+
+    @include media-breakpoint-up(sm) {
+        font-size: 20px;
     }
 }

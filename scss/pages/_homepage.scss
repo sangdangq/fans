@@ -66,13 +66,14 @@
         width: auto;
         height: auto;
 
-        > div {
+        >div {
             width: 23px;
             margin-bottom: 3px;
             display: flex;
             justify-content: space-between;
 
-            &::after, &::before {
+            &::after,
+            &::before {
                 content: "";
                 display: block;
                 height: 10px;
@@ -84,6 +85,9 @@
     }
 
     .contact {
+        align-self: flex-end;
+        margin-bottom: 2px;
+
         .dropdown {
             img {
                 height: 20px;
@@ -103,6 +107,11 @@
             &::after {
                 display: none;
             }
+        }
+
+        &__item {
+            font-size: 22px;
+            line-height: 1;
         }
     }
 
@@ -371,7 +380,7 @@
         display: flex;
         align-items: center;
         padding: 1rem;
-        
+
         @include media-breakpoint-only(xs) {
             height: 117px;
         }
@@ -388,7 +397,7 @@
 
     &__caption {
         font-size: 1.375rem;
-        line-height: 1.625;
+        line-height: 1.18;
         padding-top: 10px;
         padding-bottom: 10px;
         position: relative;
@@ -404,6 +413,8 @@
             max-height: 200px;
             flex: 1 1 auto;
 
+
+
             @include media-breakpoint-only(xs) {
                 font-size: 13px;
                 line-height: 18px;
@@ -413,6 +424,11 @@
                     margin-bottom: 5px;
                 }
             }
+        }
+
+        &-title {
+            font-size: 20px;
+            line-height: 24px;
         }
     }
 

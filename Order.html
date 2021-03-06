@@ -69,12 +69,12 @@
                 <div class="contact__phone mb-1">
                     <div class="d-flex align-items-d-flex align-items-center">
                         <i class="fas fa-phone-alt text-secondary me-1"></i>
-                        <span class="text-nowrap fs-lg-6">Hotline đặt hàng</span>
+                        <span class="text-nowrap fs-lg-7">Hotline đặt hàng</span>
                     </div>
-                    <div class="contact__item fs-4 fs-lg-2 fw-bold lh-sm">
+                    <div class="contact__item fs-6 fs-lg-2 fw-bold lh-sm">
                         08.13.13.13.31
                     </div>
-                    <div class="contact__item fs-4 fs-lg-2 fw-bold lh-sm">
+                    <div class="contact__item fs-6 fs-lg-2 fw-bold lh-sm">
                         08.16.16.16.61
                     </div>
                 </div>
@@ -84,7 +84,79 @@
     <h2 class="order-title">đặt hàng</h2>
 
     <!-- Detail -->
-    
+    <div class="col-12 col-lg-7 user-info pe-3 pe-lg-5">
+        <h3 class="pt-4 block-header">Thông tin người mua</h3>
+        <div class="gender mb-3">
+          <label class="d-inline-flex align-items-center me-4">
+            <input type="radio" name="gender" value="male" checked="true">
+            <span>Anh</span>
+          </label>
+          <label class="d-inline-flex align-items-center">
+            <input type="radio" name="gender" value="female">
+            <span>Chị</span>
+          </label>
+        </div>
+        <form action="" class="row">
+          <div class="col-12 col-lg-6">
+            <input type="text" class="form-control mb-3" id="name" placeholder="Họ và tên">
+          </div>
+          <div class="col-12 col-lg-6">
+            <input type="text" class="form-control mb-3" id="phone" placeholder="Số điện thoại">
+          </div>
+          <div class="col-12 col-lg-4">
+            <input type="text" class="form-control mb-3" id="province" placeholder="Tỉnh/ Thành phố">
+          </div>
+          <div class="col-12 col-lg-4">
+            <input type="text" class="form-control mb-3" id="district" placeholder="Quận/ Huyện">
+          </div>
+          <div class="col-12 col-lg-4">
+            <input type="text" class="form-control mb-3" id="village" placeholder="Xã/ Phường">
+          </div>
+          <div class="col-12">
+            <input type="text" class="form-control mb-3" id="street" placeholder="Số nhà, tên đường,...">
+          </div>
+          <div class="col-12">
+            <input type="text" class="form-control mb-3" id="note" placeholder="Ghi chú đơn hàng">
+          </div>
+        </form>
+        <h3 class="block-header">Hình thức thanh toán</h3>
+        <div class="row">
+          <div class="col-12 col-lg-6">
+            <label class="d-inline-flex align-items-center mb-3" data-bs-toggle="collapse"
+              data-bs-target="#bankInfo" aria-expanded="false" aria-controls="bankInfo">
+              <input type="radio" name="payment" value="payment">
+              <span>Chuyển khoản ngân hàng</span>
+            </label>
+            <div class="collapse mb-3" id="bankInfo">
+              <div>Tên TK: Nguyen Van A</div>
+              <div>Số TK: 19027714792888 Tại Ngân hàng Techcombank – Chi nhánh Hà Nội</div>
+              <div>Nội dung CK:</div>
+              <div>[Mã đơn hàng] - [Số điện thoại]</div>
+            </div>
+          </div>
+          <div class="col-12 col-lg-6">
+            <label class="d-inline-flex align-items-center mb-3" data-bs-toggle="collapse"
+              data-bs-target="#bankInfo" aria-expanded="false" aria-controls="bankInfo">
+              <input type="radio" name="payment" value="cast" checked="true">
+              <span>Trả tiền mặt khi nhận hàng</span>
+            </label>
+          </div>
+        </div>
+
+        <h3 class="block-header">Mã giảm giá</h3>
+        <div class="row">
+          <div class="col-8">
+            <input type="text" class="form-control mb-3" id="name" placeholder="Nhập mã giảm giá">
+          </div>
+          <div class="col-4">
+            <button class="btn btn-lg btn-primary fs-default w-100 px-1">Áp dụng</button>
+          </div>
+        </div>
+        <div class="price fw-bold d-flex align-items-d-flex align-items-end mb-4">
+          Tổng tiền: <h3 class="price text-secondary fs-1 fw-bold ms-3 mb-0">4.860.000đ </h3>
+        </div>
+        <button class="btn btn-lg btn-secondary btn--order mb-5" data-bs-dismiss="modal">đặt hàng ngay</button>
+      </div>
 
     <!-- Footer -->
     <div class="position-relative footer-container">
@@ -105,40 +177,40 @@
                     <div class="col-12 col-lg-4 mb-4">
                         <h3 class="footer__header text-white text-uppercase text-center text-lg-start fw-bold mb-lg-4">
                             Sản phẩm</h3>
-                        <div class="row fs-5 fs-lg-4">
+                        <div class="row fs-7 fs-lg-6">
                             <div class="col-6">
                                 <div>
-                                    <i class="fas fa-chevron-right text-secondary me-2 fs-6"></i>
+                                    <i class="fas fa-chevron-right text-secondary me-2 fs-7"></i>
                                     Quạt trần Panasonic
                                 </div>
                                 <div>
-                                    <i class="fas fa-chevron-right text-secondary me-2 fs-6"></i>
+                                    <i class="fas fa-chevron-right text-secondary me-2 fs-7"></i>
                                     Quạt trần Panasonic
                                 </div>
                                 <div>
-                                    <i class="fas fa-chevron-right text-secondary me-2 fs-6"></i>
+                                    <i class="fas fa-chevron-right text-secondary me-2 fs-7"></i>
                                     Quạt trần MR.VU
                                 </div>
                                 <div>
-                                    <i class="fas fa-chevron-right text-secondary me-2 fs-6"></i>
+                                    <i class="fas fa-chevron-right text-secondary me-2 fs-7"></i>
                                     Quạt trần MỸ.
                                 </div>
                             </div>
                             <div class="col-6">
                                 <div>
-                                    <i class="fas fa-chevron-right text-secondary me-2 fs-6"></i>
+                                    <i class="fas fa-chevron-right text-secondary me-2 fs-7"></i>
                                     Quạt trần Vinawind
                                 </div>
                                 <div>
-                                    <i class="fas fa-chevron-right text-secondary me-2 fs-6"></i>
+                                    <i class="fas fa-chevron-right text-secondary me-2 fs-7"></i>
                                     Quạt trần Hatari
                                 </div>
                                 <div>
-                                    <i class="fas fa-chevron-right text-secondary me-2 fs-6"></i>
+                                    <i class="fas fa-chevron-right text-secondary me-2 fs-7"></i>
                                     Quạt trần MITSUBISHI
                                 </div>
                                 <div>
-                                    <i class="fas fa-chevron-right text-secondary me-2 fs-6"></i>
+                                    <i class="fas fa-chevron-right text-secondary me-2 fs-7"></i>
                                     Quạt trần KAIYO
                                 </div>
                             </div>
@@ -148,14 +220,14 @@
                         <h3 class="footer__header text-white text-uppercase text-center text-lg-start fw-bold mb-lg-4">
                             Liên hệ</h3>
                         <div class="row">
-                            <div class="col-12 col-lg-5 fs-6 fs-xs-4 fs-lg-4 mb-sm-3">
+                            <div class="col-12 col-lg-5 fs-7 fs-xs-6 fs-lg-6 mb-sm-3">
                                 <div class="mb-3">
                                     <div
                                         class="d-flex flex-column flex-sm-row align-items-center justify-content-center justify-content-lg-start">
                                         <i class="fas fa-phone-alt text-secondary me-1"></i>
                                         <span class="text-nowrap text-white">Hotline đặt hàng</span>
                                     </div>
-                                    <div class="fs-1 fs-lg-3 lh-1 fw-bold">081 6161661</div>
+                                    <div class="fs-1 fs-lg-4 lh-1 fw-bold">081 6161661</div>
                                 </div>
                                 <div>
                                     <div

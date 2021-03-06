@@ -21,3 +21,66 @@
 
 
 @import "./pages/homepage";
+
+
+.cart-item {
+    border-bottom: 1px solid $grey;
+
+    &:last-of-type {
+        border-bottom: none;
+    }
+
+    &__price {
+        font-size: 20px;
+    }
+}
+
+.cart-count {
+    position: relative;
+    padding-bottom: 20px;
+
+    &::before {
+        content: "";
+        display: block;
+        width: 50px;
+        height: 2px;
+        background-color: $secondary;
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+
+        @include media-breakpoint-up(sm) {
+            height: 4px;
+        }
+    }
+}
+
+.btn--info {
+    padding: 0;
+    font-size: 14px;
+    align-items: center;
+    flex-wrap: nowrap;
+    display: flex;
+}
+
+#cartItem {
+    color: $secondary;
+    @include center;
+
+    &.active {
+        .fas {
+            transform: rotate(180deg);
+        }
+    }
+}
+
+.cart-info {
+    max-height: 0;
+    overflow: hidden;
+
+    &.open {
+        max-height: 700px;
+        transition: 1s max-height ease-out;
+    }
+}

@@ -41,8 +41,37 @@
 
     &--small {
         .btn {
-            height: 40px;
-            width: 40px;
+            height: 22px;
+            width: 22px;
+            font-size: 16px;
+
+            &:first-child {
+                border-radius: 4px 0px 0px 4px;
+            }
+    
+            &:last-child {
+                border-radius: 0 4px 4px 0px;
+            }
+        }
+
+        input {
+            height: 22px;
+            font-size: 16px;
+            max-width: 48px;
+        }
+
+        @include media-breakpoint-up(sm) {
+            .btn {
+                height: 40px;
+                width: 40px;
+                font-size: 20px;
+            }
+    
+            input {
+                height: 40px;
+                max-width: 100px;
+                font-size: 20px;
+            }
         }
     }
 }

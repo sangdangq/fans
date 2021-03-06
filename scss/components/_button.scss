@@ -13,4 +13,9 @@
 .btn-lg {
     padding-top: 12px;
     padding-bottom: 12px;
+    font-size: 16px;
+
+    @include media-breakpoint-up(sm) {
+        font-size: 20px;
+    }
 }
