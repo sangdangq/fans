@@ -12076,8 +12076,15 @@ body {
 }
 
 .category__caption-title {
-  font-size: 20px;
-  line-height: 24px;
+  font-size: 13px;
+  line-height: 18px;
+}
+
+@media (min-width: 576px) {
+  .category__caption-title {
+    font-size: 20px;
+    line-height: 24px;
+  }
 }
 
 .category__date {
