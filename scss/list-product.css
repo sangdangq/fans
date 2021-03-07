@@ -11624,6 +11624,10 @@ body {
   font-weight: 600 !important;
 }
 
+.blank-page {
+  height: 70vh;
+}
+
 .navbar {
   color: #fff;
 }
