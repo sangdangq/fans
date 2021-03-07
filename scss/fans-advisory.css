@@ -12243,4 +12243,20 @@ body {
   border-top-right-radius: 12px;
   border-bottom-right-radius: 12px;
 }
+
+.carousel-container {
+  position: relative;
+}
+
+.page-caption {
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  font-size: 36px;
+  bottom: 55px;
+  color: #62120F;
+  text-transform: uppercase;
+  font-weight: bold;
+}
 /*# sourceMappingURL=fans-advisory.css.map */
