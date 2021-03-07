@@ -4,8 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@img-fluid;0,400;0,700;1,600&display=swap"
-        rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/a37d93ee05.js" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
@@ -24,7 +23,10 @@
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
                 aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+                <span class="navbar-toggler-icon">
+                    <div class="navbar-toggler-icon__upper"></div>
+                    <div class="navbar-toggler-icon__lower"></div>
+                </span>
             </button>
             <div class="collapse navbar-collapse align-self-end" id="navbarNavDropdown">
                 <ul class="navbar-nav">
@@ -54,9 +56,9 @@
                     </li>
                     <li class="nav-item">
                         <i class="fas fa-search"></i>
-                        <form class="search pb-4 pb-md-0" action="action_page.php">
+                        <form class="search pb-4 pb-md-0 px-3 px-lg-0" action="action_page.php">
                             <div class="input-group">
-                                <input type="text" class="form-control mb-3 text-dark" placeholder="Tìm kiếm"
+                                <input type="text" class="form-control text-dark" placeholder="Tìm kiếm"
                                     aria-label="Tìm kiếm" aria-describedby="btnGroupAddon2">
                                 <div class="input-group-text bg-secondary" id="btnGroupAddon2"><i
                                         class="fas fa-search"></i></div>
@@ -67,14 +69,14 @@
             </div>
             <div class="contact d-none d-lg-block text-end">
                 <div class="contact__phone mb-1">
-                    <div class="d-flex align-items-d-flex align-items-center">
-                        <i class="fas fa-phone-alt text-secondary me-1"></i>
-                        <span class="text-nowrap fs-lg-7">Hotline đặt hàng</span>
+                    <div class="d-flex align-items-center">
+                        <i class="fas fa-phone-alt text-secondary me-1 fs-lg-6"></i>
+                        <span class="text-nowrap fs-lg-6">Hotline đặt hàng</span>
                     </div>
-                    <div class="contact__item fs-6 fs-lg-2 fw-bold lh-sm">
+                    <div class="contact__item fs-7 fs-lg-2 fw-bold">
                         08.13.13.13.31
                     </div>
-                    <div class="contact__item fs-6 fs-lg-2 fw-bold lh-sm">
+                    <div class="contact__item fs-7 fs-lg-2 fw-bold">
                         08.16.16.16.61
                     </div>
                 </div>
@@ -87,79 +89,79 @@
     <div class="col-12 col-lg-7 user-info pe-3 pe-lg-5">
         <h3 class="pt-4 block-header">Thông tin người mua</h3>
         <div class="gender mb-3">
-          <label class="d-inline-flex align-items-center me-4">
-            <input type="radio" name="gender" value="male" checked="true">
-            <span>Anh</span>
-          </label>
-          <label class="d-inline-flex align-items-center">
-            <input type="radio" name="gender" value="female">
-            <span>Chị</span>
-          </label>
+            <label class="d-inline-flex align-items-center me-4">
+                <input type="radio" name="gender" value="male" checked="true">
+                <span>Anh</span>
+            </label>
+            <label class="d-inline-flex align-items-center">
+                <input type="radio" name="gender" value="female">
+                <span>Chị</span>
+            </label>
         </div>
         <form action="" class="row">
-          <div class="col-12 col-lg-6">
-            <input type="text" class="form-control mb-3" id="name" placeholder="Họ và tên">
-          </div>
-          <div class="col-12 col-lg-6">
-            <input type="text" class="form-control mb-3" id="phone" placeholder="Số điện thoại">
-          </div>
-          <div class="col-12 col-lg-4">
-            <input type="text" class="form-control mb-3" id="province" placeholder="Tỉnh/ Thành phố">
-          </div>
-          <div class="col-12 col-lg-4">
-            <input type="text" class="form-control mb-3" id="district" placeholder="Quận/ Huyện">
-          </div>
-          <div class="col-12 col-lg-4">
-            <input type="text" class="form-control mb-3" id="village" placeholder="Xã/ Phường">
-          </div>
-          <div class="col-12">
-            <input type="text" class="form-control mb-3" id="street" placeholder="Số nhà, tên đường,...">
-          </div>
-          <div class="col-12">
-            <input type="text" class="form-control mb-3" id="note" placeholder="Ghi chú đơn hàng">
-          </div>
+            <div class="col-12 col-lg-6">
+                <input type="text" class="form-control mb-3" id="name" placeholder="Họ và tên">
+            </div>
+            <div class="col-12 col-lg-6">
+                <input type="text" class="form-control mb-3" id="phone" placeholder="Số điện thoại">
+            </div>
+            <div class="col-12 col-lg-4">
+                <input type="text" class="form-control mb-3" id="province" placeholder="Tỉnh/ Thành phố">
+            </div>
+            <div class="col-12 col-lg-4">
+                <input type="text" class="form-control mb-3" id="district" placeholder="Quận/ Huyện">
+            </div>
+            <div class="col-12 col-lg-4">
+                <input type="text" class="form-control mb-3" id="village" placeholder="Xã/ Phường">
+            </div>
+            <div class="col-12">
+                <input type="text" class="form-control mb-3" id="street" placeholder="Số nhà, tên đường,...">
+            </div>
+            <div class="col-12">
+                <input type="text" class="form-control mb-3" id="note" placeholder="Ghi chú đơn hàng">
+            </div>
         </form>
         <h3 class="block-header">Hình thức thanh toán</h3>
         <div class="row">
-          <div class="col-12 col-lg-6">
-            <label class="d-inline-flex align-items-center mb-3" data-bs-toggle="collapse"
-              data-bs-target="#bankInfo" aria-expanded="false" aria-controls="bankInfo">
-              <input type="radio" name="payment" value="payment">
-              <span>Chuyển khoản ngân hàng</span>
-            </label>
-            <div class="collapse mb-3" id="bankInfo">
-              <div>Tên TK: Nguyen Van A</div>
-              <div>Số TK: 19027714792888 Tại Ngân hàng Techcombank – Chi nhánh Hà Nội</div>
-              <div>Nội dung CK:</div>
-              <div>[Mã đơn hàng] - [Số điện thoại]</div>
+            <div class="col-12 col-lg-6">
+                <label class="d-inline-flex align-items-center mb-3" data-bs-toggle="collapse"
+                    data-bs-target="#bankInfo" aria-expanded="false" aria-controls="bankInfo">
+                    <input type="radio" name="payment" value="payment">
+                    <span>Chuyển khoản ngân hàng</span>
+                </label>
+                <div class="collapse mb-3" id="bankInfo">
+                    <div>Tên TK: Nguyen Van A</div>
+                    <div>Số TK: 19027714792888 Tại Ngân hàng Techcombank – Chi nhánh Hà Nội</div>
+                    <div>Nội dung CK:</div>
+                    <div>[Mã đơn hàng] - [Số điện thoại]</div>
+                </div>
             </div>
-          </div>
-          <div class="col-12 col-lg-6">
-            <label class="d-inline-flex align-items-center mb-3" data-bs-toggle="collapse"
-              data-bs-target="#bankInfo" aria-expanded="false" aria-controls="bankInfo">
-              <input type="radio" name="payment" value="cast" checked="true">
-              <span>Trả tiền mặt khi nhận hàng</span>
-            </label>
-          </div>
+            <div class="col-12 col-lg-6">
+                <label class="d-inline-flex align-items-center mb-3" data-bs-toggle="collapse"
+                    data-bs-target="#bankInfo" aria-expanded="false" aria-controls="bankInfo">
+                    <input type="radio" name="payment" value="cast" checked="true">
+                    <span>Trả tiền mặt khi nhận hàng</span>
+                </label>
+            </div>
         </div>
 
         <h3 class="block-header">Mã giảm giá</h3>
         <div class="row">
-          <div class="col-8">
-            <input type="text" class="form-control mb-3" id="name" placeholder="Nhập mã giảm giá">
-          </div>
-          <div class="col-4">
-            <button class="btn btn-lg btn-primary fs-default w-100 px-1">Áp dụng</button>
-          </div>
+            <div class="col-8">
+                <input type="text" class="form-control mb-3" id="name" placeholder="Nhập mã giảm giá">
+            </div>
+            <div class="col-4">
+                <button class="btn btn-lg btn-primary fs-default w-100 px-1">Áp dụng</button>
+            </div>
         </div>
         <div class="price fw-bold d-flex align-items-d-flex align-items-end mb-4">
-          Tổng tiền: <h3 class="price text-secondary fs-1 fw-bold ms-3 mb-0">4.860.000đ </h3>
+            Tổng tiền: <h3 class="price text-secondary fs-1 fw-bold ms-3 mb-0">4.860.000đ </h3>
         </div>
         <button class="btn btn-lg btn-secondary btn--order mb-5" data-bs-dismiss="modal">đặt hàng ngay</button>
-      </div>
+    </div>
 
     <!-- Footer -->
-    <div class="position-relative footer-container">
+    <div class="position-relative">
         <div class="shape shape--footer"></div>
         <div class="messenger d-none d-md-flex">
             <img class="messenger__item mb-3" src="./images/image 45.png" alt="phone">

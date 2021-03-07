@@ -12426,14 +12426,4 @@ input[type="radio"]:checked {
     font-size: 20px;
   }
 }
-
-.cart-info {
-  height: 0;
-}
-
-.cart-info .open {
-  height: auto;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
-}
 /*# sourceMappingURL=cart.css.map */
