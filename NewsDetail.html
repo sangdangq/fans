@@ -4,18 +4,20 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous">
+  </script>
   <script src="https://kit.fontawesome.com/a37d93ee05.js" crossorigin="anonymous"></script>
   <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-  <link href="/scss/payment.css" rel="stylesheet">
+  <link href="/scss/news-detail.css" rel="stylesheet">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <title>Gia Sơn</title>
 </head>
 
 <body>
-   <!-- Navigator -->
+  <!-- Navigator -->
   <nav class="navbar navbar-expand-lg navbar-dark bg-primary py-0">
     <div class="container-xl ps-lg-0">
       <a class="navbar-brand" href="/homepage">
@@ -31,14 +33,15 @@
       <div class="collapse navbar-collapse align-self-end" id="navbarNavDropdown">
         <ul class="navbar-nav">
           <li class="nav-item">
-            <a class="nav-link text-uppercase active fw-bold pb-4 pt-1" aria-current="page" href="/homepage">Trang chủ</a>
+            <a class="nav-link text-uppercase active fw-bold pb-4 pt-1" aria-current="page" href="/homepage">Trang
+              chủ</a>
           </li>
           <li class="nav-item">
             <a class="nav-link text-uppercase fw-bold pb-4 pt-1" href="/aboutOurCompany">Về chúng tôi</a>
           </li>
           <li class="nav-item dropdown">
-            <a class="nav-link text-uppercase dropdown-toggle fw-bold pb-4 pt-1" href="/listProduct" id="navbarDropdownMenuLink"
-              role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <a class="nav-link text-uppercase dropdown-toggle fw-bold pb-4 pt-1" href="/listProduct"
+              id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
               Sản phẩm
             </a>
             <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
@@ -86,170 +89,109 @@
       <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
         <ol class="breadcrumb">
           <li class="breadcrumb-item"><a href="/homepage">Trang chủ</a></li>
-          <li class="breadcrumb-item"><a href="/cart">Giỏ hàng</a></li>
-          <li class="breadcrumb-item active"><a href="/paymentInfo">Thông tin giao hàng</a></li>
-          <li class="breadcrumb-item active" aria-current="page">Phương thức thanh toán</li>
+          <li class="breadcrumb-item"><a href="/fansAdvisory">Tư vấn chọn quạt trần</a></li>
+          <li class="breadcrumb-item active" aria-current="page">Quạt trần kết hợp đèn chùm giá 30 triệu</li>
         </ol>
       </nav>
     </div>
   </div>
 
-  <!-- Cart -->
-  <div class="container-fluid container-xl">
-    <h1 class="text-primary fw-bold fs-3 fs-lg-1 text-center text-uppercase mb-lg-1">Thanh toán</h1>
-    <div class="cart-count fs-lg-4 text-center fw-semibold mb-1 mb-md-5">Có 3 sản phẩm trong giỏ hàng</div>
-    <div class="row d-dlex d-md-none">
-      <div class="col-9 d-flex align-items-center">
-        <i class="fas fa-shopping-cart text-secondary me-2"></i>
-        <div id="cartItem">
-          <button type='button' class="btn btn--info w-100 text-secondary">
-            Hiển thị thông tin đơn hàng
-          </button>
-          <i class="fas fa-chevron-down ms-2"></i>
+  <!-- News Detail -->
+  <div class="container-fluid">
+    <div class="container-xl">
+      <div class="row">
+        <div class="col-12 col-lg-8 mb-4 mb-lg-0">
+          <h3 class="text-primary fw-semibold mb-4">Quạt trần kết hợp đèn chùm giá 30 triệu đồng cho biệt thự</h3>
+          <p class="fs-4 mb-3 mb-lg-5">
+            Giải đáp và tư vấn thông tin giúp khách hàng chọn mua được sản phẩm ưng ý và phù hợp với nhu cầu sử dụng là
+            điều mà
+            META.vn luôn hướng đến nhằm mang lại những trải nghiệm mua sắm tốt nhất cho người dùng. Trong chuyên mục Tư
+            vấn ngày
+            hôm nay, META xin giải đáp thắc mắc của anh Tuấn Anh đến từ Hà Nội về việc nên mua quạt trần hãng nào. Mời
+            các bạn
+            theo dõi nhé!
+          </p>
+          <img src="/images/news-detail.png" alt="news detail" class="img-fluid mb-3 mb-lg-5">
+          <p class="fs-4 mb-0">
+            Hỏi: Nhà tôi ở chung cư có phòng khách rộng 35m² và 2 phòng ngủ, mỗi phòng có diện tích khoảng 25m². Tôi
+            muốn lắp đặt quạt trần cho mỗi phòng. Tôi có tham khảo một số thông tin thì thấy có rất nhiều hãng quạt trần
+            khác nhau khiến tôi rất băn khoăn không biết hãng nào tốt và nên chọn mua loại nào. Các bạn có thể gợi ý
+            giúp tôi một vài sản phẩm quạt trần tốt được không? (Tuấn Anh - Hà Nội)
+          </p>
+          <p class="fs-4 mb-4">Trả lời:</p>
+          <p class="fs-4 mb-4">Xin chào anh Tuấn Anh,</p>
+          <p class="fs-4"> Cảm ơn anh đã gửi câu hỏi và quan tâm tới các sản phẩm quạt trần tại META.vn. Để lựa chọn được sản phẩm quạt
+            trần tốt, phù hợp với nhu cầu sử dụng của gia đình, anh có thể tham khảo những đánh giá về ưu điểm và nhược
+            điểm của một số hãng quạt trần bán chạy nhất hiện nay dưới đây, từ đó anh có thể đưa ra được lựa chọn chính
+            xác nhất nhé.</p>
+          <h4 class="fs-4 fw-bold mt-4">Xem thêm bài viết khác:</h4>
+          <ul class="news-list fs-4">
+            <li><a href="">Cách chọn mua quạt trần tốt nhất hiện nay</a></li>
+            <li><a href="">Có nên lắp quạt trần trong phòng ngủ? Chọn quạt trần nào phù hợp cho phòng ngủ?</a></li>
+            <li><a href="">Móc treo quạt trần là gì? Có thể lắp quạt trần không có móc treo hay không?</a></li>
+            <li><a href="">Quạt trần mini là gì? Quạt trần mini có mát không, có nên mua không?</a></li>
+            <li><a href="">5+ Lợi ích của quạt trần hộp bạn không thể bỏ qu</a></li>
+          </ul>
+          <h4 class="fs-4 fw-bold">Đừng quên chia sẻ bài viết nhé!</h4>
         </div>
-      </div>
-      <div class="col-3">
-        <span class="fw-bold fs-6">25.580.000đ</span>
-      </div>
-    </div>
-    <div class="row d-flex d-md-none cart-info">
-      <div class="col-12 col-md-6">
-        <div class="row cart-item py-4">
-          <div class="col-4 col-md-3 px-md-5">
-            <img src="/images/image 29.png" alt="product" class="img-fluid">
-          </div>
-          <div class="col-8 col-md-7 d-flex align-items-md-start flex-column justify-content-md-center">
-            <h1 class="text-primary text-uppercase fw-bold fs-6 fs-lg-4 mb-md-0">HUNTER BUILDER PLUS 50562</h1>
-            <p class="fs-xs-7 mb-0">Số lượng: <span>1</span></p>
-            <p class="fs-xs-7 mb-0 d-flex align-items-center justify-content-between">Thành tiền:
-              <span class="fs-6">4.860.000đ</span></p>
-          </div>
-          <div class="col-md-2 d-none d-md-block text-end">
-            <div class="cart-item__price">4.860.000đ</div>
-          </div>
-        </div>
-        <div class="row cart-item py-4">
-          <div class="col-4 col-md-3 px-md-5">
-            <img src="/images/image 29.png" alt="product" class="img-fluid">
-          </div>
-          <div class="col-8 col-md-7 d-flex align-items-md-start flex-column justify-content-md-center">
-            <h1 class="text-primary text-uppercase fw-bold fs-6 fs-lg-4 mb-md-0">HUNTER BUILDER PLUS 50562</h1>
-            <p class="fs-xs-7 mb-0">Số lượng: <span>1</span></p>
-            <p class="fs-xs-7 mb-0 d-flex align-items-center justify-content-between">Thành tiền:
-              <span class="fs-6">4.860.000đ</span></p>
-          </div>
-          <div class="col-md-2 d-none d-md-block text-end">
-            <div class="cart-item__price">4.860.000đ</div>
-          </div>
-        </div>
-        <h3 class="fs-5 fs-lg-4 fw-semibold">Mã giảm giá</h3>
-        <div class="row">
-          <div class="col-8">
-            <input type="text" class="form-control mb-3" id="name" placeholder="Nhập mã giảm giá">
-          </div>
-          <div class="col-4">
-            <button class="btn btn-lg btn-primary w-100 px-1">Áp dụng</button>
-          </div>
-        </div>
-        <hr>
-        <div class="fs-5 price fw-bold d-flex justify-content-between">
-          Tạm tính <h3 class="price fs-5 fs-lg-4 fw-bold ms-3 mb-0">25.580.000đ</h3>
-        </div>
-        <div class="fs-5 price fw-bold d-flex justify-content-between">
-          Phí vận chuyển <h3 class="price fs-5 fs-lg-4 fw-bold ms-3 mb-0">-</h3>
-        </div>
-        <hr>
-        <div class="fs-5 price fw-bold d-flex justify-content-between">
-          Thành tiền <h3 class="price fs-3 fs-lg-1 fw-bold ms-3 mb-0">25.580.000đ</h3>
-        </div>
-        <hr>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-12 col-md-6">
-        <div class="col-md-12 user-info pe-md-3">
-          <h3 class="pt-4 fs-4 fs-lg-2 text-center text-md-start fw-semibold text-primary mb-4">Phương thức thanh toán</h3>
-          <div class="row">
-            <div class="col-12 col-lg-6">
-              <label class="d-inline-flex align-items-center mb-3" data-bs-toggle="collapse"
-                data-bs-target="#bankInfo" aria-expanded="false" aria-controls="bankInfo">
-                <input type="radio" name="payment" value="payment">
-                <span class="fw-bold">Chuyển khoản ngân hàng</span>
-              </label>
-              <div class="collapse mb-3" id="bankInfo">
-                <div>Tên TK: Nguyen Van A</div>
-                <div>Số TK: 19027714792888 Tại Ngân hàng Techcombank – Chi nhánh Hà Nội</div>
-                <div>Nội dung CK:</div>
-                <div>[Mã đơn hàng] - [Số điện thoại]</div>
+        <div class="col-12 col-lg-4">
+          <h3 class="text-primary text-uppercase fw-bold fs-4 fs-lg-1 text-center text-lg-start">tin liên quan</h3>
+          <div class="col-12 mb-4">
+            <div class="category__card shadow-none h-100 d-flex flex-column rounded-0">
+              <div class="category__img category__img--news">
+                <img class="w-100" src="/images/news 1.png" alt="product">
+              </div>
+              <div class="category__caption category__caption--big bg-light px-4 pt-4 pb-sm-5">
+                <p class="category__caption-title text-left text-primary fw-bold">Quạt trần kết hợp đèn chùm
+                  giá
+                  30 triệu đồng cho biệt thự</p>
+                <p class="text-dark fs-default fs-xs-7">Sau một năm ra mắt thị trường, mẫu Villa Light bán
+                  ra khoảng 100
+                  chiếc, doanh số
+                  gần 3 tỷ đồng.</p>
+                <div class="category__date px-4 pb-3">15.01.2020</div>
               </div>
             </div>
-            <div class="col-12 col-lg-6">
-              <label class="d-inline-flex align-items-center mb-3" data-bs-toggle="collapse"
-                data-bs-target="#bankInfo" aria-expanded="false" aria-controls="bankInfo">
-                <input type="radio" name="payment" value="cast" checked="false">
-                <span class="fw-bold">Trả tiền mặt khi nhận hàng</span>
-              </label>
+          </div>
+          <div class="col-12 mb-4">
+            <div class="category__card shadow-none h-100 d-flex flex-column rounded-0">
+              <div class="category__img category__img--news"><img class="w-100" src="/images/news 2.png" alt="product">
+              </div>
+              <div class="category__caption category__caption--big bg-light px-4 pt-4 pb-sm-5">
+                <p class="category__caption-title text-left text-primary fw-bold">Chọn Quạt trần phù hợp cho
+                  chung cư trần
+                  thấp</p>
+                <p class="text-dark fs-default fs-xs-7">Ngoài màu sắc và thiết kế, lựa chọn Quạt trần cần
+                  chú ý địa điểm
+                  lắp, diện tích
+                  phòng, ....</p>
+                <div class="category__date px-4 pb-3">15.01.2020</div>
+              </div>
             </div>
           </div>
-          <div class="row flex-md-row-reverse">
-            <div class="col-12 col-md-6 mb-3 mb-md-0">
-              <button class="btn btn-lg btn-primary w-100 h-100">Hoàn tất đơn hàng</button>
+          <div class="col-12 mb-4">
+            <div class="category__card shadow-none h-100 d-flex flex-column rounded-0">
+              <div class="category__img category__img--news"><img class="w-100" src="/images/news 3.png" alt="product">
+              </div>
+              <div class="category__caption category__caption--big bg-light px-4 pt-4 pb-sm-5">
+                <p class="category__caption-title text-left text-primary fw-bold">Nguyên tắc lắp Quạt trần
+                  không phải ai
+                  cũng biết</p>
+                <p class="text-dark fs-default fs-xs-7">Sau một năm ra mắt thị trường, mẫu Villa Light bán
+                  ra khoảng 100
+                  chiếc, doanh số
+                  gần 3 tỷ đồng.</p>
+                <div class="category__date px-4 pb-3">15.01.2020</div>
+              </div>
             </div>
-            <div class="col-12 col-md-6">
-              <button class="btn btn-lg btn-light text-primary w-100 h-100">Quay lại thông tin người mua</button>
-            </div>
           </div>
-        </div>
-      </div>
-      <div class="col-12 col-md-6 d-none d-md-block">
-        <div class="row mb-md-2">
-          <div class="col-md-3">
-            <img src="/images/image 29.png" alt="product" class="img-fluid">
-          </div>
-          <div class="col-md-7 d-flex align-items-md-start flex-column justify-content-md-center">
-            <h1 class="text-primary text-uppercase fw-bold fs-lg-4 mb-md-0">HUNTER BUILDER PLUS 50562</h1>
-            <p class="mb-0">Số lượng: <span>1</span></p>
-          </div>
-          <div class="col-md-2 text-end">
-            <div class="cart-item__price">4.860.000đ</div>
-          </div>
-        </div>
-        <div class="row mb-md-2">
-          <div class="col-md-3">
-            <img src="/images/image 29.png" alt="product" class="img-fluid">
-          </div>
-          <div class="col-md-7 d-flex align-items-md-start flex-column justify-content-md-center">
-            <h1 class="text-primary text-uppercase fw-bold fs-lg-4 mb-md-0">HUNTER BUILDER PLUS 50562</h1>
-            <p class="mb-0">Số lượng: <span>1</span></p>
-          </div>
-          <div class="col-md-2 text-end">
-            <div class="cart-item__price">4.860.000đ</div>
-          </div>
-        </div>
-        <h3 class="fs-lg-4 fw-semibold">Mã giảm giá</h3>
-        <div class="row">
-          <div class="col-8">
-            <input type="text" class="form-control mb-3" id="name" placeholder="Nhập mã giảm giá">
-          </div>
-          <div class="col-4">
-            <button class="btn btn-lg btn-primary w-100 px-1">Áp dụng</button>
-          </div>
-        </div>
-        <div class="price fw-bold d-flex justify-content-md-between">
-          Tạm tính <h3 class="price fs-lg-4 fw-bold ms-3 mb-0">25.580.000đ</h3>
-        </div>
-        <div class="price fw-bold d-flex justify-content-md-between">
-          Phí vận chuyển <h3 class="price fs-lg-4 fw-bold ms-3 mb-0">0đ</h3>
-        </div>
-        <div class="price fw-bold d-flex justify-content-md-between">
-          Phí vận chuyển <h3 class="price fs-lg-1 fw-bold ms-3 mb-0">25.580.000đ</h3>
         </div>
       </div>
     </div>
   </div>
 
-  <!-- Footer -->
-  <div class="position-relative">
+   <!-- Footer -->
+   <div class="position-relative">
     <div class="shape shape--footer"></div>
     <div class="messenger d-none d-md-flex">
       <img class="messenger__item mb-3" src="./images/image 45.png" alt="phone">
@@ -351,7 +293,7 @@
   <script src="./js/hompage.js"></script>
   <script>
     $(document).ready(function () {
-      $('#cartItem').click(function() {
+      $('#cartItem').click(function () {
         if ($(this).hasClass('active')) {
           $(this).removeClass('active');
           $(this).find('button').html('Hiển thị thông tin đơn hàng');

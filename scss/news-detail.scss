@@ -1,0 +1,36 @@
+@font-face {
+    font-family: Averta;
+    src: url(../) format('woff2');
+    font-weight: 400;
+}
+
+@import "./settings/setting";
+@import "./vendors/bootstrap";
+
+@import "./generic/generic";
+
+@import "./elements/elements";
+
+@import "./components/button";
+@import "./components/footer";
+@import "./components/quantity";
+@import "./components/form";
+@import "./components/breadcrumb";
+
+@import "./utilities/utilities";
+
+
+@import "./pages/homepage";
+
+
+.news-list {
+    color: $blue;
+
+    a {
+        color: $blue;
+    }
+
+    ::marker {
+        color: $grey;
+    }
+}

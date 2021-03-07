@@ -12388,53 +12388,15 @@ input[type="radio"]:checked {
   font-size: 60px;
 }
 
-.cart-item {
-  border-bottom: 1px solid #C4C4C4;
+.news-list {
+  color: rgba(7, 101, 188, 0.8);
 }
 
-.cart-item:last-of-type {
-  border-bottom: none;
+.news-list a {
+  color: rgba(7, 101, 188, 0.8);
 }
 
-.cart-item__price {
-  font-size: 20px;
+.news-list ::marker {
+  color: #C4C4C4;
 }
-
-.cart-count {
-  position: relative;
-  padding-bottom: 20px;
-}
-
-.cart-count::before {
-  content: "";
-  display: block;
-  width: 50px;
-  height: 2px;
-  background-color: #F6921E;
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
-}
-
-@media (min-width: 576px) {
-  .cart-count::before {
-    height: 4px;
-  }
-}
-
-.btn-lg, .btn-group-lg > .btn {
-  font-size: 12px;
-  padding: 5px 25px;
-  width: 100%;
-  line-height: 1;
-  height: 100%;
-}
-
-@media (min-width: 576px) {
-  .btn-lg, .btn-group-lg > .btn {
-    font-size: 20px;
-  }
-}
-/*# sourceMappingURL=cart.css.map */
+/*# sourceMappingURL=news-detail.css.map */
