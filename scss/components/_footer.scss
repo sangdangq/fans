@@ -17,4 +17,24 @@
             line-height: 24px;
         }
     }
+
+    .social {
+        display: flex;
+    
+        &__item {
+            height: 43px;
+            width: 43px;
+            border-radius: 50%;
+            background-color: $white;
+            color: $primary;
+            font-size: 1.4375rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+    
+            &:not(:last-of-type) {
+                margin-right: 6px;
+            }
+        }
+    }
 }

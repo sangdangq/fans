@@ -1,0 +1,44 @@
+.shape {
+    &--branch {
+        height: 40px;
+        position: relative;
+        overflow: hidden;
+        background-color: transparent;
+
+        &::after {
+            @include shape(1200vw, $white, 'down');
+        }
+    }
+
+    &--footer {
+        height: 20px;
+        position: relative;
+        overflow: hidden;
+        background-color: $primary;
+
+        &::after {
+            @include shape(800vw, $white, 'down');
+        }
+
+        @include media-breakpoint-up(sm) {
+            height: 40px;
+
+            &::after {
+                @include shape(1200vw, $white, 'down');
+            }
+        }
+    }
+
+    &--top {
+        height: 40px;
+        position: relative;
+        overflow: hidden;
+        background-color: $secondary;
+        margin-right: -0.71875rem;
+        margin-left: -0.71875rem;
+
+        &::after {
+            @include shape(1200vw, $white, 'up');
+        }
+    }
+}

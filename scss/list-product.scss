@@ -1,25 +1,11 @@
-@font-face {
-    font-family: Averta;
-    src: url(../) format('woff2');
-    font-weight: 400;
-}
+@import "./common";
 
-@import "./settings/setting";
-@import "./vendors/bootstrap";
-
-@import "./generic/generic";
-
-@import "./elements/elements";
-
-@import "./components/button";
-@import "./components/footer";
 @import "./components/breadcrumb";
 @import "./components/pagination";
-
-@import "./utilities/utilities";
-
-
-@import "./pages/homepage";
+@import "./components/carousel";
+@import "./components/swiper";
+@import "./components/branch";
+@import "./components/card";
 
 .breadcrumb-element {
     .breadcrumb-item, a {

@@ -1,0 +1,128 @@
+.navbar {
+    color: $white;
+
+    .navbar-brand {
+        margin-right: 68px;
+
+        img {
+            height: 82px;
+            width: auto;
+
+            @include media-breakpoint-only(xs) {
+                height: 52px;
+            }
+        }
+    }
+
+    .navbar-nav {
+        .nav-item {
+            .nav-link {
+                padding-left: 1rem;
+                padding-right: 1rem;
+                font-size: 0.9375rem;
+                color: $white;
+
+                &.active {
+                    color: $secondary;
+                    position: relative;
+
+                    &::after {
+                        content: "";
+                        display: block;
+                        height: 4px;
+                        width: 42%;
+                        background-color: $secondary;
+                        position: absolute;
+                        bottom: 0;
+                        left: 50%;
+                        transform: translateX(-50%);
+                    }
+
+                    @include media-breakpoint-only(xs) {
+                        &::after {
+                            display: none;
+                        }
+                    }
+                }
+            }
+
+
+            >.fa-search {
+                padding-top: 7px;
+                padding-left: 1rem;
+                padding-right: 1rem;
+                padding-bottom: 1.5rem;
+            }
+        }
+    }
+
+    &-toggler {
+        border: none;
+    }
+
+    .navbar-toggler-icon {
+        background: none;
+        border: none;
+        width: auto;
+        height: auto;
+
+        >div {
+            width: 23px;
+            margin-bottom: 3px;
+            display: flex;
+            justify-content: space-between;
+
+            &::after,
+            &::before {
+                content: "";
+                display: block;
+                height: 10px;
+                width: 10px;
+                border-radius: 50%;
+                background-color: $white;
+            }
+        }
+    }
+
+    .contact {
+        align-self: flex-end;
+        margin-bottom: 2px;
+
+        .dropdown {
+            img {
+                height: 20px;
+                margin-right: 9px;
+            }
+        }
+
+        .btn--language {
+            padding: 2px 10px 5px 10px;
+            border-radius: 0 0 8px 8px;
+            border: none;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-left: auto;
+
+            &::after {
+                display: none;
+            }
+        }
+
+        &__item {
+            font-size: 22px;
+            line-height: 1;
+        }
+    }
+
+    .search {
+        display: none;
+    }
+
+    .search-bar {
+        position: absolute;
+        bottom: -50px;
+        left: 0;
+        right: 0;
+    }
+}

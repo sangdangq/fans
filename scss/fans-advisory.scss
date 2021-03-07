@@ -1,20 +1,21 @@
+@import "./common";
 
-@font-face {
-    font-family: Averta;
-    src: url(../) format('woff2');
-    font-weight: 400;
+@import './components/breadcrumb';
+@import './components/pagination';
+@import "./components/carousel";
+@import "./components/card";
+
+.carousel-container {
+    position: relative;
 }
-@import "./settings/setting";
-@import "./vendors/bootstrap";
 
-@import "./generic/generic";
-
-@import "./elements/elements";
-
-@import "./components/button";
-@import "./components/footer";
-
-@import "./utilities/utilities";
-
-@import "./pages/homepage";
-@import "./pages/fans-advisory";
+.page-caption {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 36px;
+    bottom: 55px;
+    color: $primary;
+    text-transform: uppercase;
+    font-weight: bold;
+}

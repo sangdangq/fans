@@ -1,20 +1,43 @@
 
-@font-face {
-    font-family: Averta;
-    src: url(../) format('woff2');
-    font-weight: 400;
+@import "./common";
+
+.block-header {
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: bold;
 }
-@import "./settings/setting";
-@import "./vendors/bootstrap";
 
-@import "./generic/generic";
+.user-info {
+    font-size: 20px;
+    line-height: 24px;
+}
 
-@import "./elements/elements";
+.order-title {
+    font-size: 20px;
+    line-height: 23px;
+    padding: 10px 0;
+    background-color: $secondary;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+    color: $primary;
+}
 
-@import "./components/button";
-@import "./components/footer";
+.price {
+    font-size: 16px;
+}
 
-@import "./utilities/utilities";
+.btn--order {
+    font-size: 30px;
+    line-height: 35px;
+    padding: 17px 0;
+    width: 100%;
+    text-transform: uppercase;
+    color: $white;
+}
 
-@import "./pages/homepage";
-@import "./pages/order";
+.shape--footer {
+    &::after {
+        background-color: $light;
+    }
+}

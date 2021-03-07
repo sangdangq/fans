@@ -1,9 +1,3 @@
-
-@font-face {
-    font-family: Averta;
-    src: url(../) format('woff2');
-    font-weight: 400;
-}
 @import "./settings/setting";
 @import "./vendors/bootstrap";
 
@@ -13,8 +7,9 @@
 
 @import "./components/button";
 @import "./components/footer";
+@import "./components/header";
+@import "./components/messenger";
+@import './components/breadcrumb';
+@import "./components/shape";
 
 @import "./utilities/utilities";
-
-
-@import "./pages/homepage";
