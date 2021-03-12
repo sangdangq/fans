@@ -13,16 +13,46 @@
     }
 }
 
+.category {
+    &--first {
+        padding-top: 23px;
+
+        @include media-breakpoint-up(lg) {
+            padding-bottom: 30px;
+        }
+    }
+
+    &__header {
+        margin-bottom: 20px;
+    }
+
+    &__list {
+        margin-bottom: 15px;
+    }
+
+    .btn {
+        padding: 7px 24px;
+    }
+}
+
 .product-intro {
     position: relative;
 
     .caption {
         position: absolute;
-        right: 5%;
-        top: 50%;
-        transform: translateY(-70%);
-        color: $white;
-        max-width: 30%;
+        right: 12.8%;
+        top: 18.4%;
+        color: #fff;
+        max-width: 23.5%;
+
+        @include media-breakpoint-down(xxl) {
+            position: absolute;
+            right: 5%;
+            top: 50%;
+            transform: translateY(-50%);
+            max-width: 35%;
+            max-height: 70%;
+        }
 
         h1,
         h2 {

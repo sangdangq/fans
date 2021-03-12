@@ -6,6 +6,7 @@ $body-color: $white;
 $grid-gutter-width: 2rem;
 $grey: #C4C4C4;
 $grey-light: #EFEFEF;
+$grey-lighter: #E5E5E5;
 $black: #000;
 $blue: rgba(7, 101, 188, 0.8);
 
@@ -13,6 +14,12 @@ $blue: rgba(7, 101, 188, 0.8);
 $enable-responsive-font-sizes: true;
 $breadcrumb-divider-color:          $secondary;
 $breadcrumb-active-color:           $primary;
+
+
+$border-radius-1: 4px;
+$border-radius-2: 6px;
+$border-radius-3: 8px;
+
 @font-face {
   font-family: Averta;
   src: url(../../../fonts/Averta-Light.woff2) format('woff2');

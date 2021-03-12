@@ -2,24 +2,86 @@
 
 .footer {
     color: $white;
+    padding-top: 26px;
+    padding-bottom: 25px;
 
-    &__header {
-        font-size: 1.25rem;
+    @include media-breakpoint-up(lg) {
+        padding-top: 55px;
     }
 
-    @include media-breakpoint-only(xs) {
-        &__logo {
-            height: 74px;
+    &__header {
+        font-size: 20px;
+        line-height: 24px;
+        margin-bottom: 10px;
+
+        @include media-breakpoint-up(lg) {
+            font-size: 1.25rem;
+            margin-bottom: 21px;
         }
+
+        &--name {
+            margin-bottom: 3px;
+            
+            @include media-breakpoint-up(lg) {
+                margin-bottom: 12px;
+            }
+        }
+    }
+
+    &__number {
+        font-size: 27px;
+        line-height: 1;
+        margin-bottom: 6px;
+
+        @include media-breakpoint-up(lg) {
+            margin-bottom: 0;
+        }
+    }
+
+    &__contact {
+        margin-left: 21px;
+    }
+
+    &__logo {
+        height: 74px;
+        margin-bottom: 16px;
+
+        @include media-breakpoint-up(lg) {
+            height: 82px;
+            margin-left: -20px;
+            margin-bottom: 24px;
+        }
+    }
+
+    &__link {
+        margin-bottom: 3px;
+    }
+
+    &__info {
+        padding-left: 26px;
+    }
     
-        &__header {
-            font-size: 20px;
-            line-height: 24px;
+    .fa-phone-alt {
+        margin-right: 9px;
+    }
+    
+    .fa-envelope {
+        margin-right: 7px;
+    }
+
+    .fa-chevron-right {
+        margin-right: 5px;
+        margin-left: 3px;
+        
+        @include media-breakpoint-up(lg) {
+            margin-right: 11px;
         }
     }
 
     .social {
         display: flex;
+        padding-left: 8px;
+        padding-top: 6px;
     
         &__item {
             height: 43px;
@@ -35,6 +97,20 @@
             &:not(:last-of-type) {
                 margin-right: 6px;
             }
+        }
+    }
+
+    .gx-footer-item {
+        .col-6 {
+            padding: 0 0 0 15px;
+        }
+    }
+
+    .mb-product {
+        margin-bottom: 38px;
+
+        @include media-breakpoint-up(lg) {
+            margin-bottom: 24px;
         }
     }
 }

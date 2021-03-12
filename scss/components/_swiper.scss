@@ -1,5 +1,11 @@
 .swiper-container {
     width: 100%;
+    padding-top: 15px;
+    padding-bottom: 8px;
+
+    @include media-breakpoint-up(lg) {
+        padding-top: 41px;
+    }
 }
 
 .slider {
@@ -45,6 +51,12 @@
 
     .swiper-container {
         .swiper-pagination {
+            bottom: 10px;
+
+            @include media-breakpoint-up(lg) {
+                bottom: 20px;
+            }
+
             &-bullet {
                 width: 8px;
                 height: 8px;
@@ -55,6 +67,12 @@
                     background-color: $primary;
                 }
             }
+        }
+    }
+
+    .gy--swiper {
+        @include media-breakpoint-down(lg) {
+            --bs-gutter-y: 12px;
         }
     }
 }

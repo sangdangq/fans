@@ -31,37 +31,22 @@
       <div class="collapse navbar-collapse align-self-end" id="navbarNavDropdown">
         <ul class="navbar-nav">
           <li class="nav-item">
-            <a class="nav-link text-uppercase active fw-bold pb-4 pt-1" aria-current="page" href="/homepage">Trang chủ</a>
+            <a class="nav-link text-uppercase active fw-bold" aria-current="page" href="/homepage">Trang chủ</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link text-uppercase fw-bold pb-4 pt-1" href="/aboutOurCompany">Về chúng tôi</a>
+            <a class="nav-link text-uppercase fw-semibold" href="/aboutOurCompany">Về chúng tôi</a>
           </li>
           <li class="nav-item dropdown">
-            <a class="nav-link text-uppercase dropdown-toggle fw-bold pb-4 pt-1" href="/listProduct" id="navbarDropdownMenuLink"
-              role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Sản phẩm
-            </a>
-            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-              <li><a class="dropdown-item" href="/listProduct">Panasonic</a></li>
-              <li><a class="dropdown-item" href="#">Quạt trần Anh</a></li>
-              <li><a class="dropdown-item" href="#">Quạt trần Pháp</a></li>
-            </ul>
+            <a class="nav-link text-uppercase fw-semibold" href="/listProduct">Sản phẩm</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link text-uppercase fw-bold pb-4 pt-1" href="/fansAdvisory">Tư vấn chọn Quạt trần</a>
+            <a class="nav-link text-uppercase fw-semibold" href="/fansAdvisory">Tư vấn chọn Quạt trần</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link text-uppercase fw-bold pb-4 pt-1" href="#">Liên hệ</a>
+            <a class="nav-link text-uppercase fw-semibold" href="#">Liên hệ</a>
           </li>
           <li class="nav-item">
-            <i class="fas fa-search"></i>
-            <form class="search pb-4 pb-md-0 px-3 px-lg-0" action="action_page.php">
-              <div class="input-group">
-                <input type="text" class="form-control text-dark" placeholder="Tìm kiếm" aria-label="Tìm kiếm"
-                  aria-describedby="btnGroupAddon2">
-                <div class="input-group-text bg-secondary" id="btnGroupAddon2"><i class="fas fa-search"></i></div>
-              </div>
-            </form>
+            <img class="nav-item__search" src="/images/search-icon-white.png" alt="search icon">
           </li>
         </ul>
       </div>
@@ -71,13 +56,19 @@
             <i class="fas fa-phone-alt text-secondary me-1 fs-lg-6"></i>
             <span class="text-nowrap fs-lg-6">Hotline đặt hàng</span>
           </div>
-          <div class="contact__item fs-7 fs-lg-2 fw-bold">
+          <div class="contact__item">
             08.13.13.13.31
           </div>
-          <div class="contact__item fs-7 fs-lg-2 fw-bold">
+          <div class="contact__item">
             08.16.16.16.61
           </div>
         </div>
+      </div>
+    </div>
+    <div class="search-bar">
+      <div class="container-fluid container-xl input-group">
+        <input type="text" class="form-control" placeholder="Vui lòng nhập sản phẩm cần tìm kiếm">
+        <span class="input-group-text bg-secondary text-primary text-uppercase fw-bold px-5">tìm kiếm</span>
       </div>
     </div>
   </nav>
@@ -267,73 +258,73 @@
         <i class="fab fa-facebook-messenger"></i>
       </div>
     </div>
-    <footer class="container-fluid bg-primary py-5 footer">
+    <footer class="container-fluid bg-primary footer">
       <div class="container-xl">
         <div class="row">
-          <div class="col-12 col-lg-3 text-center text-lg-start mb-4">
-            <h3 class="footer__header text-white text-uppercase fw-bold">Công ty TNHH Gia Sơn</h3>
+          <div class="col-12 col-lg-3 text-center text-lg-start">
+            <h3 class="footer__header footer__header--name text-white text-uppercase fw-bold">Công ty TNHH Gia Sơn</h3>
             <img class="footer__logo" src="/images/Logo 1.png" alt="Logo Gia Son">
           </div>
-          <div class="col-12 col-lg-4 mb-4">
-            <h3 class="footer__header text-white text-uppercase text-center text-lg-start fw-bold mb-lg-4">Sản phẩm</h3>
-            <div class="row fs-7 fs-lg-6">
+          <div class="col-12 col-lg-4 mb-product">
+            <h3 class="footer__header text-white text-uppercase text-center text-lg-start fw-bold">Sản phẩm</h3>
+            <div class="row fs-6 gx-footer-item">
               <div class="col-6">
-                <div>
-                  <i class="fas fa-chevron-right text-secondary me-2 fs-7"></i>
+                <div class="footer__link">
+                  <i class="fas fa-chevron-right text-secondary fs-7"></i>
                   Quạt trần Panasonic
                 </div>
-                <div>
-                  <i class="fas fa-chevron-right text-secondary me-2 fs-7"></i>
-                  Quạt trần Panasonic
+                <div class="footer__link">
+                  <i class="fas fa-chevron-right text-secondary fs-7"></i>
+                  Quạt trần KDK
                 </div>
-                <div>
-                  <i class="fas fa-chevron-right text-secondary me-2 fs-7"></i>
+                <div class="footer__link">
+                  <i class="fas fa-chevron-right text-secondary fs-7"></i>
                   Quạt trần MR.VU
                 </div>
-                <div>
-                  <i class="fas fa-chevron-right text-secondary me-2 fs-7"></i>
-                  Quạt trần MỸ.
+                <div class="footer__link">
+                  <i class="fas fa-chevron-right text-secondary fs-7"></i>
+                  Quạt trần MỸ
                 </div>
               </div>
               <div class="col-6">
-                <div>
-                  <i class="fas fa-chevron-right text-secondary me-2 fs-7"></i>
+                <div class="footer__link">
+                  <i class="fas fa-chevron-right text-secondary fs-7"></i>
                   Quạt trần Vinawind
                 </div>
-                <div>
-                  <i class="fas fa-chevron-right text-secondary me-2 fs-7"></i>
+                <div class="footer__link">
+                  <i class="fas fa-chevron-right text-secondary fs-7"></i>
                   Quạt trần Hatari
                 </div>
-                <div>
-                  <i class="fas fa-chevron-right text-secondary me-2 fs-7"></i>
+                <div class="footer__link">
+                  <i class="fas fa-chevron-right text-secondary fs-7"></i>
                   Quạt trần MITSUBISHI
                 </div>
-                <div>
-                  <i class="fas fa-chevron-right text-secondary me-2 fs-7"></i>
+                <div class="footer__link">
+                  <i class="fas fa-chevron-right text-secondary fs-7"></i>
                   Quạt trần KAIYO
                 </div>
               </div>
             </div>
           </div>
-          <div class="col-12 mb-4 col-lg-5 text-center text-lg-start">
-            <h3 class="footer__header text-white text-uppercase text-center text-lg-start fw-bold mb-lg-4">Liên hệ</h3>
+          <div class="col-12 mb-4 col-lg-5 text-center text-lg-start footer__info">
+            <h3 class="footer__header text-white text-uppercase text-center text-lg-start fw-bold">Liên hệ</h3>
             <div class="row">
               <div class="col-12 col-lg-5 fs-7 fs-xs-6 fs-lg-6 mb-sm-3">
-                <div class="mb-3">
+                <div>
                   <div
                     class="d-flex flex-column flex-sm-row align-items-center justify-content-center justify-content-lg-start">
-                    <i class="fas fa-phone-alt text-secondary me-1"></i>
+                    <i class="fas fa-phone-alt text-secondary"></i>
                     <span class="text-nowrap text-white">Hotline đặt hàng</span>
                   </div>
-                  <div class="fs-1 fs-lg-4 lh-1 fw-bold">081 6161661</div>
+                  <div class="footer__number footer__contact fw-bold">081 6161661</div>
                 </div>
                 <div>
                   <div
                     class="d-flex flex-column flex-sm-row align-items-center justify-content-center justify-content-lg-start mb-2">
-                    <i class="fas fa-envelope text-secondary me-1"></i>
+                    <i class="fas fa-envelope text-secondary"></i>
                     <span class="text-nowraptext-white">info@giason.com.vn</span>
                   </div>
-                  <div>
+                  <div class="footer__contact">
                     Showroom: ...
                   </div>
                 </div>

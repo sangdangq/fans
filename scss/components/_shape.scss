@@ -6,7 +6,11 @@
         background-color: transparent;
 
         &::after {
-            @include shape(1200vw, $white, 'down');
+            @include shape(600vw, $white, 'down');
+
+            @include media-breakpoint-up(md) {
+                @include shape(1200vw, $white, 'down');
+            }
         }
     }
 
@@ -17,10 +21,10 @@
         background-color: $primary;
 
         &::after {
-            @include shape(800vw, $white, 'down');
+            @include shape(600vw, $white, 'down');
         }
 
-        @include media-breakpoint-up(sm) {
+        @include media-breakpoint-up(md) {
             height: 40px;
 
             &::after {
@@ -30,15 +34,25 @@
     }
 
     &--top {
-        height: 40px;
+        height: 18px;
         position: relative;
         overflow: hidden;
         background-color: $secondary;
-        margin-right: -0.71875rem;
-        margin-left: -0.71875rem;
+        margin-right: -6px;
+        margin-left: -6px;
 
         &::after {
-            @include shape(1200vw, $white, 'up');
+            @include shape(600vw, $white, 'up');
+
+            @include media-breakpoint-up(md) {
+                @include shape(1200vw, $white, 'up');
+            }
+        }
+
+        @include media-breakpoint-up(md) {
+            height: 40px;
+            margin-right: -16px;
+            margin-left: -16px;
         }
     }
 }

@@ -1,6 +1,6 @@
 .breadcrumb-element {
     z-index: 2;
-    margin-top: 10px;
+    margin-top: 11px;
     font-size: 15px;
     line-height: 18px;
 
@@ -8,10 +8,11 @@
         text-decoration: none;
     }
 
-    @include media-breakpoint-up(sm) {
+    @include media-breakpoint-up(lg) {
         position: absolute;
         left: 0;
-        font-size: 16px;
+        font-size: 15px;
         line-height: 22px;
+        margin-top: 8px;
     }
 }

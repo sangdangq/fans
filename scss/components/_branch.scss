@@ -1,4 +1,12 @@
 .branch {
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+    @include media-breakpoint-up(lg) {
+        padding-top: 45px;
+        padding-bottom: 42px;
+    }
+
     .branch__item {
         &--center {
             padding-left: 30px;
@@ -7,6 +15,14 @@
 
         img {
             width: 100%;
+        }
+    }
+
+    .gy-branch {
+        --bs-gutter-y: 5px;
+
+        @include media-breakpoint-up(lg) {
+            --bs-gutter-y: 35px;
         }
     }
 }

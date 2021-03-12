@@ -7,6 +7,8 @@
             @include center;
             background: rgba(239, 239, 239, 0.5);
             color: $grey;
+            border: none;
+            margin-right: 3px;  
         }
 
         &.active {
@@ -20,11 +22,12 @@
         &:first-child,
         &:last-child {
             overflow: hidden ;
+            font-size: 24px;
 
             .page-link {
                 background-color: $primary;
-                color: $white;
-                font-size: 16px;
+                background-position: center;
+                background-repeat: no-repeat;
             }
 
             &.disabled {
@@ -37,11 +40,17 @@
         &:first-child {
             border-top-left-radius: 12px;
             border-bottom-left-radius: 12px;
+            .page-link {
+                background-image: url('/images/chevron-left.png');
+            }
         }
 
         &:last-child {
             border-top-right-radius: 12px;
             border-bottom-right-radius: 12px;
+            .page-link {
+                background-image: url('/images/chevron-right.png');
+            }
         }
     }
 }

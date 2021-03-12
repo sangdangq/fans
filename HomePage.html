@@ -31,37 +31,22 @@
       <div class="collapse navbar-collapse align-self-end" id="navbarNavDropdown">
         <ul class="navbar-nav">
           <li class="nav-item">
-            <a class="nav-link text-uppercase active fw-bold pb-4 pt-1" aria-current="page" href="/homepage">Trang chủ</a>
+            <a class="nav-link text-uppercase active fw-bold" aria-current="page" href="/homepage">Trang chủ</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link text-uppercase fw-bold pb-4 pt-1" href="/aboutOurCompany">Về chúng tôi</a>
+            <a class="nav-link text-uppercase fw-semibold" href="/aboutOurCompany">Về chúng tôi</a>
           </li>
           <li class="nav-item dropdown">
-            <a class="nav-link text-uppercase dropdown-toggle fw-bold pb-4 pt-1" href="/listProduct" id="navbarDropdownMenuLink"
-              role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Sản phẩm
-            </a>
-            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-              <li><a class="dropdown-item" href="/listProduct">Panasonic</a></li>
-              <li><a class="dropdown-item" href="#">Quạt trần Anh</a></li>
-              <li><a class="dropdown-item" href="#">Quạt trần Pháp</a></li>
-            </ul>
+            <a class="nav-link text-uppercase fw-semibold" href="/listProduct">Sản phẩm</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link text-uppercase fw-bold pb-4 pt-1" href="/fansAdvisory">Tư vấn chọn Quạt trần</a>
+            <a class="nav-link text-uppercase fw-semibold" href="/fansAdvisory">Tư vấn chọn Quạt trần</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link text-uppercase fw-bold pb-4 pt-1" href="#">Liên hệ</a>
+            <a class="nav-link text-uppercase fw-semibold" href="#">Liên hệ</a>
           </li>
           <li class="nav-item">
-            <i class="fas fa-search"></i>
-            <form class="search pb-4 pb-md-0 px-3 px-lg-0" action="action_page.php">
-              <div class="input-group">
-                <input type="text" class="form-control text-dark" placeholder="Tìm kiếm" aria-label="Tìm kiếm"
-                  aria-describedby="btnGroupAddon2">
-                <div class="input-group-text bg-secondary" id="btnGroupAddon2"><i class="fas fa-search"></i></div>
-              </div>
-            </form>
+            <img class="nav-item__search" src="/images/search-icon-white.png" alt="search icon">
           </li>
         </ul>
       </div>
@@ -71,13 +56,19 @@
             <i class="fas fa-phone-alt text-secondary me-1 fs-lg-6"></i>
             <span class="text-nowrap fs-lg-6">Hotline đặt hàng</span>
           </div>
-          <div class="contact__item fs-7 fs-lg-2 fw-bold">
+          <div class="contact__item">
             08.13.13.13.31
           </div>
-          <div class="contact__item fs-7 fs-lg-2 fw-bold">
+          <div class="contact__item">
             08.16.16.16.61
           </div>
         </div>
+      </div>
+    </div>
+    <div class="search-bar">
+      <div class="container-fluid container-xl input-group">
+        <input type="text" class="form-control" placeholder="Vui lòng nhập sản phẩm cần tìm kiếm">
+        <span class="input-group-text bg-secondary text-primary text-uppercase fw-bold px-5">tìm kiếm</span>
       </div>
     </div>
   </nav>
@@ -95,7 +86,7 @@
         <img src="/images/Mobile-Banner-1.png" class="d-block d-sm-none w-100" alt="Banner">
         <div class="carousel-caption d-none d-md-block text-start">
           <h2 class="fw-bold text-uppercase mb-5">sản phẩm chất lượng hàng đầu</h5>
-            <button class="btn btn-secondary btn-lg text-white fs-7">Tìm hiểu thêm</button>
+            <button class="btn btn-secondary btn-lg text-white fs-7 fs-lg-5">Tìm hiểu thêm</button>
         </div>
       </div>
       <div class="carousel-item">
@@ -103,7 +94,7 @@
         <img src="/images/Mobile-Banner-1.png" class="d-block d-sm-none w-100" alt="Banner">
         <div class="carousel-caption d-none d-md-block text-start">
           <h2 class="fw-bold text-uppercase mb-5">sản phẩm chất lượng hàng đầu</h5>
-            <button class="btn btn-secondary btn-lg text-white fs-7">Tìm hiểu thêm</button>
+            <button class="btn btn-secondary btn-lg text-white fs-7 fs-lg-5">Tìm hiểu thêm</button>
         </div>
       </div>
       <div class="carousel-item">
@@ -111,7 +102,7 @@
         <img src="/images/Mobile-Banner-1.png" class="d-block d-sm-none w-100" alt="Banner">
         <div class="carousel-caption d-none d-md-block text-start">
           <h2 class="fw-bold text-uppercase mb-5">sản phẩm chất lượng hàng đầu</h5>
-            <button class="btn btn-secondary btn-lg text-white fs-7">Tìm hiểu thêm</button>
+            <button class="btn btn-secondary btn-lg text-white fs-7 fs-lg-5">Tìm hiểu thêm</button>
         </div>
       </div>
     </div>
@@ -133,9 +124,9 @@
   </div>
 
   <!-- Branch -->
-  <div class="container-fluid px-lg-0 bg-primary pt-3 py-md-5 pb-3">
+  <div class="container-fluid px-lg-0 bg-primary">
     <div class="container-xl branch d-flex justify-content-between flex-wrap">
-      <div class="row justify-content-center row-cols-4 row-cols-lg-5 gy-4">
+      <div class="row justify-content-center row-cols-4 row-cols-lg-5 gy-branch">
         <div class="branch__item col"><img class="img-fluid" src="/images/logo-03.png" alt=""></div>
         <div class="branch__item col"><img class="img-fluid" src="/images/logo-04.png" alt=""></div>
         <div class="branch__item col"><img class="img-fluid" src="/images/logo-05.png" alt=""></div>
@@ -151,13 +142,13 @@
   <!-- Top Product -->
   <div class="container-fluid bg-secondary">
     <div class="slider container-xl">
-      <div class="swiper-container slide pt-4 pb-3 py-lg-5">
-        <h3 class="text-uppercase fs-4 fs-lg-1 text-primary text-center fw-bold mb-3 mb-md-5">Sản phẩm bán chạy</h3>
+      <div class="swiper-container swiper-container-product slide">
+        <h3 class="text-uppercase fs-4 fs-lg-1 text-primary text-center fw-bold">Sản phẩm bán chạy</h3>
         <div class="swiper-wrapper">
           <div class="swiper-slide">
-            <div class="category">
-              <div class="row mb-lg-3">
-                <div class="col-6 col-lg-3 mb-3">
+            <div class="category category--swiper">
+              <div class="row gy--swiper">
+                <div class="col-6 col-lg-3">
                   <div class="category__card">
                     <div class="category__img">
                       <img class="w-100" src="/images/image 19.png" alt="product">
@@ -169,7 +160,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="col-6 col-lg-3 mb-3">
+                <div class="col-6 col-lg-3">
                   <div class="category__card">
                     <div class="category__img"><img class="w-100" src="/images/image 23.png" alt="product"></div>
                     <div
@@ -179,7 +170,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="col-6 col-lg-3 mb-3">
+                <div class="col-6 col-lg-3">
                   <div class="category__card">
                     <div class="category__img"><img class="w-100" src="/images/image 24.png" alt="product"></div>
                     <div
@@ -189,7 +180,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="col-6 col-lg-3 mb-3">
+                <div class="col-6 col-lg-3">
                   <div class="category__card">
                     <div class="category__img"><img class="w-100" src="/images/image 25.png" alt="product"></div>
                     <div
@@ -203,9 +194,9 @@
             </div>
           </div>
           <div class="swiper-slide">
-            <div class="category">
-              <div class="row mb-lg-3">
-                <div class="col-6 col-lg-3 mb-3">
+            <div class="category category--swiper">
+              <div class="row gy--swiper">
+                <div class="col-6 col-lg-3">
                   <div class="category__card">
                     <div class="category__img">
                       <img class="w-100" src="/images/image 27.png" alt="product">
@@ -217,7 +208,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="col-6 col-lg-3 mb-3">
+                <div class="col-6 col-lg-3">
                   <div class="category__card">
                     <div class="category__img"><img class="w-100" src="/images/image 28.png" alt="product"></div>
                     <div
@@ -227,7 +218,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="col-6 col-lg-3 mb-3">
+                <div class="col-6 col-lg-3">
                   <div class="category__card">
                     <div class="category__img"><img class="w-100" src="/images/image 29.png" alt="product"></div>
                     <div
@@ -237,7 +228,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="col-6 col-lg-3 mb-3">
+                <div class="col-6 col-lg-3">
                   <div class="category__card">
                     <div class="category__img"><img class="w-100" src="/images/image 30.png" alt="product"></div>
                     <div
@@ -251,9 +242,9 @@
             </div>
           </div>
           <div class="swiper-slide">
-            <div class="category">
-              <div class="row mb-lg-3">
-                <div class="col-6 col-lg-3 mb-3">
+            <div class="category category--swiper">
+              <div class="row gy--swiper">
+                <div class="col-6 col-lg-3">
                   <div class="category__card">
                     <div class="category__img">
                       <img class="w-100" src="/images/image 19.png" alt="product">
@@ -265,7 +256,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="col-6 col-lg-3 mb-3">
+                <div class="col-6 col-lg-3">
                   <div class="category__card">
                     <div class="category__img"><img class="w-100" src="/images/image 23.png" alt="product"></div>
                     <div
@@ -275,7 +266,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="col-6 col-lg-3 mb-3">
+                <div class="col-6 col-lg-3">
                   <div class="category__card">
                     <div class="category__img"><img class="w-100" src="/images/image 24.png" alt="product"></div>
                     <div
@@ -285,7 +276,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="col-6 col-lg-3 mb-3">
+                <div class="col-6 col-lg-3">
                   <div class="category__card">
                     <div class="category__img"><img class="w-100" src="/images/image 25.png" alt="product"></div>
                     <div
@@ -308,11 +299,11 @@
   </div>
 
   <!-- Category -->
-  <div class="container-fluid bg-white pb-4 pb-lg-5">
-    <div class="container-xl category">
-      <h3 class="text-uppercase fs-4 fs-lg-1 text-primary text-center fw-bold mb-3 mb-md-5">Quạt trần panasonic</h3>
+  <div class="container-fluid bg-white">
+    <div class="container-xl category category--first">
+      <h3 class="category__header text-uppercase fs-4 fs-lg-1 text-primary text-center fw-bold">Quạt trần panasonic</h3>
       <div class="row mb-lg-3">
-        <div class="col-6 col-lg-3 mb-3">
+        <div class="col-6 col-lg-3 mb-2 mb-lg-3">
           <div class="category__card">
             <div class="category__img">
               <img class="w-100" src="/images/image 27.png" alt="product">
@@ -324,7 +315,7 @@
             </div>
           </div>
         </div>
-        <div class="col-6 col-lg-3 mb-3">
+        <div class="col-6 col-lg-3 mb-2 mb-lg-3">
           <div class="category__card">
             <div class="category__img"><img class="w-100" src="/images/image 28.png" alt="product"></div>
             <div
@@ -334,7 +325,7 @@
             </div>
           </div>
         </div>
-        <div class="col-6 col-lg-3 mb-3">
+        <div class="col-6 col-lg-3 mb-2 mb-lg-3">
           <div class="category__card">
             <div class="category__img"><img class="w-100" src="/images/image 29.png" alt="product"></div>
             <div
@@ -344,7 +335,7 @@
             </div>
           </div>
         </div>
-        <div class="col-6 col-lg-3 mb-3">
+        <div class="col-6 col-lg-3 mb-2 mb-lg-3">
           <div class="category__card">
             <div class="category__img"><img class="w-100" src="/images/image 30.png" alt="product"></div>
             <div
@@ -356,15 +347,15 @@
         </div>
       </div>
       <div class="text-center">
-        <button class="btn btn-md btn-secondary text-primary fw-bold">Xem thêm</button>
+        <button class="btn btn-md btn-secondary btn--color">Xem thêm</button>
       </div>
     </div>
   </div>
-  <div class="container-fluid bg-light py-4 py-lg-5">
+  <div class="container-fluid bg-light">
     <div class="container-xl category">
-      <h3 class="text-uppercase fs-4 fs-lg-1 text-primary text-center fw-bold mb-3 mb-md-5">Quạt trần KDK</h3>
+      <h3 class="category__header text-uppercase fs-4 fs-lg-1 text-primary text-center fw-bold">Quạt trần KDK</h3>
       <div class="row mb-lg-3">
-        <div class="col-6 col-lg-3 mb-3">
+        <div class="col-6 col-lg-3 mb-2 mb-lg-3">
           <div class="category__card">
             <div class="category__img">
               <img class="w-100" src="/images/image 27.png" alt="product">
@@ -376,7 +367,7 @@
             </div>
           </div>
         </div>
-        <div class="col-6 col-lg-3 mb-3">
+        <div class="col-6 col-lg-3 mb-2 mb-lg-3">
           <div class="category__card">
             <div class="category__img"><img class="w-100" src="/images/image 28.png" alt="product"></div>
             <div
@@ -386,7 +377,7 @@
             </div>
           </div>
         </div>
-        <div class="col-6 col-lg-3 mb-3">
+        <div class="col-6 col-lg-3 mb-2 mb-lg-3">
           <div class="category__card">
             <div class="category__img"><img class="w-100" src="/images/image 29.png" alt="product"></div>
             <div
@@ -396,7 +387,7 @@
             </div>
           </div>
         </div>
-        <div class="col-6 col-lg-3 mb-3">
+        <div class="col-6 col-lg-3 mb-2 mb-lg-3">
           <div class="category__card">
             <div class="category__img"><img class="w-100" src="/images/image 30.png" alt="product"></div>
             <div
@@ -408,15 +399,15 @@
         </div>
       </div>
       <div class="text-center">
-        <button class="btn btn-md btn-secondary text-primary fw-bold">Xem thêm</button>
+        <button class="btn btn-md btn-secondary btn--color">Xem thêm</button>
       </div>
     </div>
   </div>
-  <div class="container-fluid bg-white py-4 py-lg-5">
+  <div class="container-fluid bg-white">
     <div class="container-xl category">
-      <h3 class="text-uppercase fs-4 fs-lg-1 text-primary text-center fw-bold mb-3 mb-md-5">Quạt trần MR.VU</h3>
+      <h3 class="category__header text-uppercase fs-4 fs-lg-1 text-primary text-center fw-bold">Quạt trần MR.VU</h3>
       <div class="row mb-lg-3">
-        <div class="col-6 col-lg-3 mb-3">
+        <div class="col-6 col-lg-3 mb-2 mb-lg-3">
           <div class="category__card">
             <div class="category__img">
               <img class="w-100" src="/images/image 27.png" alt="product">
@@ -428,7 +419,7 @@
             </div>
           </div>
         </div>
-        <div class="col-6 col-lg-3 mb-3">
+        <div class="col-6 col-lg-3 mb-2 mb-lg-3">
           <div class="category__card">
             <div class="category__img"><img class="w-100" src="/images/image 28.png" alt="product"></div>
             <div
@@ -438,7 +429,7 @@
             </div>
           </div>
         </div>
-        <div class="col-6 col-lg-3 mb-3">
+        <div class="col-6 col-lg-3 mb-2 mb-lg-3">
           <div class="category__card">
             <div class="category__img"><img class="w-100" src="/images/image 29.png" alt="product"></div>
             <div
@@ -448,7 +439,7 @@
             </div>
           </div>
         </div>
-        <div class="col-6 col-lg-3 mb-3">
+        <div class="col-6 col-lg-3 mb-2 mb-lg-3">
           <div class="category__card">
             <div class="category__img"><img class="w-100" src="/images/image 30.png" alt="product"></div>
             <div
@@ -460,15 +451,15 @@
         </div>
       </div>
       <div class="text-center">
-        <button class="btn btn-md btn-secondary text-primary fw-bold">Xem thêm</button>
+        <button class="btn btn-md btn-secondary btn--color">Xem thêm</button>
       </div>
     </div>
   </div>
-  <div class="container-fluid bg-light py-4 py-lg-5">
+  <div class="container-fluid bg-light">
     <div class="container-xl category">
-      <h3 class="text-uppercase fs-4 fs-lg-1 text-primary text-center fw-bold mb-3 mb-md-5">Quạt luxury fan (Quạt trần mỹ)</h3>
+      <h3 class="category__header text-uppercase fs-4 fs-lg-1 text-primary text-center fw-bold">Quạt trần luxury fan <br> (Quạt trần mỹ)</h3>
       <div class="row mb-lg-3">
-        <div class="col-6 col-lg-3 mb-3">
+        <div class="col-6 col-lg-3 mb-2 mb-lg-3">
           <div class="category__card">
             <div class="category__img">
               <img class="w-100" src="/images/image 27.png" alt="product">
@@ -480,7 +471,7 @@
             </div>
           </div>
         </div>
-        <div class="col-6 col-lg-3 mb-3">
+        <div class="col-6 col-lg-3 mb-2 mb-lg-3">
           <div class="category__card">
             <div class="category__img"><img class="w-100" src="/images/image 28.png" alt="product"></div>
             <div
@@ -490,7 +481,7 @@
             </div>
           </div>
         </div>
-        <div class="col-6 col-lg-3 mb-3">
+        <div class="col-6 col-lg-3 mb-2 mb-lg-3">
           <div class="category__card">
             <div class="category__img"><img class="w-100" src="/images/image 29.png" alt="product"></div>
             <div
@@ -500,7 +491,7 @@
             </div>
           </div>
         </div>
-        <div class="col-6 col-lg-3 mb-3">
+        <div class="col-6 col-lg-3 mb-2 mb-lg-3">
           <div class="category__card">
             <div class="category__img"><img class="w-100" src="/images/image 30.png" alt="product"></div>
             <div
@@ -512,28 +503,28 @@
         </div>
       </div>
       <div class="text-center">
-        <button class="btn btn-md btn-secondary text-primary fw-bold">Xem thêm</button>
+        <button class="btn btn-md btn-secondary btn--color">Xem thêm</button>
       </div>
     </div>
   </div>
 
   <!-- News -->
-  <div class="container-fluid bg-white py-4 py-lg-5">
-    <div class="container-xl category category">
-      <h3 class="text-uppercase fs-4 fs-lg-1 text-primary text-center fw-bold mb-4">Tư vấn lắp đặt Quạt trần</h3>
+  <div class="container-fluid bg-white">
+    <div class="container-xl category category--news">
+      <h3 class="category__header category__header--news text-uppercase fs-4 fs-lg-1 text-primary text-center fw-bold">Tư vấn lắp đặt Quạt trần</h3>
       <div class="row mb-lg-3 align-items-stretch">
         <div class="col-12 col-lg-4 mb-4">
           <div class="category__card shadow-none h-100 d-flex flex-column rounded-0">
             <div class="category__img category__img--news">
               <img class="w-100" src="/images/news 1.png" alt="product">
             </div>
-            <div class="category__caption category__caption--big bg-light px-4 pt-4 pb-sm-5">
+            <div class="category__caption category__caption--big bg-light">
               <p class="category__caption-title text-left text-primary fw-bold">Quạt trần kết hợp đèn chùm giá
                 30 triệu đồng cho biệt thự</p>
               <p class="text-dark fs-default fs-xs-7">Sau một năm ra mắt thị trường, mẫu Villa Light bán ra khoảng 100
                 chiếc, doanh số
                 gần 3 tỷ đồng.</p>
-              <div class="category__date px-4 pb-3">15.01.2020</div>
+              <div class="category__date">15.01.2020</div>
             </div>
           </div>
         </div>
@@ -541,13 +532,13 @@
           <div class="category__card shadow-none h-100 d-flex flex-column rounded-0">
             <div class="category__img category__img--news"><img class="w-100" src="/images/news 2.png" alt="product">
             </div>
-            <div class="category__caption category__caption--big bg-light px-4 pt-4 pb-sm-5">
+            <div class="category__caption category__caption--big bg-light">
               <p class="category__caption-title text-left text-primary fw-bold">Chọn Quạt trần phù hợp cho chung cư trần
                 thấp</p>
               <p class="text-dark fs-default fs-xs-7">Ngoài màu sắc và thiết kế, lựa chọn Quạt trần cần chú ý địa điểm
                 lắp, diện tích
                 phòng, ....</p>
-              <div class="category__date px-4 pb-3">15.01.2020</div>
+              <div class="category__date">15.01.2020</div>
             </div>
           </div>
         </div>
@@ -555,19 +546,19 @@
           <div class="category__card shadow-none h-100 d-flex flex-column rounded-0">
             <div class="category__img category__img--news"><img class="w-100" src="/images/news 3.png" alt="product">
             </div>
-            <div class="category__caption category__caption--big bg-light px-4 pt-4 pb-sm-5">
+            <div class="category__caption category__caption--big bg-light">
               <p class="category__caption-title text-left text-primary fw-bold">Nguyên tắc lắp Quạt trần không phải ai
                 cũng biết</p>
               <p class="text-dark fs-default fs-xs-7">Sau một năm ra mắt thị trường, mẫu Villa Light bán ra khoảng 100
                 chiếc, doanh số
                 gần 3 tỷ đồng.</p>
-              <div class="category__date px-4 pb-3">15.01.2020</div>
+              <div class="category__date">15.01.2020</div>
             </div>
           </div>
         </div>
       </div>
       <div class="text-center">
-        <button class="btn btn-md btn-secondary text-primary fw-bold">Xem thêm</button>
+        <button class="btn btn-md btn-secondary btn--color">Xem thêm</button>
       </div>
     </div>
   </div>
@@ -581,73 +572,73 @@
         <i class="fab fa-facebook-messenger"></i>
       </div>
     </div>
-    <footer class="container-fluid bg-primary py-5 footer">
+    <footer class="container-fluid bg-primary footer">
       <div class="container-xl">
         <div class="row">
-          <div class="col-12 col-lg-3 text-center text-lg-start mb-4">
-            <h3 class="footer__header text-white text-uppercase fw-bold">Công ty TNHH Gia Sơn</h3>
+          <div class="col-12 col-lg-3 text-center text-lg-start">
+            <h3 class="footer__header footer__header--name text-white text-uppercase fw-bold">Công ty TNHH Gia Sơn</h3>
             <img class="footer__logo" src="/images/Logo 1.png" alt="Logo Gia Son">
           </div>
-          <div class="col-12 col-lg-4 mb-4">
-            <h3 class="footer__header text-white text-uppercase text-center text-lg-start fw-bold mb-lg-4">Sản phẩm</h3>
-            <div class="row fs-7 fs-lg-6">
+          <div class="col-12 col-lg-4 mb-product">
+            <h3 class="footer__header text-white text-uppercase text-center text-lg-start fw-bold">Sản phẩm</h3>
+            <div class="row fs-6 gx-footer-item">
               <div class="col-6">
-                <div>
-                  <i class="fas fa-chevron-right text-secondary me-2 fs-7"></i>
+                <div class="footer__link">
+                  <i class="fas fa-chevron-right text-secondary fs-7"></i>
                   Quạt trần Panasonic
                 </div>
-                <div>
-                  <i class="fas fa-chevron-right text-secondary me-2 fs-7"></i>
-                  Quạt trần Panasonic
+                <div class="footer__link">
+                  <i class="fas fa-chevron-right text-secondary fs-7"></i>
+                  Quạt trần KDK
                 </div>
-                <div>
-                  <i class="fas fa-chevron-right text-secondary me-2 fs-7"></i>
+                <div class="footer__link">
+                  <i class="fas fa-chevron-right text-secondary fs-7"></i>
                   Quạt trần MR.VU
                 </div>
-                <div>
-                  <i class="fas fa-chevron-right text-secondary me-2 fs-7"></i>
-                  Quạt trần MỸ.
+                <div class="footer__link">
+                  <i class="fas fa-chevron-right text-secondary fs-7"></i>
+                  Quạt trần MỸ
                 </div>
               </div>
               <div class="col-6">
-                <div>
-                  <i class="fas fa-chevron-right text-secondary me-2 fs-7"></i>
+                <div class="footer__link">
+                  <i class="fas fa-chevron-right text-secondary fs-7"></i>
                   Quạt trần Vinawind
                 </div>
-                <div>
-                  <i class="fas fa-chevron-right text-secondary me-2 fs-7"></i>
+                <div class="footer__link">
+                  <i class="fas fa-chevron-right text-secondary fs-7"></i>
                   Quạt trần Hatari
                 </div>
-                <div>
-                  <i class="fas fa-chevron-right text-secondary me-2 fs-7"></i>
+                <div class="footer__link">
+                  <i class="fas fa-chevron-right text-secondary fs-7"></i>
                   Quạt trần MITSUBISHI
                 </div>
-                <div>
-                  <i class="fas fa-chevron-right text-secondary me-2 fs-7"></i>
+                <div class="footer__link">
+                  <i class="fas fa-chevron-right text-secondary fs-7"></i>
                   Quạt trần KAIYO
                 </div>
               </div>
             </div>
           </div>
-          <div class="col-12 mb-4 col-lg-5 text-center text-lg-start">
-            <h3 class="footer__header text-white text-uppercase text-center text-lg-start fw-bold mb-lg-4">Liên hệ</h3>
+          <div class="col-12 mb-4 col-lg-5 text-center text-lg-start footer__info">
+            <h3 class="footer__header text-white text-uppercase text-center text-lg-start fw-bold">Liên hệ</h3>
             <div class="row">
               <div class="col-12 col-lg-5 fs-7 fs-xs-6 fs-lg-6 mb-sm-3">
-                <div class="mb-3">
+                <div>
                   <div
                     class="d-flex flex-column flex-sm-row align-items-center justify-content-center justify-content-lg-start">
-                    <i class="fas fa-phone-alt text-secondary me-1"></i>
+                    <i class="fas fa-phone-alt text-secondary"></i>
                     <span class="text-nowrap text-white">Hotline đặt hàng</span>
                   </div>
-                  <div class="fs-1 fs-lg-4 lh-1 fw-bold">081 6161661</div>
+                  <div class="footer__number footer__contact fw-bold">081 6161661</div>
                 </div>
                 <div>
                   <div
                     class="d-flex flex-column flex-sm-row align-items-center justify-content-center justify-content-lg-start mb-2">
-                    <i class="fas fa-envelope text-secondary me-1"></i>
+                    <i class="fas fa-envelope text-secondary"></i>
                     <span class="text-nowraptext-white">info@giason.com.vn</span>
                   </div>
-                  <div>
+                  <div class="footer__contact">
                     Showroom: ...
                   </div>
                 </div>
@@ -673,6 +664,7 @@
   <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js">
   </script>
   <script src="./js/hompage.js"></script>
+  <script src="./js/swiper.js"></script>
 </body>
 
 </html>
