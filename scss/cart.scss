@@ -4,26 +4,19 @@
 @import "./components/form";
 @import "./components/breadcrumb";
 
-.cart-item {
-    border-bottom: 1px solid $grey;
-
-    &:last-of-type {
-        border-bottom: none;
-    }
-
-    &__price {
-        font-size: 20px;
-    }
+.fs-11 {
+    font-style: 11 !important;
 }
 
 .cart-count {
     position: relative;
-    padding-bottom: 20px;
+    padding-bottom: 12px;
+    margin-bottom: 12px;
 
     &::before {
         content: "";
         display: block;
-        width: 50px;
+        width: 37px;
         height: 2px;
         background-color: $secondary;
         position: absolute;
@@ -35,16 +28,220 @@
             height: 4px;
         }
     }
+
+    @include media-breakpoint-up(lg) {
+        margin-bottom: 31px;
+        padding-bottom: 18px;
+
+        &::before {
+            width: 50px;
+        }
+    }
 }
 
-.btn-lg {
-    font-size: 12px;
-    padding: 5px 25px;
-    width: 100%;
-    line-height: 1;
-    height: 100%;
+.cart {
+    padding-bottom: 45px;
 
-    @include media-breakpoint-up(sm) {
+    @include media-breakpoint-up(lg) {
+        padding-top: 5px;
+    }
+
+    h1 {
         font-size: 20px;
+        margin-bottom: 0;
+
+        @include media-breakpoint-up(lg) {
+            font-size: 28px;
+            line-height: 33px;
+        }
+    }
+
+    .cart-item {
+        border-bottom: 1px solid $grey;
+        padding: 12px 0 6px 0;
+
+        @include media-breakpoint-up(lg) {
+            align-items: center;
+        }
+
+        &--last {
+            border-bottom: none;
+            margin-bottom: 14px;
+        }
+
+        &__info {
+            @include media-breakpoint-up(lg) {
+                align-items: flex-end;
+            }
+        }
+
+        &__img {
+            img {
+                width: 80%;
+                margin: 0 auto;
+                display: block;
+
+                @include media-breakpoint-up(lg) {
+                    height: 171px;
+                }
+            }
+        }
+
+        &__name {
+            font-size: 14px;
+            line-height: 1;
+            margin-bottom: 0;
+
+            @include media-breakpoint-up(lg) {
+                font-size: 28px;
+                line-height: 33px;
+            }
+        }
+
+        &__price-item {
+            font-size: 12px;
+            line-height: 24px;
+            margin-bottom: 0;
+
+            @include media-breakpoint-up(lg) {
+                font-size: 18px;
+                line-height: 24px;
+                margin-bottom: 10px;
+            }
+        }
+
+        &__price {
+            font-size: 20px;
+
+            @include media-breakpoint-up(lg) {
+                text-align: right;
+            }
+        }
+
+        .quantity {
+            margin-bottom: 7px;
+        }
+
+        &__total {
+            span {
+                &:first-of-type {
+                    font-size: 14px;
+                    line-height: 24px;
+                    margin-right: 3px;
+                }
+
+                &:last-of-type {
+                    font-size: 15px;
+                    line-height: 24px;
+                }
+            }
+        }
+
+        &__close {
+            width: 10px;
+            height: 10px;
+            margin-top: 2px;
+            background: url(/images/close-1x.png) center no-repeat;
+            cursor: pointer;
+
+            @include media-breakpoint-up(lg) {
+                width: 16px;
+                height: 16px;
+                background-image: url(/images/close-2x.png);
+                margin-left: auto;
+                margin-bottom: 15px;
+            }
+        }
+    }
+
+    .textarea {
+        margin-bottom: 12px;
+
+        @include media-breakpoint-up(lg) {
+            margin-bottom: 0;
+        }
+    }
+
+    &__total-price {
+        margin-bottom: 9px;
+
+        span {
+            &:first-of-type {
+                font-size: 11px;
+                line-height: 24px;
+                margin-right: 11px;
+            }
+
+            &:last-of-type {
+                font-size: 19px;
+                line-height: 24px;
+                font-weight: bold;
+            }
+        }
+
+        @include media-breakpoint-up(lg) {
+            margin-bottom: 31px;
+
+            span {
+                &:first-of-type {
+                    font-size: 18px;
+                    line-height: 24px;
+                    margin-right: 20px;
+                }
+
+                &:last-of-type {
+                    font-size: 27px;
+                    line-height: 24px;
+                }
+            }
+        }
+    }
+
+    &__end {
+        .btn-lg {
+            font-size: 12px;
+            padding: 5px 25px;
+            width: 100%;
+            line-height: 1;
+            height: 100%;
+            line-height: 15px;
+
+            @include media-breakpoint-up(lg) {
+                font-size: 20px;
+                line-height: 24px;
+                padding: 12px 0;
+            }
+        }
+
+        @include media-breakpoint-up(sm) {
+            padding-top: 10px;
+
+            .col-lg-5 {
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-end;
+                padding-bottom: 8px;
+            }
+
+            .btn-wrapper {
+                .col {
+                    padding-right: 0 !important;
+                    flex: 0 0 auto;
+                    padding-left: 12px !important;
+
+                    &:first-child {
+                        width: 37%;
+                    }
+
+                    &:nth-child(2) {
+                        width: 26%;
+                    }
+
+                    &:last-child {
+                        width: 36%;
+                    }
+                }
+            }
+        }
     }
 }

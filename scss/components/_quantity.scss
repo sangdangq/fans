@@ -29,7 +29,7 @@
         border-right: none;
         text-align: center;
         font-size: 20px;
-        font-weight: bold;
+        font-weight: 600;
         max-width: 75px;
 
         &::-webkit-inner-spin-button {
@@ -46,6 +46,7 @@
             height: 22px;
             width: 22px;
             font-size: 16px;
+            background-image: url(/images/minus-1x.png);
 
             &:first-child {
                 border-radius: 4px 0px 0px 4px;
@@ -53,6 +54,7 @@
     
             &:last-child {
                 border-radius: 0 4px 4px 0px;
+                background-image: url(/images/plus-1x.png);
             }
         }
 
@@ -67,11 +69,21 @@
                 height: 40px;
                 width: 40px;
                 font-size: 20px;
+                background-image: url(/images/minus-2x.png);
+
+                &:first-child {
+                    border-radius: 8px 0px 0px 8px;
+                }
+
+                &:last-child {
+                    border-radius: 0 8px 8px 0px;
+                    background-image: url(/images/plus-2x.png);
+                }
             }
     
             input {
                 height: 40px;
-                max-width: 100px;
+                max-width: 87px;
                 font-size: 20px;
             }
         }

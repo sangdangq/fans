@@ -4,7 +4,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous">
+  </script>
   <script src="https://kit.fontawesome.com/a37d93ee05.js" crossorigin="anonymous"></script>
   <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
@@ -15,7 +17,7 @@
 </head>
 
 <body>
-    <!-- Navigator -->
+  <!-- Navigator -->
   <nav class="navbar navbar-expand-lg navbar-dark bg-primary py-0">
     <div class="container-xl ps-lg-0">
       <a class="navbar-brand" href="/homepage">
@@ -100,81 +102,105 @@
   </div>
 
   <!-- Cart -->
-  <div class="container-fluid container-xl">
-    <h1 class="text-primary fw-bold fs-3 fs-lg-1 text-center text-uppercase mb-lg-1">Giỏ hàng của bạn</h1>
-    <div class="cart-count fs-4 text-center fw-semibold mb-1 mb-lg-5">Có 3 sản phẩm trong giỏ hàng</div>
-    <div class="row cart-item py-4">
-      <div class="col-4 col-md-3 px-md-5">
+  <div class="cart container-fluid container-xl">
+    <h1 class="text-primary fw-bold text-center text-uppercase">Giỏ hàng của bạn</h1>
+    <div class="cart-count fs-4 text-center fw-semibold">Có 3 sản phẩm trong giỏ hàng</div>
+    <div class="row cart-item">
+      <div class="cart-item__img col-4 col-lg-3">
         <img src="/images/image 29.png" alt="product" class="img-fluid">
       </div>
-      <div class="col-7 col-md-7">
-        <h1 class="text-primary text-uppercase fw-bold fs-6 fs-lg-1">HUNTER BUILDER PLUS 50562</h1>
-        <p class="fs-7 fs-lg-4 mb-1">4.860.000đ</p>
-        <div class="quantity quantity--small">
-          <button class="btn quantity-down"></button>
-          <input type="number" value="1" min="1">
-          <button class="btn quantity-up"></button>
+      <div class="cart-item__info col-8 col-lg-9">
+        <div class="row">
+          <div class="col-11 col-lg-10">
+            <h1 class="cart-item__name text-primary text-uppercase fw-bold">HUNTER BUILDER PLUS 50562</h1>
+            <p class="cart-item__price-item">4.860.000đ</p>
+            <div class="quantity quantity--small">
+              <button class="btn quantity-down"></button>
+              <input type="number" value="1" min="1">
+              <button class="btn quantity-up"></button>
+            </div>
+            <div class="cart-item__total d-lg-none">
+              <span>Thành tiền:</span>
+              <span>4.860.000đ</span>
+            </div>
+          </div>
+          <div class="col-1 col-lg-2">
+            <div class="cart-item__close"></div>
+            <div class="cart-item__price d-none d-md-block">4.860.000đ</div>
+          </div>
         </div>
       </div>
-      <div class="col-1 col-md-2 text-end">
-        <span class="fs-lg-1"><i class="fas fa-times"></i></span>
-        <div class="cart-item__price d-none d-md-block">4.860.000đ</div>
-      </div>
     </div>
-    <div class="row cart-item py-4">
-      <div class="col-4 col-md-3 px-md-5">
+    <div class="row cart-item">
+      <div class="cart-item__img col-4 col-lg-3">
         <img src="/images/image 29.png" alt="product" class="img-fluid">
       </div>
-      <div class="col-7 col-md-7">
-        <h1 class="text-primary fw-bold text-uppercase fs-6 fs-lg-1">quạt trần panasonic f-56MPG bạc</h1>
-        <p class="fs-7 fs-lg-4 mb-1">4.860.000đ</p>
-        <div class="quantity quantity--small">
-          <button class="btn quantity-down"></button>
-          <input type="number" value="1" min="1">
-          <button class="btn quantity-up"></button>
+      <div class="cart-item__info col-8 col-lg-9">
+        <div class="row">
+          <div class="col-11 col-lg-10">
+            <h1 class="cart-item__name text-primary text-uppercase fw-bold">HUNTER BUILDER PLUS 50562</h1>
+            <p class="cart-item__price-item">4.860.000đ</p>
+            <div class="quantity quantity--small">
+              <button class="btn quantity-down"></button>
+              <input type="number" value="1" min="1">
+              <button class="btn quantity-up"></button>
+            </div>
+            <div class="cart-item__total d-lg-none">
+              <span>Thành tiền:</span>
+              <span>4.860.000đ</span>
+            </div>
+          </div>
+          <div class="col-1 col-lg-2">
+            <div class="cart-item__close"></div>
+            <div class="cart-item__price d-none d-md-block">4.860.000đ</div>
+          </div>
         </div>
       </div>
-      <div class="col-1 col-md-2 text-end">
-        <span class="fs-lg-1"><i class="fas fa-times"></i></span>
-        <div class="cart-item__price d-none d-md-block">4.860.000đ</div>
-      </div>
     </div>
-    <div class="row cart-item py-4 border-bottom-0">
-      <div class="col-4 col-md-3 px-md-5">
+    <div class="row cart-item cart-item--last">
+      <div class="cart-item__img col-4 col-lg-3">
         <img src="/images/image 25.png" alt="product" class="img-fluid">
       </div>
-      <div class="col-7 col-md-7">
-        <h1 class="text-primary text-uppercase fw-bold fs-6 fs-lg-1">quạt trần panasonic f-56MPG bạc</h1>
-        <p class="fs-7 fs-lg-4 mb-1">4.860.000đ</p>
-        <div class="quantity quantity--small">
-          <button class="btn quantity-down"></button>
-          <input type="number" value="1" min="1">
-          <button class="btn quantity-up"></button>
+      <div class="cart-item__info col-8 col-lg-9">
+        <div class="row">
+          <div class="col-11 col-lg-10">
+            <h1 class="cart-item__name text-primary text-uppercase fw-bold">HUNTER BUILDER PLUS 50562</h1>
+            <p class="cart-item__price-item">4.860.000đ</p>
+            <div class="quantity quantity--small">
+              <button class="btn quantity-down"></button>
+              <input type="number" value="1" min="1">
+              <button class="btn quantity-up"></button>
+            </div>
+            <div class="cart-item__total d-lg-none">
+              <span>Thành tiền:</span>
+              <span>4.860.000đ</span>
+            </div>
+          </div>
+          <div class="col-1 col-lg-2">
+            <div class="cart-item__close"></div>
+            <div class="cart-item__price d-none d-md-block">4.860.000đ</div>
+          </div>
         </div>
-      </div>
-      <div class="col-1 col-md-2 text-end">
-        <span class="fs-lg-1"><i class="fas fa-times"></i></span>
-        <div class="cart-item__price d-none d-md-block">4.860.000đ</div>
       </div>
     </div>
-    <div class="row pt-md-4 mb-md-5">
-      <div class="col-md-6">
+    <div class="cart__end row">
+      <div class="col-lg-7">
         <textarea class="textarea" placeholder="Ghi chú đơn hàng"></textarea>
       </div>
-      <div class="col-md-6">
-        <div class="text-end mb-4">
-          <span class="fs-lg-4">Tổng tiền: </span>
-          <span class="fs-lg-1 fw-bold">25.580.000đ</span>
+      <div class="col-lg-5">
+        <div class="cart__total-price text-end">
+          <span>Tổng tiền:</span>
+          <span>25.580.000đ</span>
         </div>
-        <div class="justify-content-lg-end row">
+        <div class="btn-wrapper justify-content-lg-end row">
           <div class="col">
-            <button class="btn btn-lg btn-primary me-md-2 col">Tiếp tục mua hàng</button>
+            <button class="btn btn-lg btn-primary me-md-2">Tiếp tục mua hàng</button>
           </div>
           <div class="col">
-            <button class="btn btn-lg btn-primary me-md-2 col">Cập nhật</button>
+            <button class="btn btn-lg btn-primary me-md-2">Cập nhật</button>
           </div>
           <div class="col">
-            <button class="btn btn-lg btn-primary col">Thanh toán</button>
+            <button class="btn btn-lg btn-primary">Thanh toán</button>
           </div>
         </div>
       </div>
@@ -194,7 +220,8 @@
       <div class="container-xl">
         <div class="row">
           <div class="col-12 col-lg-3 text-center text-lg-start">
-            <h3 class="footer__header footer__header--name text-white text-uppercase fw-bold">Công ty TNHH Gia Sơn</h3>
+            <h3 class="footer__header footer__header--name text-white text-uppercase fw-bold">Công ty TNHH Gia Sơn
+            </h3>
             <img class="footer__logo" src="/images/Logo 1.png" alt="Logo Gia Son">
           </div>
           <div class="col-12 col-lg-4 mb-product">
