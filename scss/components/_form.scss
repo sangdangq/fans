@@ -28,17 +28,25 @@
 }
 
 input[type="radio"] {
-    width: 24px;
-    height: 24px;
+    width: 20px;
+    height: 20px;
     border: 1px solid #DEE0E2;
     border-radius: 50%;
     appearance: none;
-    margin-right: 9px;
+    margin-right: 8px;
 
     &:checked {
         background-color: $secondary;
-        padding: 5px;
+        padding: 3px;
         background-clip: content-box;
+    }
+
+    @include media-breakpoint-up(sm) {
+        margin-right: 9px;
+
+        :checked {
+            padding: 5px;
+        }
     }
 }
 

@@ -6,6 +6,7 @@
 @import "./components/pagination";
 @import "./components/swiper";
 @import "./components/card";
+@import "./components/modal";
 
 .product-detail {
     padding-top: 10px;
@@ -349,16 +350,57 @@
     }
 }
 
+.radio-group {
+    margin-bottom: 12px;
+}
+
 .order-popup {
-    .block-header {
+    h3 {
         font-size: 20px;
+        line-height: 23px;
+        margin-bottom: 6px;
+    }
+
+    .product-info {
+        padding-left: 12px !important;
+        padding-right: 12px !important;
+    }
+
+    .block-header {
+        font-size: 18px;
         line-height: 24px;
         font-weight: bold;
+        margin-bottom: 15px;
+
+        &--info {
+            margin-top: 18px;
+        }
+
+        &--counpon {
+            margin-bottom: 11px;
+        }
+
+        &.mb-10 {
+            margin-bottom: 13px;
+        }
     }
 
     .user-info {
         font-size: 20px;
         line-height: 24px;
+        background-color: $light;
+        padding-left: 12px !important;
+        padding-right: 12px !important;
+
+        .form-control {
+            margin-bottom: 8px;
+            padding-left: 20px;
+            font-size: 16px;
+        }
+
+        .counpon {
+            margin-bottom: 13px;
+        }
     }
 
     .order-title {
@@ -370,10 +412,24 @@
         font-weight: bold;
         text-align: center;
         color: $primary;
+        margin-bottom: 13px;
     }
 
-    .price {
-        font-size: 16px;
+    .price,
+    .total-price {
+        h3 {
+            font-size: 26px;
+            margin-left: 9px;
+            margin-bottom: 0;
+        }
+    }
+
+    .total-price {
+        margin-bottom: 24px;
+    }
+
+    .gender {
+        margin-bottom: 8px;
     }
 
     .btn--order {
@@ -383,6 +439,129 @@
         width: 100%;
         text-transform: uppercase;
         color: $white;
+        font-weight: bold;
+        margin-bottom: 48px;
+    }
+
+    .order__form {
+        margin-bottom: 10px;
+    }
+
+    .order__noti {
+        text-align: center;
+        padding: 0 18px;
+        line-height: 22px;
+        margin-bottom: 26px;
+    }
+
+    .payment-info {
+        line-height: 22px;
+        margin-bottom: 6px;
+
+        .radio-group {
+            margin-right: 24px;
+        }
+
+        .collapse {
+            margin-bottom: 13px;
+        }
+    }
+
+    @include media-breakpoint-up(lg) {
+        h3 {
+            font-size: 28px;
+            line-height: 33px;
+            margin-bottom: 4px;
+        }
+
+        .block-header {
+            font-size: 20px;
+            line-height: 24px;
+            font-weight: bold;
+        }
+
+        .product-info {
+            padding-left: 51px !important;
+            padding-right: 12px !important;
+            padding-top: 30px;
+        }
+
+        .user-info {
+            font-size: 20px;
+            line-height: 24px;
+            padding-left: 24px !important;
+            padding-right: 51px !important;
+            padding-top: 13px;
+
+            .form-control {
+                margin-bottom: 13px;
+                font-size: 18px;
+            }
+
+            .counpon {
+                margin-bottom: 8px;
+            }
+
+            div[class*="col"] {
+                padding-right: 0;
+            }
+        }
+
+        .order-title {
+            font-size: 28px;
+            line-height: 45px;
+            margin-bottom: 0;
+        }
+
+        .order__form {
+            margin-bottom: 5px;
+        }
+
+        .order__noti {
+            margin-top: 114px;
+            font-size: 20px;
+            line-height: 23px;
+            padding: 0 20px;
+        }
+
+        .gender {
+            margin-bottom: 11px;
+
+            label {
+                &:first-of-type {
+                    margin-right: 18px;
+                }
+            }
+        }
+
+        .price {
+            h3 {
+                font-size: 30px;
+                line-height: 30px;
+            }
+        }
+
+        .total-price {
+            font-size: 20px;
+            line-height: 24px;
+            margin-bottom: 20px;
+
+            h3 {
+                font-size: 30px;
+                line-height: 30px;
+            }
+        }
+
+        .btn--order {
+            padding: 14px 0;
+            margin-bottom: 28px;
+        }
+
+        .payment-info {
+            .radio-group {
+                margin-right: 24px;
+            }
+        }
     }
 }
 

@@ -564,66 +564,74 @@
       <div class="modal-content">
         <h2 class="order-title">đặt hàng</h2>
         <div class="row">
-          <div class="col-12 col-lg-5 ps-3 ps-lg-5">
-            <h3 class="d-none d-sm-block text-primary text-uppercase fw-bold">Hunter builder plus 50562</h3>
-            <div class="fw-bold d-flex align-items-d-flex align-items-end mb-3">
-              Giá: <h3 class="price text-secondary fs-1 fw-bold ms-3 mb-0">42300000</h3>
+          <div class="product-info col-12 col-lg-5">
+            <h3 class="text-primary text-uppercase fw-bold">Hunter builder plus 50562</h3>
+            <div class="price fw-bold d-flex align-items-end mb-3 lh-1 fs-lg-4">
+              Giá: <h3 class="text-secondary fw-bold">4.860.000đ </h3>
             </div>
-            <div class="quantity d-flex">
-              <button class="btn quantity-down">-</button>
+            <div class="quantity d-flex d-lg-none">
+              <button class="btn quantity-down"></button>
               <input type="number" value="1" min="1">
-              <button class="btn quantity-up">+</button>
+              <button class="btn quantity-up"></button>
+            </div>
+            <div class="quantity quantity--small d-none d-lg-flex">
+              <button class="btn quantity-down"></button>
+              <input type="number" value="1" min="1">
+              <button class="btn quantity-up"></button>
             </div>
             <img class="img-fluid" src="/images/image 51.png">
-            <p class="mb-4 fw-semibold">Bạn vui lòng nhập đúng số điện thoại để chúng tôi sẽ gọi xác nhận đơn hàng
+            <p class="order__noti fw-semibold">Bạn vui lòng nhập đúng số điện thoại để chúng tôi sẽ gọi xác nhận đơn hàng
               trước
               khi giao
               hàng. Xin cảm ơn!</p>
           </div>
-          <div class="col-12 col-lg-7 user-info pe-3 pe-lg-5">
-            <h3 class="pt-4 block-header">Thông tin người mua</h3>
-            <div class="gender mb-3">
+          <div class="col-12 col-lg-7 user-info">
+            <h3 class="block-header block-header--info">Thông tin người mua</h3>
+            <div class="gender">
               <label class="d-inline-flex align-items-center me-4">
                 <input type="radio" name="gender" value="male" checked="true">
-                <span>Anh</span>
+                <span class="fs-5 fs-lg-4">Anh</span>
               </label>
               <label class="d-inline-flex align-items-center">
                 <input type="radio" name="gender" value="female">
-                <span>Chị</span>
+                <span class="fs-5 fs-lg-4">Chị</span>
               </label>
             </div>
-            <form action="" class="row">
+            <form action="" class="row order__form">
               <div class="col-12 col-lg-6">
-                <input type="text" class="form-control mb-3" id="name" placeholder="Họ và tên">
+                <input type="text" class="form-control" id="name" placeholder="Họ và tên">
               </div>
               <div class="col-12 col-lg-6">
-                <input type="text" class="form-control mb-3" id="phone" placeholder="Số điện thoại">
-              </div>
-              <div class="col-12 col-lg-4">
-                <input type="text" class="form-control mb-3" id="province" placeholder="Tỉnh/ Thành phố">
-              </div>
-              <div class="col-12 col-lg-4">
-                <input type="text" class="form-control mb-3" id="district" placeholder="Quận/ Huyện">
-              </div>
-              <div class="col-12 col-lg-4">
-                <input type="text" class="form-control mb-3" id="village" placeholder="Xã/ Phường">
+                <input type="text" class="form-control" id="phone" placeholder="Số điện thoại">
               </div>
               <div class="col-12">
-                <input type="text" class="form-control mb-3" id="street" placeholder="Số nhà, tên đường,...">
+                <input type="text" class="form-control" id="email" placeholder="Email">
+              </div>
+              <div class="col-12 col-lg-4">
+                <input type="text" class="form-control" id="province" placeholder="Tỉnh/ Thành phố">
+              </div>
+              <div class="col-12 col-lg-4">
+                <input type="text" class="form-control" id="district" placeholder="Quận/ Huyện">
+              </div>
+              <div class="col-12 col-lg-4">
+                <input type="text" class="form-control" id="village" placeholder="Xã/ Phường">
               </div>
               <div class="col-12">
-                <input type="text" class="form-control mb-3" id="note" placeholder="Ghi chú đơn hàng">
+                <input type="text" class="form-control" id="street" placeholder="Số nhà, tên đường,...">
+              </div>
+              <div class="col-12">
+                <input type="text" class="form-control" id="note" placeholder="Ghi chú đơn hàng">
               </div>
             </form>
-            <h3 class="block-header">Hình thức thanh toán</h3>
-            <div class="row">
+            <h3 class="block-header mb-10">Phương thức thanh toán</h3>
+            <div class="payment-info row">
               <div class="col-12 col-lg-6">
-                <label class="d-inline-flex align-items-center mb-3" data-bs-toggle="collapse"
+                <label class="radio-group d-inline-flex align-items-center" data-bs-toggle="collapse"
                   data-bs-target="#bankInfo" aria-expanded="false" aria-controls="bankInfo">
                   <input type="radio" name="payment" value="payment">
-                  <span>Chuyển khoản ngân hàng</span>
+                  <span class="fs-5 fs-lg-4">Chuyển khoản ngân hàng</span>
                 </label>
-                <div class="collapse mb-3" id="bankInfo">
+                <div class="collapse fs-5 fs-lg-4" id="bankInfo">
                   <div>Tên TK: Nguyen Van A</div>
                   <div>Số TK: 19027714792888 Tại Ngân hàng Techcombank – Chi nhánh Hà Nội</div>
                   <div>Nội dung CK:</div>
@@ -631,27 +639,31 @@
                 </div>
               </div>
               <div class="col-12 col-lg-6">
-                <label class="d-inline-flex align-items-center mb-3" data-bs-toggle="collapse"
+                <label class="radio-group d-inline-flex align-items-center" data-bs-toggle="collapse"
                   data-bs-target="#bankInfo" aria-expanded="false" aria-controls="bankInfo">
                   <input type="radio" name="payment" value="cast" checked="true">
-                  <span>Trả tiền mặt khi nhận hàng</span>
+                  <span class="fs-5 fs-lg-4">Trả tiền mặt khi nhận hàng</span>
                 </label>
               </div>
             </div>
 
-            <h3 class="block-header">Mã giảm giá</h3>
-            <div class="row">
+            <h3 class="block-header block-header--counpon">Mã giảm giá</h3>
+            <div class="row counpon">
               <div class="col-8">
-                <input type="text" class="form-control mb-3" id="name" placeholder="Nhập mã giảm giá">
+                <input type="text" class="form-control" id="name" placeholder="Nhập mã giảm giá">
               </div>
               <div class="col-4">
                 <button class="btn btn-lg btn-primary fs-default w-100 px-1">Áp dụng</button>
               </div>
             </div>
-            <div class="price fw-bold d-flex align-items-d-flex align-items-end mb-4">
-              Tổng tiền: <h3 class="price text-secondary fs-1 fw-bold ms-3 mb-0">4.860.000đ </h3>
+            <div class="total-price fw-bold d-flex align-items-end lh-1">
+              Tổng tiền: <h3 class="text-secondary fw-bold">4.860.000đ </h3>
             </div>
-            <button class="btn btn-lg btn-secondary btn--order mb-5" data-bs-dismiss="modal">đặt hàng ngay</button>
+            <div class="row">
+              <div class="col-12">
+                <button class="btn btn-lg btn-secondary btn--order" data-bs-dismiss="modal">đặt hàng ngay</button>
+              </div>
+            </div>
           </div>
         </div>
       </div>
