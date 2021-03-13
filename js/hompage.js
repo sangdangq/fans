@@ -1,5 +1,5 @@
 $(document).ready(() => {
-    $('.nav-item > .nav-item__search').click(function (e) {
+    $('.nav-item #searchIcon').click(function (e) {
         e.preventDefault();
         const searchBar = $('.search-bar');
         if(searchBar.hasClass('open')) {
@@ -11,6 +11,6 @@ $(document).ready(() => {
 
     $('.search-bar .input-group-text').click(function (e) {
         $('.search-bar').removeClass('open');
-        $('.nav-item > .nav-item__search').show();
+        $('.nav-item #searchIcon').show();
     });
 })

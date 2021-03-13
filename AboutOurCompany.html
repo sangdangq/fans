@@ -15,19 +15,27 @@
 </head>
 
 <body>
-   <!-- Navigator -->
+    <!-- Navigator -->
   <nav class="navbar navbar-expand-lg navbar-dark bg-primary py-0">
     <div class="container-xl ps-lg-0">
       <a class="navbar-brand" href="/homepage">
         <img src="/images/Logo 1.png" alt="" width="30" height="24">
       </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
-        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon">
-          <div class="navbar-toggler-icon__upper"></div>
-          <div class="navbar-toggler-icon__lower"></div>
-        </span>
-      </button>
+      <div class="d-flex d-lg-none align-items-center">
+        <a class="navbar__btn" href="/cart">
+          <img class="nav-item__search" src="/images/shopping-cart.png" alt="shopping cart">
+        </a>
+        <a class="navbar__btn">
+          <img class="nav-item__search" src="/images/search-icon-white.png" alt="search icon">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon">
+            <div class="navbar-toggler-icon__upper"></div>
+            <div class="navbar-toggler-icon__lower"></div>
+          </span>
+        </button>
+      </div>
       <div class="collapse navbar-collapse align-self-end" id="navbarNavDropdown">
         <ul class="navbar-nav">
           <li class="nav-item">
@@ -45,8 +53,15 @@
           <li class="nav-item">
             <a class="nav-link text-uppercase fw-semibold" href="#">Liên hệ</a>
           </li>
-          <li class="nav-item">
-            <img class="nav-item__search" src="/images/search-icon-white.png" alt="search icon">
+          <li class="nav-item d-none d-lg-block">
+            <div class="nav-link">
+              <img id="searchIcon" class="nav-item__search" src="/images/search-icon-white.png" alt="search icon">
+            </div>
+          </li>
+          <li class="nav-item d-none d-lg-block">
+            <a class="nav-link" href="/cart">
+              <img class="nav-item__search" src="/images/shopping-cart.png" alt="shopping cart">
+            </a>
           </li>
         </ul>
       </div>
@@ -158,7 +173,7 @@
               <img class="w-100" src="/images/news 1.png" alt="product">
             </div>
             <div class="category__caption category__caption--big bg-light">
-              <p class="category__caption-title text-left text-primary fw-bold">Quạt trần kết hợp đèn chùm giá
+              <p class="category__caption-title text-left text-primary fw-semibold">Quạt trần kết hợp đèn chùm giá
                 30 triệu đồng cho biệt thự</p>
               <p class="text-dark fs-default fs-xs-7">Sau một năm ra mắt thị trường, mẫu Villa Light bán ra khoảng 100
                 chiếc, doanh số
@@ -172,7 +187,7 @@
             <div class="category__img category__img--news"><img class="w-100" src="/images/news 2.png" alt="product">
             </div>
             <div class="category__caption category__caption--big bg-light">
-              <p class="category__caption-title text-left text-primary fw-bold">Chọn Quạt trần phù hợp cho chung cư trần
+              <p class="category__caption-title text-left text-primary fw-semibold">Chọn Quạt trần phù hợp cho chung cư trần
                 thấp</p>
               <p class="text-dark fs-default fs-xs-7">Ngoài màu sắc và thiết kế, lựa chọn Quạt trần cần chú ý địa điểm
                 lắp, diện tích
@@ -186,7 +201,7 @@
             <div class="category__img category__img--news"><img class="w-100" src="/images/news 3.png" alt="product">
             </div>
             <div class="category__caption category__caption--big bg-light">
-              <p class="category__caption-title text-left text-primary fw-bold">Nguyên tắc lắp Quạt trần không phải ai
+              <p class="category__caption-title text-left text-primary fw-semibold">Nguyên tắc lắp Quạt trần không phải ai
                 cũng biết</p>
               <p class="text-dark fs-default fs-xs-7">Sau một năm ra mắt thị trường, mẫu Villa Light bán ra khoảng 100
                 chiếc, doanh số

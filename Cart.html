@@ -15,19 +15,27 @@
 </head>
 
 <body>
-   <!-- Navigator -->
+    <!-- Navigator -->
   <nav class="navbar navbar-expand-lg navbar-dark bg-primary py-0">
     <div class="container-xl ps-lg-0">
       <a class="navbar-brand" href="/homepage">
         <img src="/images/Logo 1.png" alt="" width="30" height="24">
       </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
-        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon">
-          <div class="navbar-toggler-icon__upper"></div>
-          <div class="navbar-toggler-icon__lower"></div>
-        </span>
-      </button>
+      <div class="d-flex d-lg-none align-items-center">
+        <a class="navbar__btn" href="/cart">
+          <img class="nav-item__search" src="/images/shopping-cart.png" alt="shopping cart">
+        </a>
+        <a class="navbar__btn">
+          <img class="nav-item__search" src="/images/search-icon-white.png" alt="search icon">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon">
+            <div class="navbar-toggler-icon__upper"></div>
+            <div class="navbar-toggler-icon__lower"></div>
+          </span>
+        </button>
+      </div>
       <div class="collapse navbar-collapse align-self-end" id="navbarNavDropdown">
         <ul class="navbar-nav">
           <li class="nav-item">
@@ -45,8 +53,15 @@
           <li class="nav-item">
             <a class="nav-link text-uppercase fw-semibold" href="#">Liên hệ</a>
           </li>
-          <li class="nav-item">
-            <img class="nav-item__search" src="/images/search-icon-white.png" alt="search icon">
+          <li class="nav-item d-none d-lg-block">
+            <div class="nav-link">
+              <img id="searchIcon" class="nav-item__search" src="/images/search-icon-white.png" alt="search icon">
+            </div>
+          </li>
+          <li class="nav-item d-none d-lg-block">
+            <a class="nav-link" href="/cart">
+              <img class="nav-item__search" src="/images/shopping-cart.png" alt="shopping cart">
+            </a>
           </li>
         </ul>
       </div>
