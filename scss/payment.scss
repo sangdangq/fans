@@ -4,39 +4,6 @@
 @import "./components/form";
 @import "./components/breadcrumb";
 
-.cart-item {
-    border-bottom: 1px solid $grey;
-
-    &:last-of-type {
-        border-bottom: none;
-    }
-
-    &__price {
-        font-size: 20px;
-    }
-}
-
-.cart-count {
-    position: relative;
-    padding-bottom: 20px;
-
-    &::before {
-        content: "";
-        display: block;
-        width: 50px;
-        height: 2px;
-        background-color: $secondary;
-        position: absolute;
-        bottom: 0;
-        left: 50%;
-        transform: translateX(-50%);
-
-        @include media-breakpoint-up(sm) {
-            height: 4px;
-        }
-    }
-}
-
 .btn--info {
     padding: 0;
     font-size: 14px;
@@ -48,6 +15,11 @@
 #cartItem {
     color: $secondary;
     @include center;
+
+    .fas {
+        font-size: 11px;
+        margin-left: 5px;
+    }
 
     &.active {
         .fas {
@@ -63,5 +35,409 @@
     &.open {
         max-height: 700px;
         transition: 1s max-height ease-out;
+    }
+}
+
+.cart {
+    padding-bottom: 22px;
+
+    @include media-breakpoint-up(lg) {
+        padding-top: 5px;
+    }
+
+    h1 {
+        font-size: 20px;
+        margin-bottom: 0;
+
+        @include media-breakpoint-up(lg) {
+            font-size: 28px;
+            line-height: 33px;
+        }
+    }
+
+    .cart-count {
+        position: relative;
+        padding-bottom: 12px;
+        margin-bottom: 20px;
+
+        &::before {
+            content: "";
+            display: block;
+            width: 37px;
+            height: 2px;
+            background-color: $secondary;
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+
+            @include media-breakpoint-up(sm) {
+                height: 4px;
+            }
+        }
+
+        @include media-breakpoint-up(lg) {
+            margin-bottom: 31px;
+            padding-bottom: 18px;
+
+            &::before {
+                width: 50px;
+            }
+        }
+    }
+
+    &__icon {
+        background: url(/images/shopping-cart-1x.png) center no-repeat;
+        width: 20px;
+        height: 20px;
+        margin: 0 10px 0 0;
+    }
+
+    &__show-btn {
+        margin-bottom: 14px;
+
+        .btn--info {
+            outline: none;
+            box-shadow: none;
+        }
+    }
+
+    .cart-item {
+        border-bottom: 1px solid $grey;
+        padding: 11px 0 0px 0;
+
+        @include media-breakpoint-up(lg) {
+            align-items: center;
+        }
+
+        &:last-of-type {
+            margin-bottom: 20px;
+        }
+
+        &--last {
+            margin-bottom: 18px;
+        }
+
+        &__info {
+            @include media-breakpoint-up(lg) {
+                align-items: flex-end;
+            }
+        }
+
+        &__img {
+            img {
+                width: 80%;
+                margin: 0 auto;
+                display: block;
+
+                @include media-breakpoint-up(lg) {
+                    height: 171px;
+                }
+            }
+        }
+
+        &__name {
+            font-size: 14px;
+            line-height: 1;
+            margin-bottom: 2px;
+
+            @include media-breakpoint-up(lg) {
+                font-size: 28px;
+                line-height: 33px;
+            }
+        }
+
+        &__count {
+            font-size: 12px;
+        }
+
+        &__price-item {
+            font-size: 12px;
+            line-height: 24px;
+            margin-bottom: 0;
+
+            @include media-breakpoint-up(lg) {
+                font-size: 18px;
+                line-height: 24px;
+                margin-bottom: 10px;
+            }
+        }
+
+        &__price {
+            font-size: 20px;
+
+            @include media-breakpoint-up(lg) {
+                text-align: right;
+            }
+        }
+
+        .quantity {
+            margin-bottom: 7px;
+        }
+
+        &__total {
+            display: flex;
+            justify-content: space-between;
+
+            span {
+                &:first-of-type {
+                    font-size: 12px;
+                    line-height: 24px;
+                }
+
+                &:last-of-type {
+                    font-size: 13px;
+                    line-height: 24px;
+                }
+            }
+        }
+    }
+
+    &__discount-title {
+        margin-bottom: 12px;
+    }
+    .cash {
+        hr {
+            margin-bottom: 11px;
+
+            &:last-of-type {
+                margin-bottom: 8px;
+            }
+        }
+        .form-control {
+            font-size: 16px;
+        }
+
+        &__temp {
+            align-items: flex-end;
+            margin-bottom: 3px;
+        }
+
+        &__fee {
+            align-items: flex-end;
+        }
+
+        &__total {
+            .price {
+                font-size: 21px;
+
+                @include media-breakpoint-up(lg) {
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+
+    .textarea {
+        margin-bottom: 12px;
+
+        @include media-breakpoint-up(lg) {
+            margin-bottom: 0;
+        }
+    }
+}
+
+
+.order-popup {
+    h3 {
+        font-size: 20px;
+        line-height: 23px;
+        margin-bottom: 6px;
+    }
+
+    .product-info {
+        padding-left: 12px !important;
+        padding-right: 12px !important;
+    }
+
+    .block-header {
+        font-size: 18px;
+        line-height: 24px;
+        font-weight: bold;
+        margin-bottom: 15px;
+
+        &--info {
+            margin-top: 0;
+        }
+
+        &--counpon {
+            margin-bottom: 11px;
+        }
+
+        &.mb-10 {
+            margin-bottom: 13px;
+        }
+    }
+
+    .user-info {
+        font-size: 20px;
+        line-height: 24px;
+
+        >h3 {
+            color: $primary;
+            text-align: center;
+            margin-bottom: 6px;
+        }
+
+        .form-control {
+            margin-bottom: 8px;
+            padding-left: 20px;
+            font-size: 16px;
+        }
+
+        .counpon {
+            margin-bottom: 13px;
+        }
+    }
+
+    .price,
+    .total-price {
+        h3 {
+            font-size: 26px;
+            margin-left: 9px;
+            margin-bottom: 0;
+        }
+    }
+
+    .total-price {
+        margin-bottom: 24px;
+    }
+
+    .gender {
+        margin-bottom: 2px;
+        font-size: 16px;
+        line-height: 39px;
+    }
+
+    .btn--order {
+        font-size: 30px;
+        line-height: 35px;
+        padding: 17px 0;
+        width: 100%;
+        text-transform: uppercase;
+        color: $white;
+        font-weight: bold;
+        margin-bottom: 48px;
+    }
+
+    .order__form {
+        margin-bottom: 32px;
+    }
+
+    .order__noti {
+        text-align: center;
+        padding: 0 18px;
+        line-height: 22px;
+        margin-bottom: 26px;
+    }
+
+    .payment-info {
+        line-height: 22px;
+        margin-bottom: 6px;
+
+        .radio-group {
+            margin-right: 24px;
+        }
+
+        .collapse {
+            margin-bottom: 13px;
+        }
+    }
+
+    @include media-breakpoint-up(lg) {
+        h3 {
+            font-size: 28px;
+            line-height: 33px;
+            margin-bottom: 4px;
+        }
+
+        .block-header {
+            font-size: 20px;
+            line-height: 24px;
+            font-weight: bold;
+        }
+
+        .product-info {
+            padding-left: 51px !important;
+            padding-right: 12px !important;
+            padding-top: 30px;
+        }
+
+        .user-info {
+            font-size: 20px;
+            line-height: 24px;
+            padding-left: 24px !important;
+            padding-right: 51px !important;
+            padding-top: 13px;
+
+            .form-control {
+                margin-bottom: 13px;
+                font-size: 18px;
+            }
+
+            .counpon {
+                margin-bottom: 8px;
+            }
+
+            div[class*="col"] {
+                padding-right: 0;
+            }
+        }
+
+        .order-title {
+            font-size: 28px;
+            line-height: 45px;
+            margin-bottom: 0;
+        }
+
+        .order__form {
+            margin-bottom: 5px;
+        }
+
+        .order__noti {
+            margin-top: 114px;
+            font-size: 20px;
+            line-height: 23px;
+            padding: 0 20px;
+        }
+
+        .gender {
+            margin-bottom: 11px;
+
+            label {
+                &:first-of-type {
+                    margin-right: 18px;
+                }
+            }
+        }
+
+        .price {
+            h3 {
+                font-size: 30px;
+                line-height: 30px;
+            }
+        }
+
+        .total-price {
+            font-size: 20px;
+            line-height: 24px;
+            margin-bottom: 20px;
+
+            h3 {
+                font-size: 30px;
+                line-height: 30px;
+            }
+        }
+
+        .btn--order {
+            padding: 14px 0;
+            margin-bottom: 28px;
+        }
+
+        .payment-info {
+            .radio-group {
+                margin-right: 24px;
+            }
+        }
     }
 }
