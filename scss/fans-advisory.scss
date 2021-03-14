@@ -5,17 +5,35 @@
 @import "./components/carousel";
 @import "./components/card";
 
+.category--news {
+    padding-top: 20px;
+    padding-bottom: 15px;
+
+    @include media-breakpoint-up(lg) {
+        padding-top: 52px;
+    }
+}
+
+.category__header {
+    margin-bottom: 20px;
+}
+
 .carousel-container {
     position: relative;
 }
 
-.page-caption {
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    font-size: 36px;
-    bottom: 55px;
-    color: $primary;
-    text-transform: uppercase;
-    font-weight: bold;
+.news-container {
+    margin-bottom: 16px;
+
+    @include media-breakpoint-up(lg) {
+        margin-bottom: 10px;
+    }
+}
+
+.news-item {
+    margin-bottom: 20px;
+
+    @include media-breakpoint-up(lg) {
+        margin-bottom: 35px;
+    }
 }

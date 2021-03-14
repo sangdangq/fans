@@ -165,3 +165,14 @@
         }
     }
 }
+
+.page-caption {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 39px;
+    bottom: 59px;
+    color: $primary;
+    text-transform: uppercase;
+    font-weight: bold;
+}
