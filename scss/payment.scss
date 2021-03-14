@@ -52,6 +52,7 @@
         @include media-breakpoint-up(lg) {
             font-size: 28px;
             line-height: 33px;
+            margin-top: 13px;
         }
     }
 
@@ -77,8 +78,8 @@
         }
 
         @include media-breakpoint-up(lg) {
-            margin-bottom: 31px;
-            padding-bottom: 18px;
+            margin-bottom: 28px;
+            padding-bottom: 23px;
 
             &::before {
                 width: 50px;
@@ -103,24 +104,24 @@
     }
 
     .cart-item {
-        border-bottom: 1px solid $grey;
-        padding: 11px 0 0px 0;
+        padding: 0 0 13px 0;
 
         @include media-breakpoint-up(lg) {
             align-items: center;
         }
 
-        &:last-of-type {
-            margin-bottom: 20px;
-        }
-
         &--last {
             margin-bottom: 18px;
+            border-bottom: 1px solid $grey;
         }
 
         &__info {
             @include media-breakpoint-up(lg) {
-                align-items: flex-end;
+                >div:first-child {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                }
             }
         }
 
@@ -131,7 +132,18 @@
                 display: block;
 
                 @include media-breakpoint-up(lg) {
-                    height: 171px;
+                    max-height: 102px;
+                }
+            }
+
+            @include media-breakpoint-up(lg) {
+                >div {
+                    min-height: 102px;
+                    border-radius: $border-radius-3;
+                    background-color: $white;
+                    padding: 0 10px;
+                    display: flex;
+                    align-items: center;
                 }
             }
         }
@@ -142,13 +154,19 @@
             margin-bottom: 2px;
 
             @include media-breakpoint-up(lg) {
-                font-size: 28px;
-                line-height: 33px;
+                line-height: 24px;
+                margin-top: 0;
             }
         }
 
         &__count {
             font-size: 12px;
+
+            @include media-breakpoint-up(lg) {
+                font-size: 16px;
+                line-height: 24px;
+                color: $grey-dark;
+            }
         }
 
         &__price-item {
@@ -168,6 +186,7 @@
 
             @include media-breakpoint-up(lg) {
                 text-align: right;
+                font-size: 16px;
             }
         }
 
@@ -196,21 +215,25 @@
     &__discount-title {
         margin-bottom: 12px;
     }
+
     .cash {
         hr {
-            margin-bottom: 11px;
+            margin-bottom: 14px;
+            margin-top: 18px;
 
             &:last-of-type {
-                margin-bottom: 8px;
+                margin-bottom: 13px;
+                margin-top: 11px;
             }
         }
+
         .form-control {
             font-size: 16px;
         }
 
         &__temp {
             align-items: flex-end;
-            margin-bottom: 3px;
+            margin-bottom: 6px;
         }
 
         &__fee {
@@ -258,6 +281,14 @@
 
         &--info {
             margin-top: 0;
+            color: $primary;
+            text-align: center;
+            margin-bottom: 6px;
+
+            @include media-breakpoint-up(lg) {
+                text-align: left;
+                margin-bottom: 16px;
+            }
         }
 
         &--counpon {
@@ -273,12 +304,6 @@
         font-size: 20px;
         line-height: 24px;
 
-        >h3 {
-            color: $primary;
-            text-align: center;
-            margin-bottom: 6px;
-        }
-
         .form-control {
             margin-bottom: 8px;
             padding-left: 20px;
@@ -287,6 +312,16 @@
 
         .counpon {
             margin-bottom: 13px;
+        }
+
+        .btn {
+            padding-left: 5px;
+            padding-right: 5px;
+
+            @include media-breakpoint-up(lg) {
+                padding-left: 33px;
+                padding-right: 33px;
+            }
         }
     }
 
@@ -352,7 +387,7 @@
         }
 
         .block-header {
-            font-size: 20px;
+            font-size: 22px;
             line-height: 24px;
             font-weight: bold;
         }
@@ -366,9 +401,6 @@
         .user-info {
             font-size: 20px;
             line-height: 24px;
-            padding-left: 24px !important;
-            padding-right: 51px !important;
-            padding-top: 13px;
 
             .form-control {
                 margin-bottom: 13px;
@@ -402,7 +434,7 @@
         }
 
         .gender {
-            margin-bottom: 11px;
+            margin-bottom: 2px;
 
             label {
                 &:first-of-type {
@@ -439,5 +471,18 @@
                 margin-right: 24px;
             }
         }
+    }
+}
+
+.product-desktop {
+    &__container {
+        padding: 26px;
+        background-color: $light;
+        border-radius: $border-radius-3;
+    }
+
+    &__hr {
+        margin-top: 5px;
+        margin-bottom: 19px;
     }
 }
