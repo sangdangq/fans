@@ -31,8 +31,10 @@
         flex-direction: column;
         color: $white;
 
-        @include media-breakpoint-up(lg) {
-            border-radius: 0;
+        &--news {
+            @include media-breakpoint-up(lg) {
+                border-radius: 0;
+            }
         }
     }
 
@@ -130,6 +132,14 @@
     &--news {
         padding-top: 42px;
         padding-bottom: 0px;
+
+        .news-item {
+            margin-bottom: 20px;
+        
+            @include media-breakpoint-up(lg) {
+                margin-bottom: 35px;
+            }
+        }
     }
 
     &--swiper {
