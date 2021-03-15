@@ -5,11 +5,6 @@
 @import "./components/breadcrumb";
 @import "./components/card";
 
-
-
-
-
-
 .news-list {
     color: $blue;
 
@@ -19,5 +14,56 @@
 
     ::marker {
         color: $grey;
+    }
+}
+
+.news-detail {
+    font-size: 18px;
+    line-height: 24px;
+
+    &__paragraph {
+        font-size: 16px;
+        line-height: 22px;
+    }
+
+    &__title {
+        font-size: 20px;
+        line-height: 24px;
+        margin-bottom: 11px;
+    }
+
+    &__img {
+        margin-bottom: 20px;
+    }
+
+    &__other-post {
+        margin-top: 33px;
+    font-size: 18px;
+    margin-bottom: 6px;
+    }
+
+    &__news-post {
+        padding-left: 18px;
+        margin-bottom: 21px;
+    }
+
+    &__notice {
+        font-size: 18px;
+        margin-bottom: 20px;
+        margin-bottom: 11px;
+    }
+
+    &__social {
+        a {
+            text-decoration: none;
+        }
+    }
+}
+
+.category--news {
+    padding-top: 15px;
+
+    h3 {
+        margin-bottom: 18px;
     }
 }

@@ -210,22 +210,6 @@
   <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js">
   </script>
   <script src="./js/hompage.js"></script>
-  <script>
-    $(document).ready(function () {
-      $('#cartItem').click(function() {
-        if ($(this).hasClass('active')) {
-          $(this).removeClass('active');
-          $(this).find('button').html('Hiển thị thông tin đơn hàng');
-          $('.cart-info').removeClass('open');
-        } else {
-          $(this).addClass('active');
-          $(this).find('button').html('Ẩn thông tin đơn hàng');
-          $(this).find('button').html('Hiển thị thông tin đơn hàng');
-          $('.cart-info').addClass('open');
-        }
-      });
-    })
-  </script>
 </body>
 
 </html>
