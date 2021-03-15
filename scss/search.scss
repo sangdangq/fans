@@ -1,0 +1,34 @@
+@import "./common";
+
+@import "./components/branch";
+@import "./components/card";
+
+.gx-search {
+    --bs-gutter-y: 8px;
+}
+
+.category__header:not(.category__header--news) {
+    margin-top: 20px;
+}
+
+@include media-breakpoint-up(lg) {
+    .branch {
+        padding-top: 86px;
+    }
+
+    .category--first {
+        padding-top: 25px;
+    }
+
+    .category__header:not(.category__header--news) {
+        margin: 0 auto 65px;
+    }
+
+    .gx-search {
+        --bs-gutter-y: 35px;
+    }
+
+    .category:not(.category--news) {
+        padding-bottom: 46px;
+    }
+}

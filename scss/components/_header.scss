@@ -29,8 +29,12 @@
             border-radius: 0 0 8px 0;
             border: none;
             cursor: pointer;
-            padding: 0 57px;
+            padding: 0 17px;
             font-size: 15px;
+            
+            @include media-breakpoint-up(lg) {
+                padding: 0 57px;
+            }
         }
     }
 
@@ -88,7 +92,7 @@
                 }
             }
 
-            &__search {
+            &__icon {
                 cursor: pointer;
 
                 @include media-breakpoint-up(lg) {
