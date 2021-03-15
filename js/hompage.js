@@ -1,4 +1,5 @@
 $(document).ready(() => {
+    $('.backdrop-spinner').hide();
     $('.nav-item__icon.search').click(function (e) {
         e.preventDefault();
         const searchBar = $('.search-bar');

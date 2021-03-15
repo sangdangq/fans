@@ -53,6 +53,10 @@
         &--news {
             padding: 0;
 
+            img {
+                height: 100%;
+            }
+
             @include media-breakpoint-down(md) {
                 height: 149px;
                 border-top-left-radius: $border-radius;

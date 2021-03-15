@@ -1,0 +1,17 @@
+.backdrop-spinner {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba($color: #000, $alpha: 0.4);
+    z-index: $zindex-modal-backdrop;
+    display: flex;
+    justify-content: center;
+
+    .spinner-border {
+        margin-top: 15%;
+        width: 40px;
+        height: 40px;
+    }
+}
