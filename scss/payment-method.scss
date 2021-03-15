@@ -234,7 +234,7 @@
 
         &__temp {
             align-items: flex-end;
-            margin-bottom: 3px;
+            margin-bottom: 6px;
         }
 
         &__fee {
@@ -322,6 +322,35 @@
             @include media-breakpoint-up(lg) {
                 padding-left: 33px;
                 padding-right: 33px;
+            }
+        }
+
+        &__methods {
+            font-size: 16px;
+            line-height: 22px;
+            margin-bottom: 14px;
+
+            .col-12 {
+                &:first-of-type {
+                    margin-bottom: 6px;
+                }
+            }
+
+            label {
+                span {
+                    font-size: 18px;
+                    line-height: 39px;
+                }
+
+                &:first-child {
+                    margin-bottom: 6px;
+                }
+            }
+        }
+
+        &__btn-wrapper {
+            >div:first-of-type {
+                margin-bottom: 13px;
             }
         }
     }
@@ -414,6 +443,26 @@
 
             div[class*="col"] {
                 padding-right: 0;
+            }
+
+            #bankInfo {
+                padding: 10px 27px;
+                border-radius: 8px;
+                font-size: 18px;
+                line-height: 28px;
+                background-color: $light;
+            }
+
+            &__methods {
+                margin-bottom: 23px;
+            }
+
+            &__btn-wrapper {
+                .btn {
+                    padding-left: 10px;
+                    padding-right: 10px;
+                    line-height: 1;
+                }
             }
         }
 

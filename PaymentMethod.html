@@ -9,13 +9,13 @@
   <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-  <link href="/scss/payment.css" rel="stylesheet">
+  <link href="/scss/payment-method.css" rel="stylesheet">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <title>Gia Sơn</title>
 </head>
 
 <body>
-    <!-- Navigator -->
+  <!-- Navigator -->
   <nav class="navbar navbar-expand-lg navbar-dark bg-primary py-0">
     <div class="container-xl ps-lg-0">
       <a class="navbar-brand" href="/homepage">
@@ -101,154 +101,190 @@
   </div>
 
   <!-- Cart -->
-  <div class="container-fluid container-xl">
-    <h1 class="text-primary fw-bold fs-3 fs-lg-1 text-center text-uppercase mb-lg-1">Thanh toán</h1>
-    <div class="cart-count fs-lg-4 text-center fw-semibold mb-1 mb-md-5">Có 3 sản phẩm trong giỏ hàng</div>
-    <div class="row d-dlex d-md-none">
-      <div class="col-9 d-flex align-items-center">
-        <i class="fas fa-shopping-cart text-secondary me-2"></i>
-        <div id="cartItem">
-          <button type='button' class="btn btn--info w-100 text-secondary">
-            Hiển thị thông tin đơn hàng
-          </button>
-          <i class="fas fa-chevron-down ms-2"></i>
+  <div class="cart container-fluid">
+    <div class="container-xl">
+      <h1 class="text-primary fw-bold text-center text-uppercase">Thanh toán</h1>
+      <div class="cart-count fs-4 text-center fw-semibold">Có 3 sản phẩm cần thanh toán</div>
+      <div class="row d-dlex d-md-none">
+        <div class="cart__show-btn col-9 d-flex align-items-center">
+          <div class="cart__icon"></div>
+          <div id="cartItem">
+            <button type='button' class="btn btn--info w-100 text-secondary">
+              Hiển thị thông tin đơn hàng
+            </button>
+            <i class="fas fa-chevron-down"></i>
+          </div>
+        </div>
+        <div class="col-3">
+          <span class="cart__total fw-bold fs-6">25.580.000đ</span>
         </div>
       </div>
-      <div class="col-3">
-        <span class="fw-bold fs-6">25.580.000đ</span>
-      </div>
-    </div>
-    <div class="row d-flex d-md-none cart-info">
-      <div class="col-12 col-md-6">
-        <div class="row cart-item py-4">
-          <div class="col-4 col-md-3 px-md-5">
-            <img src="/images/image 29.png" alt="product" class="img-fluid">
-          </div>
-          <div class="col-8 col-md-7 d-flex align-items-md-start flex-column justify-content-md-center">
-            <h1 class="text-primary text-uppercase fw-bold fs-6 fs-lg-4 mb-md-0">HUNTER BUILDER PLUS 50562</h1>
-            <p class="fs-xs-7 mb-0">Số lượng: <span>1</span></p>
-            <p class="fs-xs-7 mb-0 d-flex align-items-center justify-content-between">Thành tiền:
-              <span class="fs-6">4.860.000đ</span></p>
-          </div>
-          <div class="col-md-2 d-none d-md-block text-end">
-            <div class="cart-item__price">4.860.000đ</div>
-          </div>
-        </div>
-        <div class="row cart-item py-4">
-          <div class="col-4 col-md-3 px-md-5">
-            <img src="/images/image 29.png" alt="product" class="img-fluid">
-          </div>
-          <div class="col-8 col-md-7 d-flex align-items-md-start flex-column justify-content-md-center">
-            <h1 class="text-primary text-uppercase fw-bold fs-6 fs-lg-4 mb-md-0">HUNTER BUILDER PLUS 50562</h1>
-            <p class="fs-xs-7 mb-0">Số lượng: <span>1</span></p>
-            <p class="fs-xs-7 mb-0 d-flex align-items-center justify-content-between">Thành tiền:
-              <span class="fs-6">4.860.000đ</span></p>
-          </div>
-          <div class="col-md-2 d-none d-md-block text-end">
-            <div class="cart-item__price">4.860.000đ</div>
-          </div>
-        </div>
-        <h3 class="fs-5 fs-lg-4 fw-semibold">Mã giảm giá</h3>
-        <div class="row">
-          <div class="col-8">
-            <input type="text" class="form-control mb-3" id="name" placeholder="Nhập mã giảm giá">
-          </div>
-          <div class="col-4">
-            <button class="btn btn-lg btn-primary w-100 px-1">Áp dụng</button>
-          </div>
-        </div>
-        <hr>
-        <div class="fs-5 price fw-bold d-flex justify-content-between">
-          Tạm tính <h3 class="price fs-5 fs-lg-4 fw-bold ms-3 mb-0">25.580.000đ</h3>
-        </div>
-        <div class="fs-5 price fw-bold d-flex justify-content-between">
-          Phí vận chuyển <h3 class="price fs-5 fs-lg-4 fw-bold ms-3 mb-0">-</h3>
-        </div>
-        <hr>
-        <div class="fs-5 price fw-bold d-flex justify-content-between">
-          Thành tiền <h3 class="price fs-3 fs-lg-1 fw-bold ms-3 mb-0">25.580.000đ</h3>
-        </div>
-        <hr>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-12 col-md-6">
-        <div class="col-md-12 user-info pe-md-3">
-          <h3 class="pt-4 fs-4 fs-lg-2 text-center text-md-start fw-semibold text-primary mb-4">Phương thức thanh toán</h3>
-          <div class="row">
-            <div class="col-12 col-lg-6">
-              <label class="d-inline-flex align-items-center mb-3" data-bs-toggle="collapse"
-                data-bs-target="#bankInfo" aria-expanded="false" aria-controls="bankInfo">
-                <input type="radio" name="payment" value="payment">
-                <span class="fw-bold">Chuyển khoản ngân hàng</span>
-              </label>
-              <div class="collapse mb-3" id="bankInfo">
-                <div>Tên TK: Nguyen Van A</div>
-                <div>Số TK: 19027714792888 Tại Ngân hàng Techcombank – Chi nhánh Hà Nội</div>
-                <div>Nội dung CK:</div>
-                <div>[Mã đơn hàng] - [Số điện thoại]</div>
+      <div class="row d-flex d-md-none cart-info">
+        <div class="col-12 col-md-6">
+          <div class="row cart-item">
+            <div class="cart-item__img col-4 col-md-3">
+              <img src="/images/image 29.png" alt="product" class="img-fluid">
+            </div>
+            <div class="col-8 col-md-7 d-flex align-items-md-start flex-column justify-content-md-center">
+              <h1 class="cart-item__name text-primary text-uppercase fw-bold">HUNTER BUILDER PLUS 50562</h1>
+              <div class="cart-item__count">Số lượng: <span>1</span></div>
+              <div class="cart-item__total d-lg-none">
+                <span>Thành tiền:</span>
+                <span>4.860.000đ</span>
               </div>
             </div>
-            <div class="col-12 col-lg-6">
-              <label class="d-inline-flex align-items-center mb-3" data-bs-toggle="collapse"
-                data-bs-target="#bankInfo" aria-expanded="false" aria-controls="bankInfo">
-                <input type="radio" name="payment" value="cast" checked="false">
-                <span class="fw-bold">Trả tiền mặt khi nhận hàng</span>
-              </label>
+            <div class="col-md-2 d-none d-md-block text-end">
+              <div class="cart-item__price">4.860.000đ</div>
             </div>
           </div>
-          <div class="row flex-md-row-reverse">
-            <div class="col-12 col-md-6 mb-3 mb-md-0">
-              <button class="btn btn-lg btn-primary w-100 h-100">Hoàn tất đơn hàng</button>
+          <div class="row cart-item">
+            <div class="cart-item__img col-4 col-md-3">
+              <img src="/images/image 29.png" alt="product" class="img-fluid">
             </div>
-            <div class="col-12 col-md-6">
-              <button class="btn btn-lg btn-light text-primary w-100 h-100">Quay lại thông tin người mua</button>
+            <div class="col-8 col-md-7 d-flex align-items-md-start flex-column justify-content-md-center">
+              <h1 class="cart-item__name text-primary text-uppercase fw-bold">HUNTER BUILDER PLUS 50562</h1>
+              <div class="cart-item__count">Số lượng: <span>1</span></div>
+              <div class="cart-item__total d-lg-none">
+                <span>Thành tiền:</span>
+                <span>4.860.000đ</span>
+              </div>
+            </div>
+            <div class="col-md-2 d-none d-md-block text-end">
+              <div class="cart-item__price">4.860.000đ</div>
             </div>
           </div>
+          <div class="row cart-item cart-item--last">
+            <div class="cart-item__img col-4 col-md-3">
+              <img src="/images/image 29.png" alt="product" class="img-fluid">
+            </div>
+            <div class="col-8 col-md-7 d-flex align-items-md-start flex-column justify-content-md-center">
+              <h1 class="cart-item__name text-primary text-uppercase fw-bold">HUNTER BUILDER PLUS 50562</h1>
+              <div class="cart-item__count">Số lượng: <span>1</span></div>
+              <div class="cart-item__total d-lg-none">
+                <span>Thành tiền:</span>
+                <span>4.860.000đ</span>
+              </div>
+            </div>
+            <div class="col-md-2 d-none d-md-block text-end">
+              <div class="cart-item__price">4.860.000đ</div>
+            </div>
+          </div>
+          <div class="cash">
+            <h3 class="cart__discount-title fs-5 fs-lg-4 fw-semibold">Mã giảm giá</h3>
+            <div class="row">
+              <div class="col-8">
+                <input type="text" class="form-control" id="name" placeholder="Nhập mã giảm giá">
+              </div>
+              <div class="col-4">
+                <button class="btn btn-lg btn-primary w-100 px-1">Áp dụng</button>
+              </div>
+            </div>
+            <hr>
+            <div class="cash__temp fs-5 price fw-bold d-flex justify-content-between">
+              Tạm tính <h3 class="price fs-5 fs-lg-4 fw-bold ms-3 mb-0">25.580.000đ</h3>
+            </div>
+            <div class="cash__fee fs-5 price fw-bold d-flex justify-content-between">
+              Phí vận chuyển <h3 class="price fs-5 fs-lg-4 fw-bold ms-3 mb-0">-</h3>
+            </div>
+            <hr>
+            <div class="cash__total fs-5 fw-bold d-flex justify-content-between">
+              Thành tiền <h3 class="price fw-bold ms-3 mb-0">25.580.000đ</h3>
+            </div>
+          </div>
+          <hr>
         </div>
       </div>
-      <div class="col-12 col-md-6 d-none d-md-block">
-        <div class="row mb-md-2">
-          <div class="col-md-3">
-            <img src="/images/image 29.png" alt="product" class="img-fluid">
-          </div>
-          <div class="col-md-7 d-flex align-items-md-start flex-column justify-content-md-center">
-            <h1 class="text-primary text-uppercase fw-bold fs-lg-4 mb-md-0">HUNTER BUILDER PLUS 50562</h1>
-            <p class="mb-0">Số lượng: <span>1</span></p>
-          </div>
-          <div class="col-md-2 text-end">
-            <div class="cart-item__price">4.860.000đ</div>
+      <div class="row">
+        <div class="order-popup col-12 col-md-6">
+          <div class="col-md-12 user-info">
+            <h3 class="block-header block-header--info">Phương thức thanh toán</h3>
+            <div class="user-info__methods row">
+              <div class="col-12">
+                <label class="d-inline-flex align-items-center" data-bs-toggle="collapse"
+                  data-bs-target="#bankInfo" aria-expanded="false" aria-controls="bankInfo">
+                  <input type="radio" name="payment" value="payment" checked="true">
+                  <span>Chuyển khoản ngân hàng</span>
+                </label>
+                <div class="collapse" id="bankInfo">
+                  <div>Tên TK: Nguyen Van A</div>
+                  <div>Số TK: 19027714792888 Tại Ngân hàng Techcombank – Chi nhánh Hà Nội</div>
+                  <div>Nội dung CK: [Mã đơn hàng] - [Số điện thoại]</div>
+                </div>
+              </div>
+              <div class="col-12">
+                <label class="d-inline-flex align-items-center" data-bs-toggle="collapse"
+                  data-bs-target="#bankInfo" aria-expanded="false" aria-controls="bankInfo">
+                  <input type="radio" name="payment" value="cast">
+                  <span>Trả tiền mặt khi nhận hàng</span>
+                </label>
+              </div>
+            </div>
+            <div class="user-info__btn-wrapper row flex-md-row-reverse">
+              <div class="col-12 col-md-6">
+                <button class="btn btn-lg btn-primary w-100">Hoàn tất đơn hàng</button>
+              </div>
+              <div class="col-12 col-md-6">
+                <button class="btn btn-lg btn-light text-primary w-100">Quay lại thông tin người mua</button>
+              </div>
+            </div>
           </div>
         </div>
-        <div class="row mb-md-2">
-          <div class="col-md-3">
-            <img src="/images/image 29.png" alt="product" class="img-fluid">
+        <div class="product-desktop col-12 col-md-6 d-none d-md-block">
+          <div class="product-desktop__container">
+            <div class="cart-item row">
+              <div class="cart-item__img col-md-3">
+                <div>
+                  <img src="/images/image 29.png" alt="product" class="img-fluid">
+                </div>
+              </div>
+              <div class="cart-item__info col-md-9">
+                <div>
+                  <h1 class="cart-item__name text-primary text-uppercase fw-bold fs-lg-4 mb-md-0">HUNTER BUILDER PLUS
+                    50562</h1>
+                  <div class="cart-item__price">4.860.000đ</div>
+                </div>
+                <div class="cart-item__count">Số lượng: <span>1</span></div>
+              </div>
+            </div>
+            <div class="cart-item row">
+              <div class="cart-item__img col-md-3">
+                <div>
+                  <img src="/images/image 29.png" alt="product" class="img-fluid">
+                </div>
+              </div>
+              <div class="cart-item__info col-md-9">
+                <div>
+                  <h1 class="cart-item__name text-primary text-uppercase fw-bold fs-lg-4 mb-md-0">HUNTER BUILDER PLUS
+                    50562</h1>
+                  <div class="cart-item__price">4.860.000đ</div>
+                </div>
+                <div class="cart-item__count">Số lượng: <span>1</span></div>
+              </div>
+            </div>
+            <hr class="product-desktop__hr">
+            <div class="cash">
+              <h3 class="cart__discount-title fs-5 fs-lg-4 fw-semibold">Mã giảm giá</h3>
+              <div class="row">
+                <div class="col-8">
+                  <input type="text" class="form-control" id="name" placeholder="Nhập mã giảm giá">
+                </div>
+                <div class="col-4">
+                  <button class="btn btn-lg btn-primary w-100 px-1">Áp dụng</button>
+                </div>
+              </div>
+              <hr>
+              <div class="cash__temp fs-5 fs-lg-4 price fw-bold d-flex justify-content-between">
+                Tạm tính <h3 class="price fs-5 fs-lg-3 fw-bold ms-3 mb-0">25.580.000đ</h3>
+              </div>
+              <div class="cash__fee fs-5 fs-lg-4 price fw-bold d-flex justify-content-between">
+                Phí vận chuyển <h3 class="price fs-5 fs-lg-3 fw-bold ms-3 mb-0">-</h3>
+              </div>
+              <hr>
+              <div class="cash__total fs-5 fs-lg-4 fw-bold d-flex justify-content-between">
+                Tổng cộng <h3 class="fw-bold ms-3 mb-0 fs-lg-1">25.580.000đ</h3>
+              </div>
+            </div>
           </div>
-          <div class="col-md-7 d-flex align-items-md-start flex-column justify-content-md-center">
-            <h1 class="text-primary text-uppercase fw-bold fs-lg-4 mb-md-0">HUNTER BUILDER PLUS 50562</h1>
-            <p class="mb-0">Số lượng: <span>1</span></p>
-          </div>
-          <div class="col-md-2 text-end">
-            <div class="cart-item__price">4.860.000đ</div>
-          </div>
-        </div>
-        <h3 class="fs-lg-4 fw-semibold">Mã giảm giá</h3>
-        <div class="row">
-          <div class="col-8">
-            <input type="text" class="form-control mb-3" id="name" placeholder="Nhập mã giảm giá">
-          </div>
-          <div class="col-4">
-            <button class="btn btn-lg btn-primary w-100 px-1">Áp dụng</button>
-          </div>
-        </div>
-        <div class="price fw-bold d-flex justify-content-md-between">
-          Tạm tính <h3 class="price fs-lg-4 fw-bold ms-3 mb-0">25.580.000đ</h3>
-        </div>
-        <div class="price fw-bold d-flex justify-content-md-between">
-          Phí vận chuyển <h3 class="price fs-lg-4 fw-bold ms-3 mb-0">0đ</h3>
-        </div>
-        <div class="price fw-bold d-flex justify-content-md-between">
-          Phí vận chuyển <h3 class="price fs-lg-1 fw-bold ms-3 mb-0">25.580.000đ</h3>
         </div>
       </div>
     </div>
